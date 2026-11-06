@@ -11,6 +11,40 @@ from urllib.parse import urlparse, parse_qs
 from .engine import start, visible, reveal, finalize, export, run, evidence
 from .policies import recommend
 
+_SVG_CACHE = {}
+
+
+def render_svg(smiles, width=240, height=120):
+    cache_key = (smiles, width, height)
+    if cache_key in _SVG_CACHE:
+        return _SVG_CACHE[cache_key]
+    if smiles:
+        try:
+            from rdkit import Chem
+            from rdkit.Chem.Draw import rdMolDraw2D
+            mol = Chem.MolFromSmiles(smiles)
+            if mol:
+                drawer = rdMolDraw2D.MolDraw2DSVG(width, height)
+                opts = drawer.drawOptions()
+                opts.clearBackground = False
+                opts.bondLineWidth = 1.4
+                opts.minFontSize = 10
+                opts.maxFontSize = 14
+                rdMolDraw2D.PrepareAndDrawMolecule(drawer, mol)
+                drawer.FinishDrawing()
+                svg = drawer.GetDrawingText()
+                _SVG_CACHE[cache_key] = svg
+                return svg
+        except Exception:
+            pass
+    fallback = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}"><text x="50%" y="50%" dominant-baseline="middle" '
+        f'text-anchor="middle" fill="#888" font-size="11">Structure unavailable</text></svg>'
+    )
+    _SVG_CACHE[cache_key] = fallback
+    return fallback
+
 
 class SessionStore:
     def __init__(self, directory):
@@ -59,6 +93,7 @@ class SessionStore:
 def create_server(cfg, port):
     episodes = json.loads((Path(cfg['data_dir']) / 'episodes.json').read_text())
     by_id = {episode['id']: episode for episode in episodes}
+    compound_smiles = {c['id']: c['smiles'] for e in episodes for c in e['candidates'] if 'smiles' in c}
     store = SessionStore(Path(cfg['data_dir']) / 'sessions')
     static = Path(__file__).parent / 'static'
 
@@ -104,6 +139,20 @@ def create_server(cfg, port):
                     result = json.loads(Path(cfg['results_file']).read_text())
                     result.pop('rows', None)
                     self.send(result)
+                    return
+                if url.path == '/api/structure':
+                    cid = query.get('id', [''])[0]
+                    smiles = query.get('smiles', [''])[0] or compound_smiles.get(cid, '')
+                    width = int(query.get('width', [240])[0])
+                    height = int(query.get('height', [120])[0])
+                    svg = render_svg(smiles, width=width, height=height)
+                    payload = svg.encode('utf-8')
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'image/svg+xml')
+                    self.send_header('Cache-Control', 'public, max-age=86400')
+                    self.send_header('Content-Length', str(len(payload)))
+                    self.end_headers()
+                    self.wfile.write(payload)
                     return
                 if url.path in ('/api/state', '/api/export', '/api/compare'):
                     session_id = query.get('session', [''])[0]

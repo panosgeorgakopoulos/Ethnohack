@@ -1,6 +1,8 @@
-# Three assays, one isolation
+# DECOUPLE · Documentation Index
 
-**Project handoff · updated 6 November 2026 · research and design stage**
+> For the general project overview, quickstart, benchmark results, and web workbench guide, see the [Main Project README](../README.md).
+
+**Project handoff and technical design archive · updated 6 November 2026**
 
 A natural-products chemist has several plant extracts that inhibit intracellular *Trypanosoma cruzi*. Two chemicals often appear together. Which extract should the chemist assay next to decide which chemical is worth isolating? The proposed system chooses up to three measurements and makes one nomination, with an evidence trail. It can also report that the library cannot resolve the question.
 

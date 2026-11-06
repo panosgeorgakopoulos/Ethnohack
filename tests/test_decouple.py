@@ -197,3 +197,13 @@ def test_second_concurrent_action_cannot_use_stale_revision(tmp_path):
     assert results.count('committed') == 1
     assert sum('Stale state' in result for result in results) == 1
     assert len(store.load(session_id)['trace']) == 1
+
+
+def test_structure_svg_rendering():
+    from decouple.server import render_svg
+    svg = render_svg('COc1ccc(cc1)C2OCC3C2COC3c4ccc(cc4)OC', width=200, height=100)
+    assert '<svg' in svg
+    assert '</svg>' in svg
+    fallback = render_svg('INVALID_SMILES', width=200, height=100)
+    assert '<svg' in fallback
+    assert 'unavailable' in fallback
