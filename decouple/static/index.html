@@ -1,17 +1,144 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DECOUPLE · Assay workbench</title><link rel="stylesheet" href="/style.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13'%3E%E2%9A%97%3C/text%3E%3C/svg%3E">
-</head><body>
-<header><a class="brand" href="/" aria-label="DECOUPLE home"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M3 7h10l5 16h9M3 23h10l5-16h9" fill="none" stroke="currentColor" stroke-width="2"/></svg>DECOUPLE</a><span>Natural products / T. cruzi</span><button id="resultsButton">Benchmark</button></header>
-<main><div class="title"><div><h1>Which assay breaks the tie?</h1><p>Reveal up to three assays to distinguish two chemical explanations.</p></div><button id="exportButton">Export decision trace ↗</button></div>
-<div class="notice"><strong id="tier"></strong><span id="provenance"></span></div>
-<div class="toolbar"><label>Candidate pair <select id="episodeSelect"></select></label><label class="check"><input type="checkbox" id="diagnostic"> Withhold separating specimens</label><button id="startButton">Start new episode</button></div>
-<p id="error" role="alert" hidden></p><div id="loading">Loading episodes…</div>
-<div id="workbench" hidden>
-<div class="workspace">
-<section class="hypotheses"><div class="sectionhead"><h2>Competing explanations</h2><span>Posterior probability</span></div><div id="candidates"></div><div id="alternatives"></div><p class="small">The four explanations sum to 100%. Bars show support under the inference model.</p><div class="verdict" aria-live="polite"><h3 id="verdictTitle">The starting assay cannot separate A and B.</h3><p id="verdictText"></p></div><div class="budget"><span>Assays remaining</span><span id="budgetValue"></span></div><div id="budgetMarks" aria-hidden="true"></div></section>
-<section class="specimens"><div class="sectionhead"><h2>Sample profiles</h2><span id="sampleCount"></span></div><p class="small" id="zeroNote"></p><div class="tablewrap"><table><thead><tr><th>Species</th><th>A</th><th>B</th><th>Parasite</th><th id="toxHeader">Host tox</th><th><span class="sr">Action</span></th></tr></thead><tbody id="samples"></tbody></table></div></section>
-</div>
-<section class="next"><div><span class="small">Next experiment</span><h2 id="recommendationTitle"></h2><p id="recommendationText"></p></div><div class="decision-actions"><button id="recommendedButton" class="primary">Reveal assay</button><button id="abstainButton">Abstain now</button></div></section>
-<div class="lower"><section><div class="sectionhead"><h2>Decision trail</h2><span>Saved locally</span></div><ol id="trail"></ol></section><section><div class="sectionhead"><h2>Same budget, different question</h2></div><p id="baselineText"></p><button id="compareButton" disabled>Compare with strongest-first</button><p class="small">The comparison uses identical archived outcomes and unlocks after finalization.</p></section></div>
-</div><footer>DECOUPLE / Research prototype <span>Occurrence ≠ abundance. Association ≠ causation.</span></footer></main>
-<dialog id="modal"><div class="modalhead"><h2 id="modalTitle"></h2><button id="closeModal" aria-label="Close dialog">Close</button></div><div id="modalBody"></div></dialog>
-<noscript>JavaScript is required to reveal assays. Use the documented replay command for an offline decision trace.</noscript><script src="/app.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DECOUPLE · Which compound to isolate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M3 7h10l5 16h9M3 23h10l5-16h9' fill='none' stroke='%230a0a0a' stroke-width='2.5'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header>
+  <a class="brand" href="/" aria-label="DECOUPLE home">
+    <svg width="26" height="26" viewBox="0 0 30 30" aria-hidden="true"><path d="M3 7h10l5 16h9M3 23h10l5-16h9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>DECOUPLE
+  </a>
+  <span class="scope">Chagas disease · <i>Trypanosoma cruzi</i> · 1,600-extract plant library</span>
+  <button id="resultsButton">How well it does</button>
+</header>
+
+<main>
+
+  <div class="title">
+    <div>
+      <h1>Which compound to isolate</h1>
+      <p id="standfirst">Two compounds appear together in the plant extracts that kill the parasite, so the screen alone cannot say which one is responsible. <span class="cost">Purifying the wrong one costs about six weeks of bench work.</span> You have three assays to find out.</p>
+    </div>
+    <button id="exportButton">Export decision trace ↗</button>
+  </div>
+
+  <div class="toolbar">
+    <label>Compound pair
+      <select id="episodeSelect"></select>
+    </label>
+    <label class="check"><input type="checkbox" id="diagnostic"> Hide the extracts that separate them</label>
+    <button id="startButton">Start over</button>
+    <p class="small sourceline" id="provenance"></p>
+  </div>
+
+  <p id="error" role="alert" hidden></p>
+  <div id="loading">Loading compound pairs…</div>
+
+  <div id="workbench" hidden>
+    <div class="workspace">
+
+      <section class="decision" aria-labelledby="decisionHead">
+        <div class="sectionhead">
+          <h2 id="decisionHead">The decision</h2>
+          <span id="tier"></span>
+        </div>
+
+        <div aria-live="polite">
+          <p class="verdict-state" id="verdictState">Best explanation of the activity so far</p>
+          <div class="verdict-lead">
+            <span class="figure num" id="verdictFigure">—</span>
+            <span class="unit" id="verdictFigureLabel"></span>
+          </div>
+          <h3 id="verdictTitle">Reading the evidence…</h3>
+          <p id="verdictText"></p>
+          <span class="verdict-flag" id="verdictFlag" hidden></span>
+        </div>
+
+        <div class="candidates" id="candidates"></div>
+        <div class="alternatives" id="alternatives"></div>
+        <p class="small" id="posteriorNote">The four explanations always add to 100%. Bars show how much the assays so far support each one.</p>
+
+        <div class="budget">
+          <span class="label">Assays left in the budget</span>
+          <span class="value num" id="budgetValue"></span>
+        </div>
+        <div class="budget-marks" id="budgetMarks" aria-hidden="true"></div>
+
+        <div class="next">
+          <span class="label" id="nextLabel">Recommended next assay</span>
+          <h3 id="recommendationTitle"></h3>
+          <p id="recommendationText"></p>
+          <div class="decision-actions">
+            <button id="recommendedButton" class="primary">Assay this extract</button>
+            <button id="abstainButton">Stop, isolate nothing</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="specimens" aria-labelledby="extractsHead">
+        <div class="sectionhead">
+          <h2 id="extractsHead">Plant extracts you could assay</h2>
+          <span id="sampleCount"></span>
+        </div>
+        <p class="small" id="listNote"></p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Plant extract</th>
+                <th scope="col">How much of each compound it holds</th>
+                <th scope="col">Kills parasite</th>
+                <th scope="col" id="toxHeader">Harms human cells</th>
+                <th scope="col"><span class="sr">Action</span></th>
+              </tr>
+            </thead>
+            <tbody id="samples"></tbody>
+          </table>
+        </div>
+        <div class="listfoot">
+          <span id="listTotal"></span>
+          <button id="showAllButton" hidden></button>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="lower">
+      <section>
+        <div class="sectionhead"><h2>What you have spent</h2><span>Saved in this browser</span></div>
+        <div id="trail"></div>
+      </section>
+      <section>
+        <div class="sectionhead"><h2>What a chemist would do today</h2></div>
+        <p class="small" id="baselineText"></p>
+        <div class="pushdown">
+          <button id="compareButton" disabled>Compare the two decisions</button>
+          <p class="small" id="compareNote">Both replay the same archived measurements. Available once you have decided.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <span>DECOUPLE · research prototype, not clinical advice</span>
+    <span>Compounds are mass-spectrometry annotations, not confirmed structures. Appearing together is not evidence of causing.</span>
+  </footer>
+</main>
+
+<dialog id="modal">
+  <div class="modalhead"><h2 id="modalTitle"></h2><button id="closeModal" aria-label="Close dialog">Close</button></div>
+  <div id="modalBody"></div>
+</dialog>
+
+<noscript>JavaScript is required to run an episode. The documented replay command produces the same decision trace offline.</noscript>
+<script src="/app.js" defer></script>
+</body>
+</html>

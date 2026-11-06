@@ -1,6 +1,6 @@
 .pytest_cache/
 .DS_Store
-.taste-skill/*/screenshots/
+.taste-skill/
 data/raw/
 data/sessions/
 data/enpkg/
