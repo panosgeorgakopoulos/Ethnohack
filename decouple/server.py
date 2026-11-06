@@ -12,6 +12,42 @@ from .engine import start, visible, reveal, finalize, export, run, evidence
 from .policies import recommend
 
 _SVG_CACHE = {}
+_PROPS_CACHE = {}
+
+
+def compute_properties(smiles):
+    if not smiles:
+        return None
+    if smiles in _PROPS_CACHE:
+        return _PROPS_CACHE[smiles]
+    try:
+        from rdkit import Chem
+        from rdkit.Chem import Descriptors, Lipinski
+        mol = Chem.MolFromSmiles(smiles)
+        if mol:
+            mw = round(Descriptors.MolWt(mol), 1)
+            logp = round(Descriptors.MolLogP(mol), 2)
+            hbd = Lipinski.NumHDonors(mol)
+            hba = Lipinski.NumHAcceptors(mol)
+            rotb = Lipinski.NumRotatableBonds(mol)
+            fsp3 = round(Lipinski.FractionCSP3(mol), 2)
+            tpsa = round(Descriptors.TPSA(mol), 1)
+            violations = sum([mw > 500, logp > 5, hbd > 5, hba > 10])
+            res = {
+                'mw': mw,
+                'logp': logp,
+                'tpsa': tpsa,
+                'hbd': hbd,
+                'hba': hba,
+                'rotb': rotb,
+                'fsp3': fsp3,
+                'lipinski': 'Pass' if violations == 0 else f'{violations} violation(s)'
+            }
+            _PROPS_CACHE[smiles] = res
+            return res
+    except Exception:
+        pass
+    return None
 
 
 def render_svg(smiles, width=240, height=120):
@@ -109,6 +145,7 @@ def create_server(cfg, port):
         view.update(session_id=session_id, recommendation=recommend(view, 'decouple', cfg),
                     strongest=recommend(view, 'strongest-first', cfg))
         view['evidence'] = evidence(episode, state)
+        view['properties'] = {c['id']: compute_properties(c.get('smiles', '')) for c in episode['candidates']}
         view['limitations'] = episode['limitations']
         return view
 

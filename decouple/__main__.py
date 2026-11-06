@@ -12,14 +12,19 @@ def run_demo(cfg, episode_id=None):
     es = json.loads((Path(cfg['data_dir']) / 'episodes.json').read_text())
     e = next((ep for ep in es if ep['id'] == episode_id), None) if episode_id else es[0]
     c_a, c_b = e['candidates']
+    from .server import compute_properties
+    p_a = compute_properties(c_a.get('smiles', ''))
+    p_b = compute_properties(c_b.get('smiles', ''))
+    p_a_str = f" [MW: {p_a['mw']}, cLogP: {p_a['logp']}, Fsp3: {p_a['fsp3']}]" if p_a else ""
+    p_b_str = f" [MW: {p_b['mw']}, cLogP: {p_b['logp']}, Fsp3: {p_b['fsp3']}]" if p_b else ""
     print("=" * 70)
     print("  DECOUPLE: Three Assays, One Isolation (Live Terminal Demo)")
     print("=" * 70)
     print(f"Episode: {e['id']}")
     print(f"Target : {cfg['target']} (ChEMBL ID: {cfg['target_chembl_id']})")
     print(f"Paper  : {c_a['activity_records'][0].get('document_chembl_id', 'N/A')}")
-    print(f"Candidate A: {c_a['name']} ({c_a['id']})")
-    print(f"Candidate B: {c_b['name']} ({c_b['id']})")
+    print(f"Candidate A: {c_a['name']} ({c_a['id']}){p_a_str}")
+    print(f"Candidate B: {c_b['name']} ({c_b['id']}){p_b_str}")
     print(f"Shared Botanical Species: {e['provenance']['shared_species']} (Jaccard: {e['provenance']['jaccard']:.2f})")
     print("-" * 70)
     print("Initial State (1 Starting Assay Visible):")

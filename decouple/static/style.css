@@ -13,3 +13,8 @@
 .candidate-structure img{max-height:90px;max-width:100%;object-fit:contain}
 .modal-structure{display:flex;justify-content:center;margin:12px 0;background:#fbfcfd;border:1px solid #e4e7eb;border-radius:6px;padding:12px}
 .modal-structure img{max-height:180px;max-width:100%}
+.props-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:10px 0 16px;background:#f8f9fa;border:1px solid #e9ecef;border-radius:6px;padding:12px}
+.props-grid>div{display:flex;flex-direction:column;font-size:12px}
+.props-grid span{color:var(--muted);font-size:11px}
+.props-grid b{font-size:13px;color:var(--text);margin-top:2px}
+.props-title{font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:14px}

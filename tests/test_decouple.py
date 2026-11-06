@@ -222,3 +222,14 @@ def test_terminal_demo_runs(capsys):
     assert 'Live Terminal Demo' in captured.out
     assert 'FINAL DECISION' in captured.out
     assert 'Nomination' in captured.out
+
+
+def test_compute_properties():
+    from decouple.server import compute_properties
+    props = compute_properties('COc1ccc([C@H]2O[C@H](c3ccc(OC)c(OC)c3)[C@@H](C)[C@H]2C)cc1OC')
+    assert props is not None
+    assert props['mw'] == 372.5
+    assert props['logp'] == 4.81
+    assert props['lipinski'] == 'Pass'
+    assert props['fsp3'] == 0.45
+    assert compute_properties('INVALID') is None
