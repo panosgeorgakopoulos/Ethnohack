@@ -1,0 +1,11 @@
+{
+ "source": "ENPKG Zenodo 7824642 (measured)",
+ "extracts": 1600,
+ "rotenoid_compounds": 105,
+ "confounded_pairs_eligible": 238,
+ "episodes": 12,
+ "selective_actives_total": 8,
+ "truth_distribution": {
+  "unknown": 12
+ }
+}

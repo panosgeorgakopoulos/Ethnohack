@@ -1,0 +1,243 @@
+{
+  "schema_version": 2,
+  "tier": "Tier R \u00b7 measured extracts (ENPKG)",
+  "config": {
+    "gain": 43.911973673990076,
+    "gain_method": "decouple.calibration.fit_gain on all rotenoid compound abundances (present>0)",
+    "background": 0.05,
+    "nomination_threshold": 0.85,
+    "tox_cap": 0.5,
+    "budget": 3,
+    "seed_reveals": 8,
+    "pool_size": 250,
+    "bootstrap_draws": 2000,
+    "n_pairs_available": 238,
+    "smoke": 0,
+    "truth_scoring": {
+      "named": "nominated candidate == truth driver (two-driver truth: always wrong)",
+      "developable": "named AND not the cytotoxicity driver (half the episodes make A cytotoxic)"
+    }
+  },
+  "episodes_sha256": "06a98623ea8b70111aeb0185da34a65061aa0bcca268ef3ba9ff977e1ae51d08",
+  "manifest_sha256": "546c97c1c1cb7524a03c6233187917eb35d58f510dfa6ed475ad6c7587850b46",
+  "episodes": 952,
+  "unique_pairs": 238,
+  "unique_source_documents": 1,
+  "source_documents": [
+    "Zenodo 7824642 (ENPKG)"
+  ],
+  "uncertainty": "Benchmark responses are simulated on real measured LC-MS abundances and real co-occurrence; the chemistry is real, the response is not. Intervals are pair-clustered over 238 compound pairs, not over episodes.",
+  "measured_extract_replay": true,
+  "acquisition_objective": "Expected gain in threshold-aware nomination utility; unitless.",
+  "policies": {
+    "no_budget": {
+      "correct_nomination_rate": {
+        "estimate": 0.10819327731092437,
+        "ci95": [
+          0.0861344537815126,
+          0.1323529411764706
+        ]
+      },
+      "abstention_rate": {
+        "estimate": 0.8876050420168067,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 0.9626168224299065,
+        "ci95": [
+          0.9256176367153156,
+          0.991304347826087
+        ]
+      },
+      "single_driver_recovery": {
+        "estimate": 0.10819327731092437,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.10819327731092437,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": null,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.8918067226890756,
+        "ci95": null
+      }
+    },
+    "random": {
+      "correct_nomination_rate": {
+        "estimate": 0.11239495798319328,
+        "ci95": [
+          0.09033613445378151,
+          0.1355304621848738
+        ]
+      },
+      "abstention_rate": {
+        "estimate": 0.8834033613445378,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 0.963963963963964,
+        "ci95": [
+          0.9279256060183895,
+          0.9915966386554622
+        ]
+      },
+      "single_driver_recovery": {
+        "estimate": 0.11239495798319328,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.11239495798319328,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": null,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.8876050420168067,
+        "ci95": null
+      }
+    },
+    "strongest-first": {
+      "correct_nomination_rate": {
+        "estimate": 0.3224789915966387,
+        "ci95": [
+          0.2961922268907563,
+          0.3487394957983193
+        ]
+      },
+      "abstention_rate": {
+        "estimate": 0.6754201680672269,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 0.9935275080906149,
+        "ci95": [
+          0.9837662337662337,
+          1.0
+        ]
+      },
+      "single_driver_recovery": {
+        "estimate": 0.3224789915966387,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.3224789915966387,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": null,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.6775210084033614,
+        "ci95": null
+      }
+    },
+    "decouple": {
+      "correct_nomination_rate": {
+        "estimate": 0.3319327731092437,
+        "ci95": [
+          0.3067226890756303,
+          0.3560924369747899
+        ]
+      },
+      "abstention_rate": {
+        "estimate": 0.6659663865546219,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 0.9937106918238994,
+        "ci95": [
+          0.9842258814838478,
+          1.0
+        ]
+      },
+      "single_driver_recovery": {
+        "estimate": 0.3319327731092437,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.3319327731092437,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": null,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.6680672268907564,
+        "ci95": null
+      }
+    },
+    "adaptive_contrast": {
+      "correct_nomination_rate": {
+        "estimate": 0.32668067226890757,
+        "ci95": [
+          0.3014705882352941,
+          0.35189075630252103
+        ]
+      },
+      "abstention_rate": {
+        "estimate": 0.671218487394958,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 0.9936102236421726,
+        "ci95": [
+          0.9840242791021545,
+          1.0
+        ]
+      },
+      "single_driver_recovery": {
+        "estimate": 0.32668067226890757,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.32668067226890757,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": null,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.6733193277310925,
+        "ci95": null
+      }
+    }
+  },
+  "paired_difference_vs_strongest": {
+    "metric": "correct_nomination_rate",
+    "estimate": 0.004201680672268893,
+    "ci95": null
+  },
+  "set_valued": {
+    "label": "Set-valued verdicts (mass 0.95)",
+    "coverage": 0.9894957983193278,
+    "proposal_rate": 0.49369747899159666,
+    "containment": 0.9936170212765958,
+    "mean_size": 1.4148936170212767,
+    "cytotoxic_rate": 0.4957983193277311,
+    "kind_counts": {
+      "nominate": 277,
+      "shortlist": 192,
+      "joint": 1,
+      "cytotoxic": 472,
+      "abstain": 10
+    }
+  },
+  "indistinguishable_diagnostic": {
+    "label": "Episodes where no available extract separates the pair",
+    "episodes": 952,
+    "unique_pairs": 238,
+    "abstentions": 10,
+    "rate": 0.01050420168067227,
+    "ci95": null,
+    "note": "Abstentions under the set-valued rule; the cytotoxic verdict is an answer, not a decline."
+  }
+}

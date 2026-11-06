@@ -7,16 +7,20 @@ from pathlib import Path
 
 from .model import update, decision
 from .policies import recommend
+from .setvalued import set_decision
 
 PUBLIC_CANDIDATE_FIELDS = ('id', 'name', 'inchikey', 'smiles', 'identity_match_tier', 'source_url')
 PUBLIC_SAMPLE_FIELDS = ('id', 'name', 'x', 'units', 'occurrence_status', 'evidence')
 
 
 def start(episode, cfg):
-    state = {'episode_id': episode['id'], 'revealed': {}, 'trace': [], 'decision': None,
-             'revision': 0, 'requests': {}}
+    state = {'episode_id': episode['id'], 'revealed': {}, 'revealed_cytotox': {}, 'trace': [],
+             'decision': None, 'revision': 0, 'requests': {}}
+    tox = episode['hidden'].get('outcomes_cytotox') or {}
     for sample_id in episode.get('initial', []):
         state['revealed'][sample_id] = episode['hidden']['outcomes'][sample_id]
+        if sample_id in tox:
+            state['revealed_cytotox'][sample_id] = tox[sample_id]
     return state
 
 
@@ -24,17 +28,25 @@ def revision(state):
     return state.get('revision', len(state['trace']) + int(state['decision'] is not None))
 
 
-def visible(episode, state, cfg):
+def _posterior(episode, revealed, cfg):
     posterior = cfg['prior']
-    for sample_id, response in state['revealed'].items():
+    for sample_id, response in revealed.items():
         sample = next(s for s in episode['samples'] if s['id'] == sample_id)
         posterior = update(posterior, sample['x'], response, cfg).tolist()
+    return list(posterior)
+
+
+def visible(episode, state, cfg):
+    posterior = _posterior(episode, state['revealed'], cfg)
+    cytotox = state.get('revealed_cytotox') or {}
     return {
         'id': episode['id'], 'tier': episode['tier'], 'target': cfg['target'],
         'candidates': [{key: candidate[key] for key in ('id', 'name')} for candidate in episode['candidates']],
         'samples': [{key: copy.deepcopy(sample[key]) for key in PUBLIC_SAMPLE_FIELDS if key in sample}
                     for sample in episode['samples']],
-        'posterior': list(posterior), 'revealed': dict(state['revealed']),
+        'posterior': posterior, 'revealed': dict(state['revealed']),
+        'revealed_cytotox': dict(cytotox),
+        'posterior_cytotox': _posterior(episode, cytotox, cfg) if cytotox else None,
         'remaining': cfg['budget'] - len(state['trace']),
         'decision': copy.deepcopy(state['decision']), 'trace': copy.deepcopy(state['trace']),
         'revision': revision(state),
@@ -81,8 +93,13 @@ def reveal(episode, state, sample_id, cfg, policy='manual', request_id=None, exp
     # Store the revision before mutating legacy states that predate explicit revisions.
     state['revision'] = revision(state)
     state['revealed'][sample_id] = response
+    cytotox_response = (episode['hidden'].get('outcomes_cytotox') or {}).get(sample_id)
+    if cytotox_response is not None:
+        state.setdefault('revealed_cytotox', {})[sample_id] = cytotox_response
     event = {'step': len(state['trace']) + 1, 'sample_id': sample_id,
              'response': response, 'policy': policy}
+    if cytotox_response is not None:
+        event['response_cytotox'] = cytotox_response
     state['trace'].append(event)
     event['posterior'] = visible(episode, state, cfg)['posterior']
     _complete_request(state, request_id, operation)
@@ -98,7 +115,16 @@ def finalize(episode, state, cfg, request_id=None, expected_revision=None, absta
     if not abstain and len(state['trace']) < cfg['budget']:
         raise ValueError('Complete the assay budget before finalizing, or abstain')
     state['revision'] = revision(state)
-    result = decision(visible(episode, state, cfg), cfg)
+    view = visible(episode, state, cfg)
+    if view['posterior_cytotox'] is not None:
+        names = tuple(candidate['name'] for candidate in view['candidates'])
+        result = set_decision(view['posterior'], view['posterior_cytotox'], view['samples'],
+                              view['revealed'], cfg, mass=cfg.get('set_mass', 0.95), names=names)
+        # keep the single-candidate field the pre-set-valued clients read
+        candidates = result['candidates']
+        result['candidate'] = candidates[0] if len(candidates) == 1 and candidates[0] in ('A', 'B') else None
+    else:
+        result = decision(view, cfg)
     if abstain:
         result = {'kind': 'abstain', 'candidate': None, 'probability': result['probability'],
                   'explanation': 'The user ended this episode without an isolation nomination.'}

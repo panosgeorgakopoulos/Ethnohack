@@ -1,0 +1,3319 @@
+{
+ "status": "hypothesis",
+ "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+ "annotation_note": "Rotenone and deguelin are isomers of identical exact mass that compete to explain the same peak; an ISDB match cannot tell them apart.",
+ "provenance": "Real ENPKG data, no simulation. Activity = Tcruzi_10ugml. Selector never sees held-out activities (imputed); real values revealed only after the recommendation.",
+ "initial_assayed_set": {
+  "n": 32,
+  "hits": [
+   "VGF139_H07",
+   "VGF145_G09",
+   "VGF146_E08",
+   "VGF146_F09",
+   "VGF150_A09",
+   "VGF150_H08",
+   "VGF155_D05",
+   "VGF156_A06"
+  ],
+  "reference_extracts": [
+   "VGF146_C07",
+   "VGF141_G11",
+   "VGF150_B05",
+   "VGF156_G03",
+   "VGF139_B10",
+   "VGF139_G10",
+   "VGF153_G05",
+   "VGF140_D05",
+   "VGF147_D04",
+   "VGF154_H11",
+   "VGF139_D10",
+   "VGF153_A07",
+   "VGF143_E02",
+   "VGF138_H08",
+   "VGF140_B09",
+   "VGF151_B06",
+   "VGF150_G03",
+   "VGF139_G05",
+   "VGF144_B05",
+   "VGF140_C08",
+   "VGF154_B06",
+   "VGF150_H06",
+   "VGF139_E03",
+   "VGF154_E06"
+  ]
+ },
+ "cases": [
+  {
+   "case": "rotenoid",
+   "title": "Rotenoid case (positive mode)",
+   "mode": "pos",
+   "annotation": "isdb",
+   "status": "hypothesis",
+   "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+   "annotation_note": "Rotenone and deguelin are isomers of identical exact mass that compete to explain the same peak; an ISDB match cannot tell them apart.",
+   "n_candidates": 64,
+   "candidates": [
+    {
+     "cid": 153,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 355.1178,
+     "rt_min": 3.013,
+     "canopus_class": "Flavanones",
+     "canopus_prob": 0.953,
+     "isdb_keys": [
+      "HUHGGORLMLOUCC",
+      "MEADLGUPYQNUNF",
+      "SEIQQHZEVVWEAF",
+      "ZVEDKPGZOXEGTK",
+      "WLZYCSNLBZYEHT",
+      "WXQNEGHFLYKCJC",
+      "AZZOFOYQTLQXGY",
+      "QINRCHWVLQBLCO",
+      "FORZKFDSRRLEKM",
+      "JDKOSPKTKADBCU"
+     ],
+     "n_isdb_keys": 19,
+     "n_extracts_present": 33,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 383,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 353.1021,
+     "rt_min": 3.205,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 0.993,
+     "isdb_keys": [
+      "JZASYWWZBYHRIJ",
+      "YHQSAPYIPYYEMD",
+      "QDVCTVPRLKNDMC",
+      "VHLZJIBDJSOIAT",
+      "IRHITZXGUBMNBQ",
+      "OKQQXHUICMLKQI",
+      "VHNPAPHWKVLGHG",
+      "RSTRBTNSRVARGB",
+      "HQZSTJGHLLEVNO",
+      "XCWUWQXTHOXUPO"
+     ],
+     "n_isdb_keys": 17,
+     "n_extracts_present": 27,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 472,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 343.1176,
+     "rt_min": 3.22,
+     "canopus_class": "Flavones",
+     "canopus_prob": 0.981,
+     "isdb_keys": [
+      "IOKUHHOVWITKLG",
+      "DDGJUTBQQURRGE",
+      "YOZUDFLREPPXIO",
+      "URSUMOWUGDXZHU",
+      "CLXVBVLQKLQNRQ",
+      "MINVCYFPVPBILB",
+      "PYRZRPSTTNKOCS",
+      "UIFRXEHXPRFGTF",
+      "PRKMAOZUUWKOOK",
+      "HLBQIAYRCJIRCQ"
+     ],
+     "n_isdb_keys": 14,
+     "n_extracts_present": 44,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 532,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 353.1021,
+     "rt_min": 3.012,
+     "canopus_class": "Flavones",
+     "canopus_prob": 0.993,
+     "isdb_keys": [
+      "LWZACZCRAUQSLH",
+      "QDVCTVPRLKNDMC",
+      "OVLQTBOVUNAVGU",
+      "GJIALGLHOBXNAT",
+      "OKQQXHUICMLKQI",
+      "DESYRLMOSLWIGY",
+      "VHLZJIBDJSOIAT",
+      "OHRYPZSDRFBQMN",
+      "XCWUWQXTHOXUPO",
+      "CMJGAYUQSLJSCR"
+     ],
+     "n_isdb_keys": 17,
+     "n_extracts_present": 28,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 609,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 397.128,
+     "rt_min": 2.652,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.998,
+     "isdb_keys": [
+      "HROBVUODGKJNHV",
+      "OPGVEBTYBAOEHZ",
+      "RALLVQKXPZCTCL",
+      "LJNMTAALHAPGLP",
+      "SHCMKWXVHLOSIU"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 7,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 748,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 409.1264,
+     "rt_min": 4.168,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.999,
+     "isdb_keys": [
+      "NPYOKEDYJXYSTA",
+      "CKHVKQDEOBZNIX",
+      "RSVWXUPJBWWEJY",
+      "IABFCFVKJYQRCS"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 1320,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 367.1176,
+     "rt_min": 3.439,
+     "canopus_class": "Furocoumarins",
+     "canopus_prob": 0.988,
+     "isdb_keys": [
+      "KSESTLPJESZHFG",
+      "WGKJZQZVJSKRPI",
+      "OQUXSJDSDHAMOY",
+      "ZBIQLNABDNOOKV",
+      "MHRQXFCQTMCKHV",
+      "CCBYKOUIUXULII",
+      "UGWRCDURVAJLKZ",
+      "LZNQBDHNIGPIFL",
+      "TYNZRPOBMSNIAX",
+      "WEELWZNBAZIZRK"
+     ],
+     "n_isdb_keys": 11,
+     "n_extracts_present": 24,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 1738,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 353.1019,
+     "rt_min": 2.84,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 0.998,
+     "isdb_keys": [
+      "CMJGAYUQSLJSCR",
+      "RTJFPTTVUICQRZ",
+      "QDVCTVPRLKNDMC",
+      "VTCPKAZOZJPWSB",
+      "YKYNYMQDXOWMDT",
+      "HHHCFSNROIVKQQ",
+      "YHQSAPYIPYYEMD",
+      "YAWLWHBWDHQRRT",
+      "HQZSTJGHLLEVNO",
+      "OVLQTBOVUNAVGU"
+     ],
+     "n_isdb_keys": 10,
+     "n_extracts_present": 16,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2456,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 359.1125,
+     "rt_min": 3.606,
+     "canopus_class": "Flavones",
+     "canopus_prob": 0.988,
+     "isdb_keys": [
+      "YYFWIFCWNZFLJJ",
+      "HZWQFLMDVZUSON",
+      "UTOJBBXYXTWQDE",
+      "AXCXIPWOLDUSPI",
+      "WLLOTQCRMSKSCK",
+      "DGPPUQGDNLFZCD",
+      "IEQJWNREVVCVGT",
+      "OLIZBCDMOHNKCE"
+     ],
+     "n_isdb_keys": 8,
+     "n_extracts_present": 10,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2461,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 427.1379,
+     "rt_min": 3.173,
+     "canopus_class": "Simple_phenolic_acids",
+     "canopus_prob": 0.994,
+     "isdb_keys": [
+      "HYURYBOIAWCYNB",
+      "VVELXKLAUSKIIE",
+      "WBFAMVDHSGIPNA"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2818,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 353.1022,
+     "rt_min": 3.377,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.999,
+     "isdb_keys": [
+      "QDVCTVPRLKNDMC",
+      "JJVJBPKUTANWEW",
+      "XYDSFEQOFYTNPI",
+      "CMJGAYUQSLJSCR",
+      "PKEYFNYGJJUWHE",
+      "HHHCFSNROIVKQQ",
+      "FSXLVPMQNMFQDL",
+      "VHLZJIBDJSOIAT",
+      "ABQWPANFECMPDF",
+      "OHRYPZSDRFBQMN"
+     ],
+     "n_isdb_keys": 11,
+     "n_extracts_present": 19,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2820,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 409.128,
+     "rt_min": 4.017,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "CKHVKQDEOBZNIX",
+      "JFOIHGHOZIMXTP",
+      "RSVWXUPJBWWEJY",
+      "WNOFGVICQRDQSB",
+      "MYVZRARGAOPFGY"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 7,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2829,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.133,
+     "rt_min": 3.624,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "NVGQZFJWDWMWMT",
+      "NGQVFILFHVPLFE",
+      "LSNZUXYRWFYNAA"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 7,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2841,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 395.1493,
+     "rt_min": 4.048,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "JUVIOZPCNVVQFO",
+      "LNVUVAIFUJRDBV",
+      "JLUDWKYIDWFAGN",
+      "VNIIWYXDSWVLIC",
+      "GUBOZMSGAMLXPU",
+      "PVTASJQBVPOLER",
+      "YNHZDINWEJCMRF",
+      "QLKSLGRVBGVPPG",
+      "OBIUGMGQVQMVSK"
+     ],
+     "n_isdb_keys": 9,
+     "n_extracts_present": 17,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2843,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 351.0865,
+     "rt_min": 2.991,
+     "canopus_class": "Simple_coumarins",
+     "canopus_prob": 0.853,
+     "isdb_keys": [
+      "LAPWFFQUEBKHQY",
+      "AOYQXCYLRJFNFX",
+      "ILDXUUAZBUVRDX",
+      "ZUVMYDNDIWLGSH",
+      "UVJBSWKDLJKBCL",
+      "ZTYBQWLDCYNQKE",
+      "NFNSSVSQSNJVCR",
+      "FARHQKNGMYOEBH"
+     ],
+     "n_isdb_keys": 8,
+     "n_extracts_present": 17,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2844,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 337.0705,
+     "rt_min": 3.726,
+     "canopus_class": "Simple_coumarins",
+     "canopus_prob": 0.632,
+     "isdb_keys": [
+      "RAJDDCCSNZAPCH",
+      "KXMKNCBSCHINMT",
+      "BRFFHCOMPMJEIK"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 3344,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 423.1402,
+     "rt_min": 3.553,
+     "canopus_class": "Unknown",
+     "canopus_prob": 0.0,
+     "isdb_keys": [
+      "VWSZNYHUCXFZPZ",
+      "XMJHOTVIJNLONQ"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 3432,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 367.0801,
+     "rt_min": 3.009,
+     "canopus_class": "Unknown",
+     "canopus_prob": 0.0,
+     "isdb_keys": [
+      "RZZBXVGBWLOHHV",
+      "FNUQWDBRYMIHEA",
+      "VKSKFMRCZHZMHZ",
+      "NDFPDLUZXSJUKN"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 8,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 3440,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 367.0812,
+     "rt_min": 3.367,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.82,
+     "isdb_keys": [
+      "RZZBXVGBWLOHHV",
+      "NUYYOLGSNQWSLU",
+      "IFYIHGHEIRCOSQ",
+      "SAALZFZQLFTOGM",
+      "FNUQWDBRYMIHEA",
+      "QXAPPJWRWBYNHA"
+     ],
+     "n_isdb_keys": 6,
+     "n_extracts_present": 9,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 3464,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 345.0968,
+     "rt_min": 2.363,
+     "canopus_class": "Flavonols",
+     "canopus_prob": 0.998,
+     "isdb_keys": [
+      "YSXFFLGRZJWNFM",
+      "NZISSJGLGHXPMF",
+      "BFLVWZBVOBQBNK",
+      "WLYCTTJGVRMXFW",
+      "RHXKHTYRDAJUEZ",
+      "BVMYGPIULRZQPJ",
+      "GONMHOQVFDWXLV",
+      "FVUSIGFBEZPOSJ"
+     ],
+     "n_isdb_keys": 8,
+     "n_extracts_present": 23,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 3806,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 443.1325,
+     "rt_min": 2.444,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.997,
+     "isdb_keys": [
+      "TYURHYMMTQGDOP",
+      "GKHOGRMKNUUWFH",
+      "CDZUQIFWCXAIFB"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4144,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 351.0863,
+     "rt_min": 3.387,
+     "canopus_class": "Simple_coumarins",
+     "canopus_prob": 0.848,
+     "isdb_keys": [
+      "LAPWFFQUEBKHQY",
+      "FARHQKNGMYOEBH",
+      "ILDXUUAZBUVRDX"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4145,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 365.0659,
+     "rt_min": 3.387,
+     "canopus_class": "Furocoumarins",
+     "canopus_prob": 0.545,
+     "isdb_keys": [
+      "MSXPSNDSSMJJME",
+      "UGUCEZIVNNWSAY"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4146,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 385.0918,
+     "rt_min": 2.98,
+     "canopus_class": "Furofuranoid_lignans",
+     "canopus_prob": 0.706,
+     "isdb_keys": [
+      "NCRFSUOFWNAZCS",
+      "RZMDOLYAHSOCQW",
+      "VFLHIZSORMIUMV"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 8,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4149,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 357.0971,
+     "rt_min": 3.447,
+     "canopus_class": "Flavonols",
+     "canopus_prob": 0.981,
+     "isdb_keys": [
+      "AHASVNPHVWSIGH",
+      "OMYJDDMIHAOFPJ"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4152,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.1328,
+     "rt_min": 5.204,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "NGQVFILFHVPLFE",
+      "NVGQZFJWDWMWMT"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4154,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 409.1285,
+     "rt_min": 3.835,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.998,
+     "isdb_keys": [
+      "CKHVKQDEOBZNIX",
+      "JFOIHGHOZIMXTP",
+      "OJMVWQKOYQXIJO"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4162,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 343.1177,
+     "rt_min": 3.375,
+     "canopus_class": "Flavones",
+     "canopus_prob": 0.997,
+     "isdb_keys": [
+      "PYRZRPSTTNKOCS",
+      "GYWCUSNYNXPLAE",
+      "KFMFKHCKPGKKNV",
+      "CFHHDFAUABSBHT",
+      "NVTJLSRVWFAVPB",
+      "MVRMZYSAVJUULH",
+      "ATUWQWOHLKRHRS",
+      "ZEOKDWPZNMUQNT",
+      "PRKMAOZUUWKOOK",
+      "SLIMCXCSQXYCGL"
+     ],
+     "n_isdb_keys": 22,
+     "n_extracts_present": 39,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4168,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 411.1426,
+     "rt_min": 2.424,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 0.926,
+     "isdb_keys": [
+      "JFVKWCYZKMUTLH",
+      "ANTWBTVYATURFG",
+      "WNIRAQXHOVJVDB",
+      "ZFSLOJRJABHMTL",
+      "DVGPZIMBJLTERM"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4179,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 315.0862,
+     "rt_min": 2.806,
+     "canopus_class": "Flavones",
+     "canopus_prob": 0.998,
+     "isdb_keys": [
+      "CLKLDTHVJNABQP",
+      "UCKKVYJWPOXEJX",
+      "HCRLNUIDURQGLT",
+      "KVSCSPAYYVSPTI",
+      "NMXLTAIWCAJDHP",
+      "FBIOTKKGJNFUMI",
+      "LWWWNDVDXAKGAI",
+      "JDMXMMBASFOTIF"
+     ],
+     "n_isdb_keys": 8,
+     "n_extracts_present": 14,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4183,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 351.0866,
+     "rt_min": 3.78,
+     "canopus_class": "Flavones",
+     "canopus_prob": 0.982,
+     "isdb_keys": [
+      "LAPWFFQUEBKHQY",
+      "AOYQXCYLRJFNFX",
+      "ZUVMYDNDIWLGSH",
+      "IOLIWNMGVYEBIW"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 10,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4186,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 357.0975,
+     "rt_min": 2.26,
+     "canopus_class": "Pterocarpan",
+     "canopus_prob": 0.382,
+     "isdb_keys": [
+      "AHASVNPHVWSIGH",
+      "XTQARNACNLDAEQ",
+      "YEASWFUXWMSEOA",
+      "HZHNYQLMLQAKSH",
+      "BROWXLHOQNBXKJ",
+      "AEKPZNDJHWFONI"
+     ],
+     "n_isdb_keys": 6,
+     "n_extracts_present": 7,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4188,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 395.149,
+     "rt_min": 3.379,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "JUVIOZPCNVVQFO",
+      "OBIUGMGQVQMVSK",
+      "ORDAZKGHSNRHTD",
+      "SEIGQCCMNQRVTJ",
+      "CDLSCSXOZKFNDL"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 6,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4192,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 383.1128,
+     "rt_min": 3.153,
+     "canopus_class": "Furocoumarins",
+     "canopus_prob": 0.908,
+     "isdb_keys": [
+      "DGLSPEHHYIIOPE",
+      "OACYQSXLLVSYPQ",
+      "RIYXZIMMUILXAQ",
+      "PKBDGQRRPFRWSU",
+      "PYWWMBHIWCVDGL",
+      "NMKFZSNRHNHWLX",
+      "RJCCYQUNRFJCPC",
+      "CSINKIKNVRIRBU",
+      "CCJWJASNEQOVDI",
+      "GWBKGLTYZHMDMU"
+     ],
+     "n_isdb_keys": 12,
+     "n_extracts_present": 24,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4194,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 369.1326,
+     "rt_min": 2.444,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 0.995,
+     "isdb_keys": [
+      "LGJWBTKCQLVCIA",
+      "CFMMELZRMVWLJB",
+      "RCKPFEXECYJLFV",
+      "SVOIVAHAKDYEOL",
+      "NDFCDWPCDQESDP"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4196,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 357.0972,
+     "rt_min": 2.375,
+     "canopus_class": "Simple_coumarins",
+     "canopus_prob": 0.807,
+     "isdb_keys": [
+      "AHASVNPHVWSIGH",
+      "SVKQUYNIOYNNBI",
+      "BROWXLHOQNBXKJ"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4199,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 379.1177,
+     "rt_min": 3.569,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.513,
+     "isdb_keys": [
+      "GMPWOFIFBQYNHH",
+      "YDVLAWUIRSKWMJ",
+      "NKHPGJPLHMMRIF",
+      "FIJFZZZLQKGDMK"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 5659,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.1332,
+     "rt_min": 3.755,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "NVGQZFJWDWMWMT",
+      "KAAYYZHXDKHIBG",
+      "WLMRWQPXGXVFKO",
+      "NGQVFILFHVPLFE",
+      "FTQHVDBBSYLXIP",
+      "XXLTVUGWGQRUPX",
+      "CPBXNYZFGKIZDX",
+      "XRIWVFJLXPAXJU",
+      "LSNZUXYRWFYNAA"
+     ],
+     "n_isdb_keys": 9,
+     "n_extracts_present": 27,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 5920,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 397.1281,
+     "rt_min": 2.789,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 0.99,
+     "isdb_keys": [
+      "VIMHZMOJYABXJB",
+      "LJNMTAALHAPGLP",
+      "LKQBEBUFBFOQAS",
+      "VAAPHFWVXAMOLR",
+      "QLSDMNALMSHELG",
+      "HROBVUODGKJNHV"
+     ],
+     "n_isdb_keys": 6,
+     "n_extracts_present": 11,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 6098,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 411.1439,
+     "rt_min": 4.37,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "DIOIPXZGSXBDJU",
+      "MTTUVGLGBORPBI",
+      "WNIRAQXHOVJVDB",
+      "UXCHPUGUYQOBAV"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 6530,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 395.1497,
+     "rt_min": 4.777,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "BHCBWJBSVOKHRJ",
+      "OBIUGMGQVQMVSK",
+      "JUVIOZPCNVVQFO",
+      "WDCDWNXBGWEULT",
+      "PVTASJQBVPOLER",
+      "GUBOZMSGAMLXPU",
+      "WIYCPTFPEMBDCR",
+      "UPHWJAWTGRBPAJ",
+      "ORDAZKGHSNRHTD",
+      "QLKSLGRVBGVPPG"
+     ],
+     "n_isdb_keys": 12,
+     "n_extracts_present": 17,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 7532,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 373.092,
+     "rt_min": 2.678,
+     "canopus_class": "Isoflavones",
+     "canopus_prob": 0.598,
+     "isdb_keys": [
+      "INRSYSTZYGIZOF",
+      "YSLIYOFBTRWGSD",
+      "IWYIZCDOIHPNJL"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 7923,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 427.1384,
+     "rt_min": 2.232,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.982,
+     "isdb_keys": [
+      "XNCJHURCKJVUAN",
+      "VVELXKLAUSKIIE",
+      "OHRIQNJHLMZPSG",
+      "JDNHANBRNDZELM"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 8,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 7965,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 397.1283,
+     "rt_min": 3.465,
+     "canopus_class": "Arylnaphthalene_and_aryltetralin_lignans",
+     "canopus_prob": 0.929,
+     "isdb_keys": [
+      "BSOQPQBWWASEBU",
+      "RALLVQKXPZCTCL",
+      "LJNMTAALHAPGLP",
+      "QTSYIEYGKIGDKF",
+      "HROBVUODGKJNHV"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 9,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9053,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 427.1388,
+     "rt_min": 2.818,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "IPUDWVRFBNLJPM",
+      "JCJPVNDLAAXNEX",
+      "HYURYBOIAWCYNB",
+      "QOXJILVSGINTCU",
+      "OHRIQNJHLMZPSG"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 6,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9056,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 413.1594,
+     "rt_min": 2.843,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "UJRXJHPYROZVGI",
+      "IFQCOXCDQXGBFK",
+      "YUQJTSITEJNBRW",
+      "ANEGWFDHDHYTBO"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 10,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9059,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 411.1438,
+     "rt_min": 2.582,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "MTTUVGLGBORPBI",
+      "WNIRAQXHOVJVDB",
+      "DIOIPXZGSXBDJU",
+      "VVFJAQFKTCHFPC"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 8,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9244,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.1336,
+     "rt_min": 4.578,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.999,
+     "isdb_keys": [
+      "AVSIAACNDNIRAQ",
+      "LSNZUXYRWFYNAA",
+      "NGQVFILFHVPLFE",
+      "KDOCRANJCODQMR"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 15,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9323,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 425.1233,
+     "rt_min": 4.362,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.989,
+     "isdb_keys": [
+      "LKSFQAUFFRGKGH",
+      "NZIANEPQOIXOGI"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9325,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 411.1437,
+     "rt_min": 3.387,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "YLBRYHYFZWJGFN",
+      "PVLCTVYVOQEQLE",
+      "WNIRAQXHOVJVDB",
+      "PIPKOMCOCGAXLZ",
+      "UXCHPUGUYQOBAV"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 6,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9328,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 425.123,
+     "rt_min": 2.657,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.984,
+     "isdb_keys": [
+      "LKSFQAUFFRGKGH",
+      "NVIZHSSHHRHDLE"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9330,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 409.128,
+     "rt_min": 3.185,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.999,
+     "isdb_keys": [
+      "CKHVKQDEOBZNIX",
+      "RSVWXUPJBWWEJY"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9334,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.1322,
+     "rt_min": 4.057,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "LSNZUXYRWFYNAA",
+      "LRKIXOZDMXDDBU",
+      "FTQHVDBBSYLXIP",
+      "NGQVFILFHVPLFE"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9335,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 423.144,
+     "rt_min": 3.393,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.994,
+     "isdb_keys": [
+      "XMJHOTVIJNLONQ",
+      "VWSZNYHUCXFZPZ"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9339,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 425.123,
+     "rt_min": 3.595,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.967,
+     "isdb_keys": [
+      "UFHFSWXZPIOOQR",
+      "SIJVKLMCZBBMGR",
+      "JZLOANXPTOXARG",
+      "GGTZHSHHPAQZRU"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9340,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 395.1125,
+     "rt_min": 3.372,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.862,
+     "isdb_keys": [
+      "IZLDEMGPMNPSSR",
+      "AFDWFYSMCGLTEY"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9341,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 409.1284,
+     "rt_min": 5.194,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.999,
+     "isdb_keys": [
+      "JFOIHGHOZIMXTP",
+      "AVWAYGDSFUMWHP",
+      "HDDUSYQWBVKRGV",
+      "RSVWXUPJBWWEJY"
+     ],
+     "n_isdb_keys": 4,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9342,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 429.1542,
+     "rt_min": 2.573,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "KANDATZVPJBSEB",
+      "ZUQNZVKHXXKXSY",
+      "ARDCIQJWEMRJPN",
+      "SXYMZPDEDWTMMB",
+      "QUNBFDGYGBBWMM"
+     ],
+     "n_isdb_keys": 5,
+     "n_extracts_present": 7,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9343,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 397.1647,
+     "rt_min": 4.601,
+     "canopus_class": "Plant_xanthones",
+     "canopus_prob": 0.994,
+     "isdb_keys": [
+      "SYOGFYMIPOYTIT",
+      "ZJSCTRPDQUMQKM"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9345,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 385.0918,
+     "rt_min": 2.817,
+     "canopus_class": "Methyl_xanthones",
+     "canopus_prob": 0.998,
+     "isdb_keys": [
+      "NCRFSUOFWNAZCS",
+      "VFLHIZSORMIUMV",
+      "KRRNYMLYOLMYMS"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 10022,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.1309,
+     "rt_min": 4.167,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "NGQVFILFHVPLFE",
+      "LRKIXOZDMXDDBU",
+      "LSNZUXYRWFYNAA"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 10048,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 393.1333,
+     "rt_min": 5.348,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "NGQVFILFHVPLFE"
+     ],
+     "n_isdb_keys": 1,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 10774,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 411.1437,
+     "rt_min": 2.981,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 1.0,
+     "isdb_keys": [
+      "WNIRAQXHOVJVDB",
+      "PVLCTVYVOQEQLE",
+      "XEYKGWOEWOJOKM"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 10786,
+     "mode": "pos",
+     "annotation_setting": "isdb",
+     "mz": 425.122,
+     "rt_min": 2.177,
+     "canopus_class": "Rotenoids",
+     "canopus_prob": 0.986,
+     "isdb_keys": [
+      "NVIZHSSHHRHDLE",
+      "LMMACNCQNDTCON",
+      "UEZYSVVAZHVDEJ"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    }
+   ],
+   "attribution": {
+    "initial": {
+     "stage": "initial (known hits + reference extracts)",
+     "n_assayed": 32,
+     "abstain": false,
+     "abstain_threshold": 0.6,
+     "top_score": 0.7685388981033356,
+     "ranking_top": [
+      {
+       "cid": 2820,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.128,
+       "rt_min": 4.017,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "CKHVKQDEOBZNIX",
+        "JFOIHGHOZIMXTP",
+        "RSVWXUPJBWWEJY",
+        "WNOFGVICQRDQSB",
+        "MYVZRARGAOPFGY"
+       ],
+       "n_isdb_keys": 5,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 1,
+       "score": 0.7685388981033356,
+       "ci95": [
+        0.5066126334477605,
+        0.9928727840871613
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 5659,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.1332,
+       "rt_min": 3.755,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "NVGQZFJWDWMWMT",
+        "KAAYYZHXDKHIBG",
+        "WLMRWQPXGXVFKO",
+        "NGQVFILFHVPLFE",
+        "FTQHVDBBSYLXIP",
+        "XXLTVUGWGQRUPX",
+        "CPBXNYZFGKIZDX",
+        "XRIWVFJLXPAXJU",
+        "LSNZUXYRWFYNAA"
+       ],
+       "n_isdb_keys": 9,
+       "n_extracts_present": 27,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 2,
+       "score": 0.7637434604245259,
+       "ci95": [
+        0.5103141237997747,
+        0.9948110364746547
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 7923,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 427.1384,
+       "rt_min": 2.232,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.982,
+       "isdb_keys": [
+        "XNCJHURCKJVUAN",
+        "VVELXKLAUSKIIE",
+        "OHRIQNJHLMZPSG",
+        "JDNHANBRNDZELM"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 8,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 3,
+       "score": 0.7625874083824301,
+       "ci95": [
+        0.508592870928903,
+        0.993875888402358
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 9244,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.1336,
+       "rt_min": 4.578,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "AVSIAACNDNIRAQ",
+        "LSNZUXYRWFYNAA",
+        "NGQVFILFHVPLFE",
+        "KDOCRANJCODQMR"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 15,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 4,
+       "score": 0.7622876102137877,
+       "ci95": [
+        0.510312275028311,
+        0.9941190560453398
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 6530,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 395.1497,
+       "rt_min": 4.777,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "BHCBWJBSVOKHRJ",
+        "OBIUGMGQVQMVSK",
+        "JUVIOZPCNVVQFO",
+        "WDCDWNXBGWEULT",
+        "PVTASJQBVPOLER",
+        "GUBOZMSGAMLXPU",
+        "WIYCPTFPEMBDCR",
+        "UPHWJAWTGRBPAJ",
+        "ORDAZKGHSNRHTD",
+        "QLKSLGRVBGVPPG"
+       ],
+       "n_isdb_keys": 12,
+       "n_extracts_present": 17,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 5,
+       "score": 0.7619190298915429,
+       "ci95": [
+        0.50917095098295,
+        0.9926520382699039
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 2818,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 353.1022,
+       "rt_min": 3.377,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "QDVCTVPRLKNDMC",
+        "JJVJBPKUTANWEW",
+        "XYDSFEQOFYTNPI",
+        "CMJGAYUQSLJSCR",
+        "PKEYFNYGJJUWHE",
+        "HHHCFSNROIVKQQ",
+        "FSXLVPMQNMFQDL",
+        "VHLZJIBDJSOIAT",
+        "ABQWPANFECMPDF",
+        "OHRYPZSDRFBQMN"
+       ],
+       "n_isdb_keys": 11,
+       "n_extracts_present": 19,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 6,
+       "score": 0.7401487779348201,
+       "ci95": [
+        0.47369792005138306,
+        0.9708174701822243
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 2841,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 395.1493,
+       "rt_min": 4.048,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "JUVIOZPCNVVQFO",
+        "LNVUVAIFUJRDBV",
+        "JLUDWKYIDWFAGN",
+        "VNIIWYXDSWVLIC",
+        "GUBOZMSGAMLXPU",
+        "PVTASJQBVPOLER",
+        "YNHZDINWEJCMRF",
+        "QLKSLGRVBGVPPG",
+        "OBIUGMGQVQMVSK"
+       ],
+       "n_isdb_keys": 9,
+       "n_extracts_present": 17,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 7,
+       "score": 0.6903064817500544,
+       "ci95": [
+        0.39131573451583457,
+        0.9155747593325777
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9323,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 425.1233,
+       "rt_min": 4.362,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.989,
+       "isdb_keys": [
+        "LKSFQAUFFRGKGH",
+        "NZIANEPQOIXOGI"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 8,
+       "score": 0.6829417957330056,
+       "ci95": [
+        0.36021164495938146,
+        0.9227134991656749
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9328,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 425.123,
+       "rt_min": 2.657,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.984,
+       "isdb_keys": [
+        "LKSFQAUFFRGKGH",
+        "NVIZHSSHHRHDLE"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 9,
+       "score": 0.6809025807422419,
+       "ci95": [
+        0.360211644959382,
+        0.9205882664844222
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9341,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.1284,
+       "rt_min": 5.194,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "JFOIHGHOZIMXTP",
+        "AVWAYGDSFUMWHP",
+        "HDDUSYQWBVKRGV",
+        "RSVWXUPJBWWEJY"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 10,
+       "score": 0.6735300801435042,
+       "ci95": [
+        0.4156394472243249,
+        0.9147728186478571
+       ],
+       "n_informative": 4
+      }
+     ],
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    "after_recommended": {
+     "stage": "after assaying the 3 recommended extracts (real measured values)",
+     "n_assayed": 35,
+     "abstain": false,
+     "abstain_threshold": 0.6,
+     "top_score": 0.7528783542860696,
+     "ranking_top": [
+      {
+       "cid": 7923,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 427.1384,
+       "rt_min": 2.232,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.982,
+       "isdb_keys": [
+        "XNCJHURCKJVUAN",
+        "VVELXKLAUSKIIE",
+        "OHRIQNJHLMZPSG",
+        "JDNHANBRNDZELM"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 8,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 1,
+       "score": 0.7528783542860696,
+       "ci95": [
+        0.4877269347394649,
+        0.967872144872679
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 2820,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.128,
+       "rt_min": 4.017,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "CKHVKQDEOBZNIX",
+        "JFOIHGHOZIMXTP",
+        "RSVWXUPJBWWEJY",
+        "WNOFGVICQRDQSB",
+        "MYVZRARGAOPFGY"
+       ],
+       "n_isdb_keys": 5,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 2,
+       "score": 0.7485786273470714,
+       "ci95": [
+        0.5120310687931333,
+        0.9713492015030045
+       ],
+       "n_informative": 6
+      },
+      {
+       "cid": 9244,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.1336,
+       "rt_min": 4.578,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "AVSIAACNDNIRAQ",
+        "LSNZUXYRWFYNAA",
+        "NGQVFILFHVPLFE",
+        "KDOCRANJCODQMR"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 15,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 3,
+       "score": 0.6804770351188247,
+       "ci95": [
+        0.32448530080140214,
+        0.9423629024434417
+       ],
+       "n_informative": 6
+      },
+      {
+       "cid": 9323,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 425.1233,
+       "rt_min": 4.362,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.989,
+       "isdb_keys": [
+        "LKSFQAUFFRGKGH",
+        "NZIANEPQOIXOGI"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 4,
+       "score": 0.6753280724153087,
+       "ci95": [
+        0.3600695983561134,
+        0.9131083285937884
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9328,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 425.123,
+       "rt_min": 2.657,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.984,
+       "isdb_keys": [
+        "LKSFQAUFFRGKGH",
+        "NVIZHSSHHRHDLE"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 5,
+       "score": 0.6733367215452208,
+       "ci95": [
+        0.360069598356112,
+        0.9099666292551882
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9341,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.1284,
+       "rt_min": 5.194,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "JFOIHGHOZIMXTP",
+        "AVWAYGDSFUMWHP",
+        "HDDUSYQWBVKRGV",
+        "RSVWXUPJBWWEJY"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 6,
+       "score": 0.6661005166370247,
+       "ci95": [
+        0.3963386127240439,
+        0.9390677753399581
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9342,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 429.1542,
+       "rt_min": 2.573,
+       "canopus_class": "Methyl_xanthones",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "KANDATZVPJBSEB",
+        "ZUQNZVKHXXKXSY",
+        "ARDCIQJWEMRJPN",
+        "SXYMZPDEDWTMMB",
+        "QUNBFDGYGBBWMM"
+       ],
+       "n_isdb_keys": 5,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 7,
+       "score": 0.6638513713667581,
+       "ci95": [
+        0.39633725282792165,
+        0.9351276251500585
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 5659,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.1332,
+       "rt_min": 3.755,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "NVGQZFJWDWMWMT",
+        "KAAYYZHXDKHIBG",
+        "WLMRWQPXGXVFKO",
+        "NGQVFILFHVPLFE",
+        "FTQHVDBBSYLXIP",
+        "XXLTVUGWGQRUPX",
+        "CPBXNYZFGKIZDX",
+        "XRIWVFJLXPAXJU",
+        "LSNZUXYRWFYNAA"
+       ],
+       "n_isdb_keys": 9,
+       "n_extracts_present": 27,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 8,
+       "score": 0.6591200432521883,
+       "ci95": [
+        0.27902566562245157,
+        0.9430248540120068
+       ],
+       "n_informative": 6
+      },
+      {
+       "cid": 4183,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 351.0866,
+       "rt_min": 3.78,
+       "canopus_class": "Flavones",
+       "canopus_prob": 0.982,
+       "isdb_keys": [
+        "LAPWFFQUEBKHQY",
+        "AOYQXCYLRJFNFX",
+        "ZUVMYDNDIWLGSH",
+        "IOLIWNMGVYEBIW"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 10,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 9,
+       "score": 0.6555793527249595,
+       "ci95": [
+        0.3944089073481165,
+        0.8876131044749015
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 2829,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.133,
+       "rt_min": 3.624,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "NVGQZFJWDWMWMT",
+        "NGQVFILFHVPLFE",
+        "LSNZUXYRWFYNAA"
+       ],
+       "n_isdb_keys": 3,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 10,
+       "score": 0.6392783427609541,
+       "ci95": [
+        0.3633555017467094,
+        0.8957897142604112
+       ],
+       "n_informative": 5
+      }
+     ],
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    "full_library_reference": {
+     "stage": "reference: all 1600 extracts (full library)",
+     "n_assayed": 1600,
+     "abstain": true,
+     "abstain_threshold": 0.6,
+     "top_score": 0.4676472335556957,
+     "ranking_top": [
+      {
+       "cid": 2820,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.128,
+       "rt_min": 4.017,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "CKHVKQDEOBZNIX",
+        "JFOIHGHOZIMXTP",
+        "RSVWXUPJBWWEJY",
+        "WNOFGVICQRDQSB",
+        "MYVZRARGAOPFGY"
+       ],
+       "n_isdb_keys": 5,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 1,
+       "score": 0.4676472335556957,
+       "ci95": [
+        0.21903030548454902,
+        0.6328861642960983
+       ],
+       "n_informative": 7
+      },
+      {
+       "cid": 9323,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 425.1233,
+       "rt_min": 4.362,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.989,
+       "isdb_keys": [
+        "LKSFQAUFFRGKGH",
+        "NZIANEPQOIXOGI"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 2,
+       "score": 0.4275237320889058,
+       "ci95": [
+        0.22273577309720008,
+        0.585359061315796
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9328,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 425.123,
+       "rt_min": 2.657,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.984,
+       "isdb_keys": [
+        "LKSFQAUFFRGKGH",
+        "NVIZHSSHHRHDLE"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 3,
+       "score": 0.42638665681937704,
+       "ci95": [
+        0.22273577309719064,
+        0.5841869041155314
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9341,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.1284,
+       "rt_min": 5.194,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "JFOIHGHOZIMXTP",
+        "AVWAYGDSFUMWHP",
+        "HDDUSYQWBVKRGV",
+        "RSVWXUPJBWWEJY"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 4,
+       "score": 0.42293293446859503,
+       "ci95": [
+        0.2047090638274445,
+        0.588209976729151
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 2829,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.133,
+       "rt_min": 3.624,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 1.0,
+       "isdb_keys": [
+        "NVGQZFJWDWMWMT",
+        "NGQVFILFHVPLFE",
+        "LSNZUXYRWFYNAA"
+       ],
+       "n_isdb_keys": 3,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 5,
+       "score": 0.38853445377265167,
+       "ci95": [
+        0.14749787203789255,
+        0.560481444748979
+       ],
+       "n_informative": 7
+      },
+      {
+       "cid": 9335,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 423.144,
+       "rt_min": 3.393,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.994,
+       "isdb_keys": [
+        "XMJHOTVIJNLONQ",
+        "VWSZNYHUCXFZPZ"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 6,
+       "score": 0.3643339017468447,
+       "ci95": [
+        0.19804685019380042,
+        0.5501354861923006
+       ],
+       "n_informative": 3
+      },
+      {
+       "cid": 9340,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 395.1125,
+       "rt_min": 3.372,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.862,
+       "isdb_keys": [
+        "IZLDEMGPMNPSSR",
+        "AFDWFYSMCGLTEY"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 7,
+       "score": 0.3594723657735662,
+       "ci95": [
+        0.1960237191056498,
+        0.5189433700860353
+       ],
+       "n_informative": 3
+      },
+      {
+       "cid": 7923,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 427.1384,
+       "rt_min": 2.232,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.982,
+       "isdb_keys": [
+        "XNCJHURCKJVUAN",
+        "VVELXKLAUSKIIE",
+        "OHRIQNJHLMZPSG",
+        "JDNHANBRNDZELM"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 8,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 8,
+       "score": 0.33539611960157634,
+       "ci95": [
+        0.06509871180787832,
+        0.5341009984438957
+       ],
+       "n_informative": 8
+      },
+      {
+       "cid": 4154,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 409.1285,
+       "rt_min": 3.835,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.998,
+       "isdb_keys": [
+        "CKHVKQDEOBZNIX",
+        "JFOIHGHOZIMXTP",
+        "OJMVWQKOYQXIJO"
+       ],
+       "n_isdb_keys": 3,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 9,
+       "score": 0.3138046062531697,
+       "ci95": [
+        -0.0014569549840787073,
+        0.5090066409816417
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 9244,
+       "mode": "pos",
+       "annotation_setting": "isdb",
+       "mz": 393.1336,
+       "rt_min": 4.578,
+       "canopus_class": "Rotenoids",
+       "canopus_prob": 0.999,
+       "isdb_keys": [
+        "AVSIAACNDNIRAQ",
+        "LSNZUXYRWFYNAA",
+        "NGQVFILFHVPLFE",
+        "KDOCRANJCODQMR"
+       ],
+       "n_isdb_keys": 4,
+       "n_extracts_present": 15,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 10,
+       "score": 0.30940921031066065,
+       "ci95": [
+        0.08593964140532967,
+        0.5005143795629722
+       ],
+       "n_informative": 15
+      }
+     ],
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    }
+   },
+   "abstention": {
+    "initial": false,
+    "after_recommended": false,
+    "full_library": true
+   },
+   "recommended_extracts": [
+    {
+     "sample": "VGF146_D08",
+     "species": "Gouania leptostachya",
+     "organ": "woody_stems",
+     "tissue": "woody_tissue",
+     "measured_Tcruzi_10ugml": 7.7,
+     "separates_top_candidates": {
+      "contains": [
+       5659,
+       9244
+      ],
+      "lacks": [
+       2820,
+       7923,
+       6530
+      ]
+     },
+     "rationale": "Chosen by adaptive_contrast for maximal abundance spread across the currently top-ranked/ambiguous candidates. Contains: cid 5659 (rel_area 0.482), cid 9244 (rel_area 0.0127); lacks: cid 2820, cid 7923, cid 6530. Assaying it would help separate candidates that currently co-occur in the active extracts.",
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "sample": "VGF143_E06",
+     "species": "Wahlenbergia marginata",
+     "organ": "multiple",
+     "tissue": "multiple",
+     "measured_Tcruzi_10ugml": 0.0,
+     "separates_top_candidates": {
+      "contains": [
+       6530
+      ],
+      "lacks": [
+       2820,
+       5659,
+       7923,
+       9244
+      ]
+     },
+     "rationale": "Chosen by adaptive_contrast for maximal abundance spread across the currently top-ranked/ambiguous candidates. Contains: cid 6530 (rel_area 0.598); lacks: cid 2820, cid 5659, cid 7923, cid 9244. Assaying it would help separate candidates that currently co-occur in the active extracts.",
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "sample": "VGF139_A08",
+     "species": "Pachyrhizus erosus",
+     "organ": "woody_stems",
+     "tissue": "woody_tissue",
+     "measured_Tcruzi_10ugml": 53.7,
+     "separates_top_candidates": {
+      "contains": [
+       2820
+      ],
+      "lacks": [
+       5659,
+       7923,
+       9244,
+       6530
+      ]
+     },
+     "rationale": "Chosen by adaptive_contrast for maximal abundance spread across the currently top-ranked/ambiguous candidates. Contains: cid 2820 (rel_area 0.0248); lacks: cid 5659, cid 7923, cid 9244, cid 6530. Assaying it would help separate candidates that currently co-occur in the active extracts.",
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    }
+   ],
+   "rotenoid_bearing_actives": [
+    {
+     "sample": "VGF139_H07",
+     "species": "Pachyrhizus erosus",
+     "organ": "leaves",
+     "Tcruzi_10ugml": 112.2
+    },
+    {
+     "sample": "VGF146_E08",
+     "species": "Cnestis palala",
+     "organ": "roots",
+     "Tcruzi_10ugml": 112.1
+    },
+    {
+     "sample": "VGF146_F09",
+     "species": "Cnestis palala",
+     "organ": "woody_stems",
+     "Tcruzi_10ugml": 112.0
+    },
+    {
+     "sample": "VGF150_A09",
+     "species": "Chadsia grevei",
+     "organ": "bark",
+     "Tcruzi_10ugml": 104.1
+    },
+    {
+     "sample": "VGF150_H08",
+     "species": "Chadsia grevei",
+     "organ": "roots",
+     "Tcruzi_10ugml": 108.6
+    },
+    {
+     "sample": "VGF155_D05",
+     "species": "Desmodium heterophyllum",
+     "organ": "multiple",
+     "Tcruzi_10ugml": 117.4
+    }
+   ],
+   "provenance": "Rotenoid hypothesis: Gaudry et al., RSC Adv 2025 (reproduced, not ours).",
+   "n_rotenoid_compounds_in_library": 105
+  },
+  {
+   "case": "melochia_umbellata",
+   "title": "Melochia umbellata VGF156_A06 (negative mode)",
+   "mode": "neg",
+   "annotation": "union",
+   "status": "hypothesis",
+   "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+   "annotation_note": "Rotenone and deguelin are isomers of identical exact mass that compete to explain the same peak; an ISDB match cannot tell them apart.",
+   "n_candidates": 13,
+   "candidates": [
+    {
+     "cid": 13063,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 318.2073,
+     "rt_min": 3.977,
+     "canopus_class": "Quinoline_alkaloids",
+     "canopus_prob": 0.631,
+     "isdb_keys": [
+      "SQHHGSWNKZJRQQ",
+      "SJWGGIJOUKBIPF"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2659,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 689.406,
+     "rt_min": 6.414,
+     "canopus_class": "Lupane_triterpenoids",
+     "canopus_prob": 0.901,
+     "isdb_keys": [
+      "RCRIEGZGQYGDDM",
+      "JYCRDAOPMDFYFX"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 7,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 11334,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 191.0341,
+     "rt_min": 1.522,
+     "canopus_class": "Simple_coumarins",
+     "canopus_prob": 0.98,
+     "isdb_keys": [],
+     "n_isdb_keys": 0,
+     "n_extracts_present": 23,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2824,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 385.0927,
+     "rt_min": 2.383,
+     "canopus_class": "Coumarinolignans",
+     "canopus_prob": 0.982,
+     "isdb_keys": [
+      "GBLZBLJGCQTQMB",
+      "XGGAWFDOIDZRPI",
+      "QLFQDIADUIVNRF",
+      "FQOAFBZCAGMDDR",
+      "OCBGWPJNUZMLCA",
+      "WQZHIPWFEKLEJM",
+      "ZJEWVOJUXVSQAT",
+      "CUVUBURTEQFLLZ",
+      "CGYDHWLJDXNIQZ",
+      "KIALIUIIYHDOKW"
+     ],
+     "n_isdb_keys": 12,
+     "n_extracts_present": 32,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 13072,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 320.2231,
+     "rt_min": 3.339,
+     "canopus_class": "Capsaicins_and_Capsaicinoids",
+     "canopus_prob": 0.454,
+     "isdb_keys": [
+      "DDWNKXWEQSXNNX",
+      "CWYBYEMWRGFCLL"
+     ],
+     "n_isdb_keys": 2,
+     "n_extracts_present": 3,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 11029,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 137.0232,
+     "rt_min": 0.915,
+     "canopus_class": "Simple_phenolic_acids",
+     "canopus_prob": 0.902,
+     "isdb_keys": [],
+     "n_isdb_keys": 0,
+     "n_extracts_present": 148,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2108,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 347.1995,
+     "rt_min": 4.155,
+     "canopus_class": "Other_Octadecanoids",
+     "canopus_prob": 0.8,
+     "isdb_keys": [],
+     "n_isdb_keys": 0,
+     "n_extracts_present": 88,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 2654,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 703.3855,
+     "rt_min": 5.629,
+     "canopus_class": "Lupane_triterpenoids",
+     "canopus_prob": 0.884,
+     "isdb_keys": [],
+     "n_isdb_keys": 0,
+     "n_extracts_present": 6,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 12531,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 248.9602,
+     "rt_min": 4.179,
+     "canopus_class": "Simple_coumarins",
+     "canopus_prob": 0.3,
+     "isdb_keys": [],
+     "n_isdb_keys": 0,
+     "n_extracts_present": 4,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 4849,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 459.3118,
+     "rt_min": 5.553,
+     "canopus_class": "Cholane_steroids",
+     "canopus_prob": 0.947,
+     "isdb_keys": [
+      "HURHMFSVMAENRK",
+      "XBLLVTMPRLZIAG",
+      "BCJPBGBGAHLILH"
+     ],
+     "n_isdb_keys": 3,
+     "n_extracts_present": 179,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 646,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 211.0606,
+     "rt_min": 0.738,
+     "canopus_class": "Simple_phenolic_acids",
+     "canopus_prob": 0.654,
+     "isdb_keys": [
+      "DYRZXVSFXIQNPW",
+      "ODKFBQCYKKPNLJ",
+      "CLHRRLZEKMQHFZ",
+      "DMWFWDHLGYACRE",
+      "ZMXJAEGJWHJMGX",
+      "OHFUJVGMWXATSG",
+      "FCAZUVCXCGJHMG"
+     ],
+     "n_isdb_keys": 7,
+     "n_extracts_present": 128,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 3001,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 705.4011,
+     "rt_min": 5.763,
+     "canopus_class": "Lupane_triterpenoids",
+     "canopus_prob": 0.866,
+     "isdb_keys": [
+      "KVCWSRZTJGVXQK"
+     ],
+     "n_isdb_keys": 1,
+     "n_extracts_present": 5,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "cid": 9998,
+     "mode": "neg",
+     "annotation_setting": "union",
+     "mz": 185.081,
+     "rt_min": 1.951,
+     "canopus_class": "Paraconic_acids_and_derivatives",
+     "canopus_prob": 0.753,
+     "isdb_keys": [],
+     "n_isdb_keys": 0,
+     "n_extracts_present": 19,
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    }
+   ],
+   "attribution": {
+    "initial": {
+     "stage": "initial (known hits + reference extracts)",
+     "n_assayed": 32,
+     "abstain": true,
+     "abstain_threshold": 0.6,
+     "top_score": 0.4218647546748425,
+     "ranking_top": [
+      {
+       "cid": 12531,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 248.9602,
+       "rt_min": 4.179,
+       "canopus_class": "Simple_coumarins",
+       "canopus_prob": 0.3,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 1,
+       "score": 0.4218647546748425,
+       "ci95": [
+        0.2030872515947966,
+        0.7002178878389888
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 11334,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 191.0341,
+       "rt_min": 1.522,
+       "canopus_class": "Simple_coumarins",
+       "canopus_prob": 0.98,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 23,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 2,
+       "score": 0.23764324897688088,
+       "ci95": [
+        0.1643028570209495,
+        0.552903381197881
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 2654,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 703.3855,
+       "rt_min": 5.629,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.884,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 6,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 3,
+       "score": 0.23764324897688083,
+       "ci95": [
+        0.16430285702094968,
+        0.5529033811978806
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 13072,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 320.2231,
+       "rt_min": 3.339,
+       "canopus_class": "Capsaicins_and_Capsaicinoids",
+       "canopus_prob": 0.454,
+       "isdb_keys": [
+        "DDWNKXWEQSXNNX",
+        "CWYBYEMWRGFCLL"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 4,
+       "score": 0.23764324897688077,
+       "ci95": [
+        0.16430285702094968,
+        0.552903381197881
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 13063,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 318.2073,
+       "rt_min": 3.977,
+       "canopus_class": "Quinoline_alkaloids",
+       "canopus_prob": 0.631,
+       "isdb_keys": [
+        "SQHHGSWNKZJRQQ",
+        "SJWGGIJOUKBIPF"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 5,
+       "score": 0.2376432489768806,
+       "ci95": [
+        0.1643028570209494,
+        0.5529033811978807
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 3001,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 705.4011,
+       "rt_min": 5.763,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.866,
+       "isdb_keys": [
+        "KVCWSRZTJGVXQK"
+       ],
+       "n_isdb_keys": 1,
+       "n_extracts_present": 5,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 6,
+       "score": 0.2376432489768806,
+       "ci95": [
+        0.16430285702094943,
+        0.5529033811978805
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 9998,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 185.081,
+       "rt_min": 1.951,
+       "canopus_class": "Paraconic_acids_and_derivatives",
+       "canopus_prob": 0.753,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 19,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 7,
+       "score": 0.2376432489768806,
+       "ci95": [
+        0.1643028570209495,
+        0.5529033811978806
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 2659,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 689.406,
+       "rt_min": 6.414,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.901,
+       "isdb_keys": [
+        "RCRIEGZGQYGDDM",
+        "JYCRDAOPMDFYFX"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 8,
+       "score": 0.23764324897688052,
+       "ci95": [
+        0.16430285702094963,
+        0.5529033811978805
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 2108,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 347.1995,
+       "rt_min": 4.155,
+       "canopus_class": "Other_Octadecanoids",
+       "canopus_prob": 0.8,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 88,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 9,
+       "score": 0.14219243057685266,
+       "ci95": [
+        -0.1847440586274142,
+        0.5209814694630432
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 4849,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 459.3118,
+       "rt_min": 5.553,
+       "canopus_class": "Cholane_steroids",
+       "canopus_prob": 0.947,
+       "isdb_keys": [
+        "HURHMFSVMAENRK",
+        "XBLLVTMPRLZIAG",
+        "BCJPBGBGAHLILH"
+       ],
+       "n_isdb_keys": 3,
+       "n_extracts_present": 179,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 10,
+       "score": 0.09871045276836327,
+       "ci95": [
+        -0.21921290011573136,
+        0.5160632235144189
+       ],
+       "n_informative": 5
+      }
+     ],
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    "after_recommended": {
+     "stage": "after assaying the 3 recommended extracts (real measured values)",
+     "n_assayed": 35,
+     "abstain": true,
+     "abstain_threshold": 0.6,
+     "top_score": 0.42734538961788204,
+     "ranking_top": [
+      {
+       "cid": 12531,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 248.9602,
+       "rt_min": 4.179,
+       "canopus_class": "Simple_coumarins",
+       "canopus_prob": 0.3,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 1,
+       "score": 0.42734538961788204,
+       "ci95": [
+        0.2222751190373336,
+        0.7149004782259278
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 13072,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 320.2231,
+       "rt_min": 3.339,
+       "canopus_class": "Capsaicins_and_Capsaicinoids",
+       "canopus_prob": 0.454,
+       "isdb_keys": [
+        "DDWNKXWEQSXNNX",
+        "CWYBYEMWRGFCLL"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 2,
+       "score": 0.2428691650150844,
+       "ci95": [
+        0.18192153234933978,
+        0.5178620487022491
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 13063,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 318.2073,
+       "rt_min": 3.977,
+       "canopus_class": "Quinoline_alkaloids",
+       "canopus_prob": 0.631,
+       "isdb_keys": [
+        "SQHHGSWNKZJRQQ",
+        "SJWGGIJOUKBIPF"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 3,
+       "score": 0.2428691650150843,
+       "ci95": [
+        0.18192153234933967,
+        0.5178620487022488
+       ],
+       "n_informative": 1
+      },
+      {
+       "cid": 2108,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 347.1995,
+       "rt_min": 4.155,
+       "canopus_class": "Other_Octadecanoids",
+       "canopus_prob": 0.8,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 88,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 4,
+       "score": 0.15854642787090492,
+       "ci95": [
+        -0.15717819928230672,
+        0.5769520833829389
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 3001,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 705.4011,
+       "rt_min": 5.763,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.866,
+       "isdb_keys": [
+        "KVCWSRZTJGVXQK"
+       ],
+       "n_isdb_keys": 1,
+       "n_extracts_present": 5,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 5,
+       "score": 0.1070913836033868,
+       "ci95": [
+        -0.17645962673375998,
+        0.4655866358778824
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 2824,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 385.0927,
+       "rt_min": 2.383,
+       "canopus_class": "Coumarinolignans",
+       "canopus_prob": 0.982,
+       "isdb_keys": [
+        "GBLZBLJGCQTQMB",
+        "XGGAWFDOIDZRPI",
+        "QLFQDIADUIVNRF",
+        "FQOAFBZCAGMDDR",
+        "OCBGWPJNUZMLCA",
+        "WQZHIPWFEKLEJM",
+        "ZJEWVOJUXVSQAT",
+        "CUVUBURTEQFLLZ",
+        "CGYDHWLJDXNIQZ",
+        "KIALIUIIYHDOKW"
+       ],
+       "n_isdb_keys": 12,
+       "n_extracts_present": 32,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 6,
+       "score": 0.10654066413235558,
+       "ci95": [
+        -0.17519910381485787,
+        0.4429133200415002
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 11334,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 191.0341,
+       "rt_min": 1.522,
+       "canopus_class": "Simple_coumarins",
+       "canopus_prob": 0.98,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 23,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 7,
+       "score": 0.10386941897457191,
+       "ci95": [
+        -0.17537352617356752,
+        0.4547258794610797
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 2654,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 703.3855,
+       "rt_min": 5.629,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.884,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 6,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 8,
+       "score": 0.09266839439207769,
+       "ci95": [
+        -0.17645962673376,
+        0.4591954819946056
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 2659,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 689.406,
+       "rt_min": 6.414,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.901,
+       "isdb_keys": [
+        "RCRIEGZGQYGDDM",
+        "JYCRDAOPMDFYFX"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 9,
+       "score": 0.09248849728462297,
+       "ci95": [
+        -0.17645962673375992,
+        0.4591954819946057
+       ],
+       "n_informative": 2
+      },
+      {
+       "cid": 9998,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 185.081,
+       "rt_min": 1.951,
+       "canopus_class": "Paraconic_acids_and_derivatives",
+       "canopus_prob": 0.753,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 19,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 10,
+       "score": 0.07607233326239515,
+       "ci95": [
+        -0.17588226203106608,
+        0.4700498007502955
+       ],
+       "n_informative": 2
+      }
+     ],
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    "full_library_reference": {
+     "stage": "reference: all 1600 extracts (full library)",
+     "n_assayed": 1600,
+     "abstain": true,
+     "abstain_threshold": 0.6,
+     "top_score": 0.19834164261099316,
+     "ranking_top": [
+      {
+       "cid": 12531,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 248.9602,
+       "rt_min": 4.179,
+       "canopus_class": "Simple_coumarins",
+       "canopus_prob": 0.3,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 4,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 1,
+       "score": 0.19834164261099316,
+       "ci95": [
+        -0.013397841844009791,
+        0.40369846341390486
+       ],
+       "n_informative": 4
+      },
+      {
+       "cid": 13072,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 320.2231,
+       "rt_min": 3.339,
+       "canopus_class": "Capsaicins_and_Capsaicinoids",
+       "canopus_prob": 0.454,
+       "isdb_keys": [
+        "DDWNKXWEQSXNNX",
+        "CWYBYEMWRGFCLL"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 2,
+       "score": 0.14241891722727623,
+       "ci95": [
+        0.00898998781967471,
+        0.3088010626130043
+       ],
+       "n_informative": 3
+      },
+      {
+       "cid": 13063,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 318.2073,
+       "rt_min": 3.977,
+       "canopus_class": "Quinoline_alkaloids",
+       "canopus_prob": 0.631,
+       "isdb_keys": [
+        "SQHHGSWNKZJRQQ",
+        "SJWGGIJOUKBIPF"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 3,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 3,
+       "score": 0.1349751531554743,
+       "ci95": [
+        0.008989987819674663,
+        0.2985604354442996
+       ],
+       "n_informative": 3
+      },
+      {
+       "cid": 3001,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 705.4011,
+       "rt_min": 5.763,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.866,
+       "isdb_keys": [
+        "KVCWSRZTJGVXQK"
+       ],
+       "n_isdb_keys": 1,
+       "n_extracts_present": 5,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 4,
+       "score": 0.06591667480412418,
+       "ci95": [
+        -0.019941980778219418,
+        0.22303643563621905
+       ],
+       "n_informative": 5
+      },
+      {
+       "cid": 2654,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 703.3855,
+       "rt_min": 5.629,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.884,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 6,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 5,
+       "score": 0.057937789279966144,
+       "ci95": [
+        -0.021183726345649138,
+        0.21257941206933134
+       ],
+       "n_informative": 6
+      },
+      {
+       "cid": 2659,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 689.406,
+       "rt_min": 6.414,
+       "canopus_class": "Lupane_triterpenoids",
+       "canopus_prob": 0.901,
+       "isdb_keys": [
+        "RCRIEGZGQYGDDM",
+        "JYCRDAOPMDFYFX"
+       ],
+       "n_isdb_keys": 2,
+       "n_extracts_present": 7,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 6,
+       "score": 0.052116819138847796,
+       "ci95": [
+        -0.022458974390043178,
+        0.20165458135188988
+       ],
+       "n_informative": 7
+      },
+      {
+       "cid": 2824,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 385.0927,
+       "rt_min": 2.383,
+       "canopus_class": "Coumarinolignans",
+       "canopus_prob": 0.982,
+       "isdb_keys": [
+        "GBLZBLJGCQTQMB",
+        "XGGAWFDOIDZRPI",
+        "QLFQDIADUIVNRF",
+        "FQOAFBZCAGMDDR",
+        "OCBGWPJNUZMLCA",
+        "WQZHIPWFEKLEJM",
+        "ZJEWVOJUXVSQAT",
+        "CUVUBURTEQFLLZ",
+        "CGYDHWLJDXNIQZ",
+        "KIALIUIIYHDOKW"
+       ],
+       "n_isdb_keys": 12,
+       "n_extracts_present": 32,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 7,
+       "score": 0.024509129546637174,
+       "ci95": [
+        -0.03597388104370769,
+        0.13165059169803264
+       ],
+       "n_informative": 32
+      },
+      {
+       "cid": 9998,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 185.081,
+       "rt_min": 1.951,
+       "canopus_class": "Paraconic_acids_and_derivatives",
+       "canopus_prob": 0.753,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 19,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 8,
+       "score": 0.020758906889686447,
+       "ci95": [
+        -0.028501422697047633,
+        0.12387069872735489
+       ],
+       "n_informative": 19
+      },
+      {
+       "cid": 11334,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 191.0341,
+       "rt_min": 1.522,
+       "canopus_class": "Simple_coumarins",
+       "canopus_prob": 0.98,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 23,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 9,
+       "score": 0.011376797469344906,
+       "ci95": [
+        -0.03759455005227379,
+        0.10689819554816002
+       ],
+       "n_informative": 23
+      },
+      {
+       "cid": 2108,
+       "mode": "neg",
+       "annotation_setting": "union",
+       "mz": 347.1995,
+       "rt_min": 4.155,
+       "canopus_class": "Other_Octadecanoids",
+       "canopus_prob": 0.8,
+       "isdb_keys": [],
+       "n_isdb_keys": 0,
+       "n_extracts_present": 88,
+       "status": "hypothesis",
+       "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity.",
+       "rank": 10,
+       "score": 0.007305833657657215,
+       "ci95": [
+        -0.041693991776124796,
+        0.06637105232922463
+       ],
+       "n_informative": 88
+      }
+     ],
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    }
+   },
+   "abstention": {
+    "initial": true,
+    "after_recommended": true,
+    "full_library": true
+   },
+   "recommended_extracts": [
+    {
+     "sample": "VGF157_B11",
+     "species": "Meyna pierrei",
+     "organ": "woody_stems",
+     "tissue": "woody_tissue",
+     "measured_Tcruzi_10ugml": 0.0,
+     "separates_top_candidates": {
+      "contains": [
+       11334
+      ],
+      "lacks": [
+       12531,
+       2654,
+       13072,
+       13063
+      ]
+     },
+     "rationale": "Chosen by adaptive_contrast for maximal abundance spread across the currently top-ranked/ambiguous candidates. Contains: cid 11334 (rel_area 0.295); lacks: cid 12531, cid 2654, cid 13072, cid 13063. Assaying it would help separate candidates that currently co-occur in the active extracts.",
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "sample": "VGF139_B04",
+     "species": "Decaschistia parviflora",
+     "organ": "roots",
+     "tissue": "root_tissue",
+     "measured_Tcruzi_10ugml": 0.0,
+     "separates_top_candidates": {
+      "contains": [
+       2654
+      ],
+      "lacks": [
+       12531,
+       11334,
+       13072,
+       13063
+      ]
+     },
+     "rationale": "Chosen by adaptive_contrast for maximal abundance spread across the currently top-ranked/ambiguous candidates. Contains: cid 2654 (rel_area 0.135); lacks: cid 12531, cid 11334, cid 13072, cid 13063. Assaying it would help separate candidates that currently co-occur in the active extracts.",
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    },
+    {
+     "sample": "VGF150_B03",
+     "species": "Adenia monadelpha",
+     "organ": "green_stems",
+     "tissue": "green_tissue",
+     "measured_Tcruzi_10ugml": 0.0,
+     "separates_top_candidates": {
+      "contains": [],
+      "lacks": [
+       12531,
+       11334,
+       2654,
+       13072,
+       13063
+      ]
+     },
+     "rationale": "Chosen by adaptive_contrast for maximal abundance spread across the currently top-ranked/ambiguous candidates. Contains: none; lacks: cid 12531, cid 11334, cid 2654, cid 13072, cid 13063. Assaying it would help separate candidates that currently co-occur in the active extracts.",
+     "status": "hypothesis",
+     "caveat": "Computational hypothesis requiring experimental confirmation; NOT an identification. MS annotations are candidate structures, not confirmed identities. Correlation of abundance with activity across a few extracts does not establish that a compound is responsible for the activity."
+    }
+   ],
+   "sample": "VGF156_A06",
+   "species": "Melochia umbellata",
+   "organ": "green_stems",
+   "melochia_tcruzi_inhibition": 89.9,
+   "melochia_L6_cytotoxicity": 11.6,
+   "n_quinoline_compounds": 1,
+   "quinoline_share_of_signal": 0.010158564145730535,
+   "quinoline_signal_rank_in_library": {
+    "rank_of_melochia": 2,
+    "n_extracts_with_signal": 3,
+    "more_signal_and_inactive": [
+     {
+      "sample": "VGF156_B06",
+      "species": "Melochia umbellata",
+      "Tcruzi_10ugml": 31.8
+     }
+    ]
+   },
+   "why_union": "annotation='isdb' yields 0 quinoline compounds in negative mode; the lead only exists under 'union' (VALIDATION.md 7d).",
+   "documented_class_level_context": "VALIDATION.md: quinoline-class signal ranks 4th of 1600 extracts and three extracts carry more and are inactive (documented class-level figure, pos+neg; not recomputed here). The single-compound rank above is a narrower, separate measure.",
+   "lead_framing": "A lead, not an identification: extracts with more quinoline signal than Melochia are inactive in this assay."
+  }
+ ]
+}

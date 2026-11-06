@@ -6,3 +6,6 @@ pluggy==1.7.0
 Pygments==2.21.0
 pytest==9.2.0
 rdkit==2026.9.1
+matplotlib>=3.8
+streamlit>=1.40
+certifi>=2024.0

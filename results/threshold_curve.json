@@ -1,0 +1,529 @@
+{
+ "gain": 43.911973673990076,
+ "budget": 3,
+ "seed_reveals": 8,
+ "grid": [
+  0.5,
+  0.55,
+  0.6,
+  0.65,
+  0.7,
+  0.75,
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "n_episodes": 58,
+ "n_distinct_pairs": 16,
+ "n_pairs_available": 238,
+ "generator": "the (saturating exp), single driver, hard-case only",
+ "curve_decouple": [
+  {
+   "threshold": 0.5,
+   "n_episodes": 58,
+   "nominations": 48,
+   "correct": 45,
+   "coverage": 0.8275862068965517,
+   "precision": 0.9375,
+   "precision_ci95_pair_clustered": [
+    0.875,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8316430233725778,
+    0.9785171568687728
+   ],
+   "overall_accuracy": 0.7758620689655172,
+   "wasted_per_100": 5.172413793103448,
+   "correct_per_100": 77.58620689655173
+  },
+  {
+   "threshold": 0.55,
+   "n_episodes": 58,
+   "nominations": 44,
+   "correct": 41,
+   "coverage": 0.7586206896551724,
+   "precision": 0.9318181818181818,
+   "precision_ci95_pair_clustered": [
+    0.8636363636363636,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.817746786633828,
+    0.9765410298271597
+   ],
+   "overall_accuracy": 0.7068965517241379,
+   "wasted_per_100": 5.172413793103448,
+   "correct_per_100": 70.6896551724138
+  },
+  {
+   "threshold": 0.6,
+   "n_episodes": 58,
+   "nominations": 41,
+   "correct": 39,
+   "coverage": 0.7068965517241379,
+   "precision": 0.9512195121951219,
+   "precision_ci95_pair_clustered": [
+    0.8823529411764706,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8386073303764864,
+    0.9865193377174265
+   ],
+   "overall_accuracy": 0.6724137931034483,
+   "wasted_per_100": 3.4482758620689653,
+   "correct_per_100": 67.24137931034483
+  },
+  {
+   "threshold": 0.65,
+   "n_episodes": 58,
+   "nominations": 37,
+   "correct": 37,
+   "coverage": 0.6379310344827587,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.9059390425448562,
+    1.0000000000000002
+   ],
+   "overall_accuracy": 0.6379310344827587,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 63.793103448275865
+  },
+  {
+   "threshold": 0.7,
+   "n_episodes": 58,
+   "nominations": 34,
+   "correct": 34,
+   "coverage": 0.5862068965517241,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8984820937803899,
+    1.0
+   ],
+   "overall_accuracy": 0.5862068965517241,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 58.62068965517241
+  },
+  {
+   "threshold": 0.75,
+   "n_episodes": 58,
+   "nominations": 29,
+   "correct": 29,
+   "coverage": 0.5,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8830264055344442,
+    1.0000000000000002
+   ],
+   "overall_accuracy": 0.5,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 50.0
+  },
+  {
+   "threshold": 0.8,
+   "n_episodes": 58,
+   "nominations": 13,
+   "correct": 13,
+   "coverage": 0.22413793103448276,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7718981569447084,
+    1.0
+   ],
+   "overall_accuracy": 0.22413793103448276,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 22.413793103448278
+  },
+  {
+   "threshold": 0.85,
+   "n_episodes": 58,
+   "nominations": 10,
+   "correct": 10,
+   "coverage": 0.1724137931034483,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7224598312333834,
+    1.0
+   ],
+   "overall_accuracy": 0.1724137931034483,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 17.24137931034483
+  },
+  {
+   "threshold": 0.9,
+   "n_episodes": 58,
+   "nominations": 9,
+   "correct": 9,
+   "coverage": 0.15517241379310345,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7008472464490406,
+    1.0
+   ],
+   "overall_accuracy": 0.15517241379310345,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 15.517241379310345
+  },
+  {
+   "threshold": 0.95,
+   "n_episodes": 58,
+   "nominations": 8,
+   "correct": 8,
+   "coverage": 0.13793103448275862,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.6755843804891231,
+    1.0
+   ],
+   "overall_accuracy": 0.13793103448275862,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 13.793103448275861
+  },
+  {
+   "threshold": 0.99,
+   "n_episodes": 58,
+   "nominations": 7,
+   "correct": 7,
+   "coverage": 0.1206896551724138,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.6456611570247934,
+    1.0
+   ],
+   "overall_accuracy": 0.1206896551724138,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 12.068965517241379
+  }
+ ],
+ "curve_strongest_first": [
+  {
+   "threshold": 0.5,
+   "n_episodes": 58,
+   "nominations": 48,
+   "correct": 45,
+   "coverage": 0.8275862068965517,
+   "precision": 0.9375,
+   "precision_ci95_pair_clustered": [
+    0.875,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8316430233725778,
+    0.9785171568687728
+   ],
+   "overall_accuracy": 0.7758620689655172,
+   "wasted_per_100": 5.172413793103448,
+   "correct_per_100": 77.58620689655173
+  },
+  {
+   "threshold": 0.55,
+   "n_episodes": 58,
+   "nominations": 44,
+   "correct": 41,
+   "coverage": 0.7586206896551724,
+   "precision": 0.9318181818181818,
+   "precision_ci95_pair_clustered": [
+    0.8636363636363636,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.817746786633828,
+    0.9765410298271597
+   ],
+   "overall_accuracy": 0.7068965517241379,
+   "wasted_per_100": 5.172413793103448,
+   "correct_per_100": 70.6896551724138
+  },
+  {
+   "threshold": 0.6,
+   "n_episodes": 58,
+   "nominations": 41,
+   "correct": 39,
+   "coverage": 0.7068965517241379,
+   "precision": 0.9512195121951219,
+   "precision_ci95_pair_clustered": [
+    0.8823529411764706,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8386073303764864,
+    0.9865193377174265
+   ],
+   "overall_accuracy": 0.6724137931034483,
+   "wasted_per_100": 3.4482758620689653,
+   "correct_per_100": 67.24137931034483
+  },
+  {
+   "threshold": 0.65,
+   "n_episodes": 58,
+   "nominations": 37,
+   "correct": 37,
+   "coverage": 0.6379310344827587,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.9059390425448562,
+    1.0000000000000002
+   ],
+   "overall_accuracy": 0.6379310344827587,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 63.793103448275865
+  },
+  {
+   "threshold": 0.7,
+   "n_episodes": 58,
+   "nominations": 34,
+   "correct": 34,
+   "coverage": 0.5862068965517241,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8984820937803899,
+    1.0
+   ],
+   "overall_accuracy": 0.5862068965517241,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 58.62068965517241
+  },
+  {
+   "threshold": 0.75,
+   "n_episodes": 58,
+   "nominations": 29,
+   "correct": 29,
+   "coverage": 0.5,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.8830264055344442,
+    1.0000000000000002
+   ],
+   "overall_accuracy": 0.5,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 50.0
+  },
+  {
+   "threshold": 0.8,
+   "n_episodes": 58,
+   "nominations": 14,
+   "correct": 14,
+   "coverage": 0.2413793103448276,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7846829880728186,
+    1.0
+   ],
+   "overall_accuracy": 0.2413793103448276,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 24.137931034482758
+  },
+  {
+   "threshold": 0.85,
+   "n_episodes": 58,
+   "nominations": 11,
+   "correct": 11,
+   "coverage": 0.1896551724137931,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7411599827511859,
+    1.0
+   ],
+   "overall_accuracy": 0.1896551724137931,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 18.96551724137931
+  },
+  {
+   "threshold": 0.9,
+   "n_episodes": 58,
+   "nominations": 9,
+   "correct": 9,
+   "coverage": 0.15517241379310345,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7008472464490406,
+    1.0
+   ],
+   "overall_accuracy": 0.15517241379310345,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 15.517241379310345
+  },
+  {
+   "threshold": 0.95,
+   "n_episodes": 58,
+   "nominations": 8,
+   "correct": 8,
+   "coverage": 0.13793103448275862,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.6755843804891231,
+    1.0
+   ],
+   "overall_accuracy": 0.13793103448275862,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 13.793103448275861
+  },
+  {
+   "threshold": 0.99,
+   "n_episodes": 58,
+   "nominations": 7,
+   "correct": 7,
+   "coverage": 0.1206896551724138,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.6456611570247934,
+    1.0
+   ],
+   "overall_accuracy": 0.1206896551724138,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 12.068965517241379
+  }
+ ],
+ "synergy_false_nominations": [
+  {
+   "threshold": 0.5,
+   "false_nomination_rate": 0.4583333333333333,
+   "nominations": 11
+  },
+  {
+   "threshold": 0.55,
+   "false_nomination_rate": 0.4583333333333333,
+   "nominations": 11
+  },
+  {
+   "threshold": 0.6,
+   "false_nomination_rate": 0.4166666666666667,
+   "nominations": 10
+  },
+  {
+   "threshold": 0.65,
+   "false_nomination_rate": 0.2916666666666667,
+   "nominations": 7
+  },
+  {
+   "threshold": 0.7,
+   "false_nomination_rate": 0.25,
+   "nominations": 6
+  },
+  {
+   "threshold": 0.75,
+   "false_nomination_rate": 0.20833333333333334,
+   "nominations": 5
+  },
+  {
+   "threshold": 0.8,
+   "false_nomination_rate": 0.08333333333333333,
+   "nominations": 2
+  },
+  {
+   "threshold": 0.85,
+   "false_nomination_rate": 0.041666666666666664,
+   "nominations": 1
+  },
+  {
+   "threshold": 0.9,
+   "false_nomination_rate": 0.041666666666666664,
+   "nominations": 1
+  },
+  {
+   "threshold": 0.95,
+   "false_nomination_rate": 0.041666666666666664,
+   "nominations": 1
+  },
+  {
+   "threshold": 0.99,
+   "false_nomination_rate": 0.0,
+   "nominations": 0
+  }
+ ],
+ "synergy_n_episodes": 24,
+ "synergy_n_pairs": 6,
+ "recommendation": {
+  "threshold": 0.85,
+  "rule": "Rule: the LOWEST threshold with point precision >= 95% and pair-clustered 95% CI lower bound >= 85% AND false-nomination rate under two-driver synergy <= 5% (the system cannot tell synergy from a single driver, and every nomination there is wrong). Not an argmax: raw overall accuracy always favours a lower threshold, so the constraint on wasted isolations is what stops the slide.",
+  "tradeoff": "At 0.85: coverage 17.2%, precision 100.0%, overall 17.2%, 0.00 wasted isolations/100 episodes. Versus 0.90: coverage 15.5%, precision 100.0%, 0.00 wasted/100. Moving 0.90 -> 0.85 buys +1.7 points coverage (+1.7 extra correct nominations/100) at a cost of +0.00 extra wasted isolations/100. Aggressive alternative 0.75: coverage 50.0%, 0 observed wasted in single-driver, but 20.8% false nominations under synergy; coverage jumps sharply between 0.80 and 0.75, so it is the knob to revisit once the synergy prevalence is known.",
+  "point": {
+   "threshold": 0.85,
+   "n_episodes": 58,
+   "nominations": 10,
+   "correct": 10,
+   "coverage": 0.1724137931034483,
+   "precision": 1.0,
+   "precision_ci95_pair_clustered": [
+    1.0,
+    1.0
+   ],
+   "precision_ci95_wilson": [
+    0.7224598312333834,
+    1.0
+   ],
+   "overall_accuracy": 0.1724137931034483,
+   "wasted_per_100": 0.0,
+   "correct_per_100": 17.24137931034483
+  }
+ },
+ "min_precision_on_grid": 0.9318181818181818,
+ "caveat": "gain=_FITTED provisional (fitted elsewhere); few distinct pairs; precision lower CI is wide."
+}

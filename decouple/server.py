@@ -66,6 +66,10 @@ def create_server(cfg, port):
         episode = copy.deepcopy(by_id[state['episode_id']])
         if state.get('diagnostic'):
             episode['samples'] = [s for s in episode['samples'] if s['x'][0] == s['x'][1]]
+            kept = {s['id'] for s in episode['samples']}
+            # the starting assay is withheld too when it carries a contrast,
+            # otherwise it names a sample that no longer exists
+            episode['initial'] = [i for i in episode.get('initial', []) if i in kept]
             episode['tier'] = 'Diagnostic · reconstructed, contrasts withheld'
         return episode
 

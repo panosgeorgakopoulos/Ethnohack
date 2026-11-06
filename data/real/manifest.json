@@ -1,0 +1,170 @@
+{
+ "generator": "scripts/make_enpkg_episodes.py",
+ "source": "https://zenodo.org/records/7824642",
+ "selective_def": "Tcruzi_10ugml > 80.0 and L6_10ugml < 50.0",
+ "selective_actives": [
+  "VGF139_H07",
+  "VGF145_G09",
+  "VGF146_E08",
+  "VGF146_F09",
+  "VGF150_A09",
+  "VGF150_H08",
+  "VGF155_D05",
+  "VGF156_A06"
+ ],
+ "actives_covered": [
+  "VGF139_H07",
+  "VGF146_E08",
+  "VGF146_F09",
+  "VGF150_A09",
+  "VGF150_H08",
+  "VGF155_D05"
+ ],
+ "pairs": [
+  {
+   "pair_id": "C153-C5659",
+   "extracts": 57,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C383-C5659",
+   "extracts": 50,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2818-C6530",
+   "extracts": 32,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2841-C6530",
+   "extracts": 30,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2843-C9244",
+   "extracts": 29,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2818-C9244",
+   "extracts": 27,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2841-C7923",
+   "extracts": 22,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C4183-C7923",
+   "extracts": 15,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2820-C2829",
+   "extracts": 9,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2820-C9323",
+   "extracts": 8,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C2829-C2843",
+   "extracts": 21,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_H08",
+    "VGF155_D05"
+   ]
+  },
+  {
+   "pair_id": "C4183-C9342",
+   "extracts": 14,
+   "actives": [
+    "VGF139_H07",
+    "VGF146_E08",
+    "VGF146_F09",
+    "VGF150_A09",
+    "VGF155_D05"
+   ]
+  }
+ ],
+ "eligible_pairs_total": 238,
+ "truth": "null for every episode (unknown)",
+ "episodes_sha256": "06a98623ea8b70111aeb0185da34a65061aa0bcca268ef3ba9ff977e1ae51d08"
+}

@@ -1,0 +1,26 @@
+{
+  "seed": 20261106,
+  "target": "Trypanosoma cruzi",
+  "target_chembl_id": "CHEMBL368",
+  "budget": 3,
+  "prior": [
+    0.4,
+    0.4,
+    0.1,
+    0.1
+  ],
+  "noise_sd": 0.25,
+  "background": 0.05,
+  "gain": 43.91,
+  "nomination_threshold": 0.85,
+  "simulation_draws": 128,
+  "bootstrap_draws": 1000,
+  "active_threshold_nM": 10000,
+  "min_shared_species": 3,
+  "min_jaccard": 0.3,
+  "max_pairs": 80,
+  "replicates": 5,
+  "data_dir": "data/real",
+  "results_file": "results/evaluation-enpkg.json",
+  "tox_cap": 0.5
+}
