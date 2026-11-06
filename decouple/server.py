@@ -194,6 +194,20 @@ def create_server(cfg, port):
                     self.end_headers()
                     self.wfile.write(payload)
                     return
+                if url.path == '/api/report':
+                    from .report import generate_report
+                    session_id = query.get('session', [''])[0]
+                    state = store.load(session_id)
+                    episode = episode_for(state)
+                    html_content = generate_report(episode, state, cfg)
+                    payload = html_content.encode('utf-8')
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'text/html; charset=utf-8')
+                    self.send_header('Cache-Control', 'no-store')
+                    self.send_header('Content-Length', str(len(payload)))
+                    self.end_headers()
+                    self.wfile.write(payload)
+                    return
                 if url.path in ('/api/state', '/api/export', '/api/compare'):
                     session_id = query.get('session', [''])[0]
                     state = store.load(session_id)

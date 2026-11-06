@@ -233,3 +233,13 @@ def test_compute_properties():
     assert props['lipinski'] == 'Pass'
     assert props['fsp3'] == 0.45
     assert compute_properties('INVALID') is None
+
+
+def test_generate_report():
+    from decouple.report import generate_report
+    e = EPISODES[0]
+    st = run(e, 'decouple', CFG)
+    html_out = generate_report(e, st, CFG)
+    assert '<!doctype html>' in html_out
+    assert 'Isolation Prioritization Dossier' in html_out
+    assert e['candidates'][0]['name'] in html_out
