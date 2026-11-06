@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/License-CC--BY--SA--4.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Tests](https://img.shields.io/badge/Tests-18%20passing-brightgreen.svg)](tests/test_decouple.py)
 [![Target](https://img.shields.io/badge/Target-Trypanosoma%20cruzi-orange.svg)](https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL368/)
+[![Pitch Guide](https://img.shields.io/badge/Presentation-3--Min%20Pitch%20%26%20Judge%20Guide-purple.svg)](docs/PITCH.md)
 
 ---
 
