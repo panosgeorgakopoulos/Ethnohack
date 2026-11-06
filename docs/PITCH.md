@@ -74,3 +74,4 @@ Interactive workbench,                                               100% single
 
 ### Q4: *"What prevents the model from leaking hidden assay labels?"*
 > **Answer:** *"Strict architectural air-gapping. The model and acquisition functions only receive visible state (`samples`, `revealed`, `prior`). Ground truth outcomes and candidate assay records are stored behind an SQLite-backed reveal controller. Furthermore, we have automated regression tests in our CI suite proving that perturbing or changing unrevealed labels leaves policy actions completely invariant."*
+

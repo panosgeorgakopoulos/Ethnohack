@@ -131,7 +131,10 @@ def create_server(cfg, port):
                 query = parse_qs(url.query)
                 if url.path == '/api/catalog':
                     self.send({'episodes': [
-                        {'id': e['id'], 'names': [c['name'] for c in e['candidates']]}
+                        {'id': e['id'], 'names': [c['name'] for c in e['candidates']],
+                         'document': e['candidates'][0]['activity_records'][0].get('document_chembl_id', ''),
+                         'shared_species': e['provenance'].get('shared_species', 0),
+                         'jaccard': round(e['provenance'].get('jaccard', 0), 2)}
                         for e in episodes if e['provenance']['replicate'] == 0],
                         'audit': json.loads((Path(cfg['data_dir']) / 'audit.json').read_text())})
                     return

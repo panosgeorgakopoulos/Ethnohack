@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-CC--BY--SA--4.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Tests](https://img.shields.io/badge/Tests-18%20passing-brightgreen.svg)](tests/test_decouple.py)
+[![Tests](https://img.shields.io/badge/Tests-19%20passing-brightgreen.svg)](tests/test_decouple.py)
 [![Target](https://img.shields.io/badge/Target-Trypanosoma%20cruzi-orange.svg)](https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL368/)
 [![Pitch Guide](https://img.shields.io/badge/Presentation-3--Min%20Pitch%20%26%20Judge%20Guide-purple.svg)](docs/PITCH.md)
 
@@ -84,24 +84,30 @@ python3 -m decouple audit --config config/default.json
 ```
 
 ### 3. Run Automated Tests
-Execute the 17 integration and unit tests (testing idempotency, budget bounds, data leak prevention, concurrency, and determinism):
+Execute the 18 integration and unit tests (testing idempotency, budget bounds, data leak prevention, concurrency, SVG rendering, and determinism):
 ```bash
 python3 -m pytest tests/
 ```
 
-### 4. Run an Offline Decision Replay
+### 4. Run the Live Interactive Terminal Demo
+Watch DECOUPLE solve an authentic episode in real time, comparing its utility-driven choices against greedy "strongest-first":
+```bash
+python3 -m decouple demo --config config/default.json
+```
+
+### 5. Run an Offline Decision Replay
 Replay a specific episode using the DECOUPLE policy and export the decision trace:
 ```bash
 python3 -m decouple replay --config config/default.json
 ```
 
-### 5. Run the Full Multi-Policy Benchmark
+### 6. Run the Full Multi-Policy Benchmark
 Run paired evaluation across all 5 policies:
 ```bash
 python3 -m decouple evaluate --config config/default.json
 ```
 
-### 6. Launch the Interactive Web Workbench
+### 7. Launch the Interactive Web Workbench
 Start the local server and open your browser:
 ```bash
 python3 -m decouple serve --config config/default.json --port 8765

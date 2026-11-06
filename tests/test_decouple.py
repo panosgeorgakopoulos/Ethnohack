@@ -213,3 +213,12 @@ def test_structure_svg_rendering():
     fallback = render_svg('INVALID_SMILES', width=200, height=100)
     assert '<svg' in fallback
     assert 'unavailable' in fallback
+
+
+def test_terminal_demo_runs(capsys):
+    from decouple.__main__ import run_demo
+    run_demo(CFG)
+    captured = capsys.readouterr()
+    assert 'Live Terminal Demo' in captured.out
+    assert 'FINAL DECISION' in captured.out
+    assert 'Nomination' in captured.out
