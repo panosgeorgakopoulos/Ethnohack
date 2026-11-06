@@ -21,20 +21,26 @@
       "simulation_draws": 128,
       "bootstrap_draws": 1000,
       "active_threshold_nM": 10000,
-      "min_shared_species": 3,
-      "min_jaccard": 0.3,
+      "min_shared_species": 2,
+      "min_jaccard": 0.1,
       "max_pairs": 80,
-      "replicates": 5,
+      "replicates": 1,
       "data_dir": "data",
       "results_file": "results/evaluation-v1.json"
     },
-    "episodes_sha256": "7b1ea09cf096080c55ff13cd295b95c79959ce736273595b009d999cb4b27e9e",
+    "episodes_sha256": "427194afd0c60acb28a998915eba7ccf810d7903644e54c7e3e8ffc49bef89d8",
     "manifest_sha256": "99f3a34037bd7950ce01a2a510894ca5a3d0c4df513865a26eed609bb50961ba",
-    "episodes": 10,
-    "unique_pairs": 2,
-    "unique_source_documents": 1,
+    "episodes": 23,
+    "unique_pairs": 23,
+    "unique_source_documents": 7,
     "source_documents": [
-      "CHEMBL1146457"
+      "CHEMBL1143992",
+      "CHEMBL1146457",
+      "CHEMBL1212812",
+      "CHEMBL1944624",
+      "CHEMBL3044681",
+      "CHEMBL3997809",
+      "CHEMBL4261582"
     ],
     "uncertainty": "Descriptive simulation results only. Confidence intervals are withheld because noise replicates and shared-source chemical pairs do not provide independent biological validation.",
     "measured_extract_replay": false,
@@ -42,15 +48,15 @@
     "policies": {
       "random": {
         "correct_nomination_rate": {
-          "estimate": 0.5,
+          "estimate": 0.4782608695652174,
           "ci95": null
         },
         "single_driver_recovery": {
-          "estimate": 1.0,
+          "estimate": 0.9166666666666666,
           "ci95": null
         },
         "abstention_rate": {
-          "estimate": 0.5,
+          "estimate": 0.5217391304347826,
           "ci95": null
         },
         "precision_when_nominating": {
@@ -58,59 +64,59 @@
           "ci95": null
         },
         "hypothesis_accuracy": {
-          "estimate": 0.9,
+          "estimate": 1.0,
           "ci95": null
         },
         "mean_assays_to_correct_threshold_among_recovered": {
-          "estimate": 1.2,
+          "estimate": 1.6363636363636365,
           "ci95": null
         },
         "unrecovered_single_driver_rate": {
-          "estimate": 0.0,
+          "estimate": 0.08333333333333337,
           "ci95": null
         }
       },
       "strongest-first": {
         "correct_nomination_rate": {
-          "estimate": 0.0,
+          "estimate": 0.34782608695652173,
           "ci95": null
         },
         "single_driver_recovery": {
-          "estimate": 0.0,
+          "estimate": 0.6666666666666666,
           "ci95": null
         },
         "abstention_rate": {
-          "estimate": 1.0,
+          "estimate": 0.6521739130434783,
           "ci95": null
         },
         "precision_when_nominating": {
-          "estimate": null,
+          "estimate": 1.0,
           "ci95": null
         },
         "hypothesis_accuracy": {
-          "estimate": 0.5,
+          "estimate": 0.8260869565217391,
           "ci95": null
         },
         "mean_assays_to_correct_threshold_among_recovered": {
-          "estimate": null,
+          "estimate": 2.25,
           "ci95": null
         },
         "unrecovered_single_driver_rate": {
-          "estimate": 1.0,
+          "estimate": 0.33333333333333337,
           "ci95": null
         }
       },
       "correlation": {
         "correct_nomination_rate": {
-          "estimate": 0.5,
+          "estimate": 0.43478260869565216,
           "ci95": null
         },
         "single_driver_recovery": {
-          "estimate": 1.0,
+          "estimate": 0.8333333333333334,
           "ci95": null
         },
         "abstention_rate": {
-          "estimate": 0.5,
+          "estimate": 0.5652173913043479,
           "ci95": null
         },
         "precision_when_nominating": {
@@ -118,29 +124,29 @@
           "ci95": null
         },
         "hypothesis_accuracy": {
-          "estimate": 1.0,
+          "estimate": 0.9565217391304348,
           "ci95": null
         },
         "mean_assays_to_correct_threshold_among_recovered": {
-          "estimate": 1.0,
+          "estimate": 1.3,
           "ci95": null
         },
         "unrecovered_single_driver_rate": {
-          "estimate": 0.0,
+          "estimate": 0.16666666666666663,
           "ci95": null
         }
       },
       "disagreement": {
         "correct_nomination_rate": {
-          "estimate": 0.5,
+          "estimate": 0.4782608695652174,
           "ci95": null
         },
         "single_driver_recovery": {
-          "estimate": 1.0,
+          "estimate": 0.9166666666666666,
           "ci95": null
         },
         "abstention_rate": {
-          "estimate": 0.5,
+          "estimate": 0.5217391304347826,
           "ci95": null
         },
         "precision_when_nominating": {
@@ -148,21 +154,21 @@
           "ci95": null
         },
         "hypothesis_accuracy": {
-          "estimate": 0.5,
+          "estimate": 0.9565217391304348,
           "ci95": null
         },
         "mean_assays_to_correct_threshold_among_recovered": {
-          "estimate": 1.0,
+          "estimate": 1.1818181818181819,
           "ci95": null
         },
         "unrecovered_single_driver_rate": {
-          "estimate": 0.0,
+          "estimate": 0.08333333333333337,
           "ci95": null
         }
       },
       "decouple": {
         "correct_nomination_rate": {
-          "estimate": 0.5,
+          "estimate": 0.5217391304347826,
           "ci95": null
         },
         "single_driver_recovery": {
@@ -170,7 +176,7 @@
           "ci95": null
         },
         "abstention_rate": {
-          "estimate": 0.5,
+          "estimate": 0.4782608695652174,
           "ci95": null
         },
         "precision_when_nominating": {
@@ -182,7 +188,7 @@
           "ci95": null
         },
         "mean_assays_to_correct_threshold_among_recovered": {
-          "estimate": 1.0,
+          "estimate": 1.1666666666666667,
           "ci95": null
         },
         "unrecovered_single_driver_rate": {
@@ -193,14 +199,14 @@
     },
     "paired_difference_vs_strongest": {
       "metric": "correct_nomination_rate",
-      "estimate": 0.5,
+      "estimate": 0.17391304347826086,
       "ci95": null
     },
     "indistinguishable_diagnostic": {
       "label": "Contrast-withheld reconstructed diagnostic, excluded from main results",
-      "episodes": 10,
-      "unique_pairs": 2,
-      "abstentions": 10,
+      "episodes": 8,
+      "unique_pairs": 8,
+      "abstentions": 8,
       "rate": 1.0,
       "ci95": null,
       "note": "Structural rule under simulated profiles; no biological safety estimate."

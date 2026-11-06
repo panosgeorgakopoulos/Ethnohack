@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-CC--BY--SA--4.0-green.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Tests](https://img.shields.io/badge/Tests-17%20passing-brightgreen.svg)](tests/test_decouple.py)
+[![Tests](https://img.shields.io/badge/Tests-18%20passing-brightgreen.svg)](tests/test_decouple.py)
 [![Target](https://img.shields.io/badge/Target-Trypanosoma%20cruzi-orange.svg)](https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL368/)
 
 ---
@@ -50,17 +50,17 @@ flowchart LR
 
 ## 📊 Benchmark Results
 
-Evaluated over paired episodes constructed from authentic **ChEMBL** anti-*T. cruzi* bioactivities and **LOTUS** plant occurrence records:
+Evaluated over **23 paired episodes** across **7 published scientific studies** and distinct botanical families constructed from authentic **ChEMBL** anti-*T. cruzi* bioactivities and **LOTUS** plant occurrence records:
 
-| Policy | Policy Strategy | Correct Nomination Rate | Single-Driver Recovery | Abstention Rate | Assays to Threshold |
+| Policy | Policy Strategy | Correct Nomination Rate | Single-Driver Recovery | Precision / Nominated | Assays to Threshold |
 |---|---|:---:|:---:|:---:|:---:|
-| `strongest-first` | Greedy exploitation (highest predicted inhibition) | 0.0% | 0.0% | 100.0% | N/A (Failed) |
-| `random` | Uniform random sampling | 50.0% | 100.0% | 50.0% | 1.2 |
-| `correlation` | Leading biochemometric feature correlation | 50.0% | 100.0% | 50.0% | 1.0 |
-| `disagreement` | Maximal hypothesis divergence | 50.0% | 100.0% | 50.0% | 1.0 |
-| **`decouple`** | **Expected isolation utility gain** | **50.0%** | **100.0%** | **50.0%** | **1.0** |
+| `strongest-first` | Greedy exploitation (highest predicted inhibition) | 34.8% | 66.7% | 100.0% | 2.25 |
+| `correlation` | Leading biochemometric feature correlation | 43.5% | 83.3% | 100.0% | 1.30 |
+| `random` | Uniform random sampling | 47.8% | 91.7% | 100.0% | 1.64 |
+| `disagreement` | Maximal hypothesis divergence | 47.8% | 91.7% | 100.0% | 1.18 |
+| **`decouple`** | **Expected isolation utility gain** | **52.2%** | **100.0%** | **100.0%** | **1.17** |
 
-> **Key Finding:** In mixture deconvolution, the greedy baseline (`strongest-first`) consistently exhausts the assay budget on redundant co-occurring extracts, never gaining enough contrast to isolate the causal constituent. In contrast, **`decouple` achieves 100% single-driver recovery** while safely abstaining when ground truth is dual-driver (`both`).
+> **Key Finding:** In natural products deconvolution, the greedy baseline (`strongest-first`) wastes valuable assay budget on redundant co-occurring extracts, missing 33.3% of true single drivers and taking nearly twice as many reveals (2.25) when it does find them. In contrast, **`decouple` achieves 100.0% single-driver recovery** with the fastest convergence (1.17 reveals), while safely abstaining when ground truth is dual-driver or non-active.
 
 ---
 

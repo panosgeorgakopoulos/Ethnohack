@@ -9,13 +9,17 @@
   "excluded_non_species_occurrence": 812,
   "matched_full_inchikeys": 151,
   "same_assay_pairs_examined": 510,
-  "confounded_assay_pairs": 2,
-  "eligible_unique_pairs": 2,
-  "selected_unique_pairs": 2,
-  "episodes": 10,
+  "confounded_assay_pairs": 27,
+  "excluded_insufficient_specimens": 2,
+  "excluded_repeated_chemical_pair": 2,
+  "eligible_unique_pairs": 23,
+  "selected_unique_pairs": 23,
+  "episodes": 23,
   "naturally_indistinguishable_episodes": 0,
   "truth_distribution": {
-    "B": 5,
-    "both": 5
+    "A": 5,
+    "B": 7,
+    "neither": 9,
+    "both": 2
   }
 }

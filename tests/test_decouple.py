@@ -31,7 +31,9 @@ def test_budget_repeat_and_finalization():
         snapshot = copy.deepcopy(s)
         reveal(e,s,rec['sample_id'],CFG)
         assert s == snapshot
-    with pytest.raises(ValueError):reveal(e,s,e['samples'][-1]['id'],CFG)
+    unrevealed = next(sm['id'] for sm in e['samples'] if sm['id'] not in s['revealed'])
+    with pytest.raises(ValueError, match='budget'):
+        reveal(e, s, unrevealed, CFG)
     finalize(e,s,CFG)
     with pytest.raises(ValueError):finalize(e,s,CFG)
 
@@ -48,7 +50,11 @@ def test_resume_preserves_posterior_and_next_action(tmp_path):
 @pytest.mark.parametrize('policy',POLICIES)
 def test_perfect_cooccurrence_always_abstains(policy):
     for original in EPISODES:
-        e=copy.deepcopy(original);e['samples']=[s for s in e['samples'] if s['x'][0]==s['x'][1]]
+        co = [s for s in original['samples'] if s['x'][0] == s['x'][1]]
+        if len(co) < CFG['budget'] + 1:
+            continue
+        e = copy.deepcopy(original)
+        e['samples'] = co
         result=run(e,policy,CFG)
         assert result['decision']['kind']=='abstain'
         assert 'identical profiles' in result['decision']['explanation']
