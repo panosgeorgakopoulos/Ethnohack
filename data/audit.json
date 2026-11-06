@@ -1,0 +1,21 @@
+{
+  "activity_rows": 15996,
+  "api_total": 15996,
+  "excluded_activity_quality_or_censoring": 5252,
+  "eligible_activity_rows": 10744,
+  "lotus_rows": 709740,
+  "lotus_plant_rows": 552194,
+  "matched_occurrence_rows": 8585,
+  "excluded_non_species_occurrence": 812,
+  "matched_full_inchikeys": 151,
+  "same_assay_pairs_examined": 510,
+  "confounded_assay_pairs": 2,
+  "eligible_unique_pairs": 2,
+  "selected_unique_pairs": 2,
+  "episodes": 10,
+  "naturally_indistinguishable_episodes": 0,
+  "truth_distribution": {
+    "B": 5,
+    "both": 5
+  }
+}

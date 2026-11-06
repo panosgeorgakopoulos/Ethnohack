@@ -1,0 +1,3807 @@
+[
+  {
+    "id": "CHEMBL469499-CHEMBL471177-r0",
+    "pair_id": "CHEMBL469499-CHEMBL471177",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL469499",
+        "name": "CALOPIPTIN",
+        "inchikey": "HSMDOSKNXLVXIP-IRTBSJMASA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324173,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "12600.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "12.6",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL469499"
+      },
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18036191",
+        "name": "Piper hymenophyllum",
+        "x": [
+          0.4305,
+          0.4305
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1080/10286020108040371"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.46488
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q12202433",
+        "name": "Trimenia moorei",
+        "x": [
+          0.85243,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q12202433",
+            "name": "Trimenia moorei",
+            "url": "http://www.wikidata.org/entity/Q12202433",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1071/CH9682095"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q6093520",
+        "name": "Pycnanthus angolensis",
+        "x": [
+          1.49528,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q6093520",
+            "name": "Pycnanthus angolensis",
+            "url": "http://www.wikidata.org/entity/Q6093520",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1055/S-2007-967103"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          0.0,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15466666",
+        "name": "Aristolochia holostylis",
+        "x": [
+          1.47355,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q15466666",
+            "name": "Aristolochia holostylis",
+            "url": "http://www.wikidata.org/entity/Q15466666",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(03)00335-2",
+              "10.1016/J.PHYTOCHEM.2009.02.008"
+            ]
+          },
+          null
+        ]
+      }
+    ],
+    "initial": [
+      "Q18038101"
+    ],
+    "hidden": {
+      "truth": "B",
+      "outcomes": {
+        "Q18038101": 0.5612904192767747,
+        "Q18036191": 0.5508726753951068,
+        "Q794061": 0.8389510619171133,
+        "Q6039337": 0.7672614401198928,
+        "Q15608205": 0.44821604021227734,
+        "Q104396371": 0.7698487000940009,
+        "Q12202433": -0.18319360761938502,
+        "Q6093520": -0.11072230489819253,
+        "Q5792073": 0.8555986213820937,
+        "Q15466666": -0.08555375324449217
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.5,
+      "shared_species": 6,
+      "union_species": 12,
+      "replicate": 0,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL469499-CHEMBL471177-r1",
+    "pair_id": "CHEMBL469499-CHEMBL471177",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL469499",
+        "name": "CALOPIPTIN",
+        "inchikey": "HSMDOSKNXLVXIP-IRTBSJMASA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324173,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "12600.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "12.6",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL469499"
+      },
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18036191",
+        "name": "Piper hymenophyllum",
+        "x": [
+          0.4305,
+          0.4305
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1080/10286020108040371"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.46488
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q12202433",
+        "name": "Trimenia moorei",
+        "x": [
+          0.85243,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q12202433",
+            "name": "Trimenia moorei",
+            "url": "http://www.wikidata.org/entity/Q12202433",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1071/CH9682095"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q6093520",
+        "name": "Pycnanthus angolensis",
+        "x": [
+          1.49528,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q6093520",
+            "name": "Pycnanthus angolensis",
+            "url": "http://www.wikidata.org/entity/Q6093520",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1055/S-2007-967103"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          0.0,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15466666",
+        "name": "Aristolochia holostylis",
+        "x": [
+          1.47355,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q15466666",
+            "name": "Aristolochia holostylis",
+            "url": "http://www.wikidata.org/entity/Q15466666",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(03)00335-2",
+              "10.1016/J.PHYTOCHEM.2009.02.008"
+            ]
+          },
+          null
+        ]
+      }
+    ],
+    "initial": [
+      "Q18038101"
+    ],
+    "hidden": {
+      "truth": "B",
+      "outcomes": {
+        "Q18038101": 0.4537819777272033,
+        "Q18036191": 0.541203052394775,
+        "Q794061": 0.919815845858612,
+        "Q6039337": 0.8264289673384027,
+        "Q15608205": 0.661062320153235,
+        "Q104396371": 0.7214936165970071,
+        "Q12202433": -0.11080413650916836,
+        "Q6093520": 0.040107355732450424,
+        "Q5792073": 0.7592109000948055,
+        "Q15466666": 0.048036835971948424
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.5,
+      "shared_species": 6,
+      "union_species": 12,
+      "replicate": 1,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL469499-CHEMBL471177-r2",
+    "pair_id": "CHEMBL469499-CHEMBL471177",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL469499",
+        "name": "CALOPIPTIN",
+        "inchikey": "HSMDOSKNXLVXIP-IRTBSJMASA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324173,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "12600.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "12.6",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL469499"
+      },
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18036191",
+        "name": "Piper hymenophyllum",
+        "x": [
+          0.4305,
+          0.4305
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1080/10286020108040371"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.46488
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q12202433",
+        "name": "Trimenia moorei",
+        "x": [
+          0.85243,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q12202433",
+            "name": "Trimenia moorei",
+            "url": "http://www.wikidata.org/entity/Q12202433",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1071/CH9682095"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q6093520",
+        "name": "Pycnanthus angolensis",
+        "x": [
+          1.49528,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q6093520",
+            "name": "Pycnanthus angolensis",
+            "url": "http://www.wikidata.org/entity/Q6093520",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1055/S-2007-967103"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          0.0,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15466666",
+        "name": "Aristolochia holostylis",
+        "x": [
+          1.47355,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q15466666",
+            "name": "Aristolochia holostylis",
+            "url": "http://www.wikidata.org/entity/Q15466666",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(03)00335-2",
+              "10.1016/J.PHYTOCHEM.2009.02.008"
+            ]
+          },
+          null
+        ]
+      }
+    ],
+    "initial": [
+      "Q18038101"
+    ],
+    "hidden": {
+      "truth": "B",
+      "outcomes": {
+        "Q18038101": 0.678767361107465,
+        "Q18036191": 0.47066681427436424,
+        "Q794061": 0.9464130821698791,
+        "Q6039337": 0.6873914906523829,
+        "Q15608205": 0.4598285508737906,
+        "Q104396371": 0.5592348425158307,
+        "Q12202433": 0.06728791462786225,
+        "Q6093520": 0.10483743427693876,
+        "Q5792073": 1.0135927403780502,
+        "Q15466666": -0.15446797024339337
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.5,
+      "shared_species": 6,
+      "union_species": 12,
+      "replicate": 2,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL469499-CHEMBL471177-r3",
+    "pair_id": "CHEMBL469499-CHEMBL471177",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL469499",
+        "name": "CALOPIPTIN",
+        "inchikey": "HSMDOSKNXLVXIP-IRTBSJMASA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324173,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "12600.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "12.6",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL469499"
+      },
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18036191",
+        "name": "Piper hymenophyllum",
+        "x": [
+          0.4305,
+          0.4305
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1080/10286020108040371"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.46488
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q12202433",
+        "name": "Trimenia moorei",
+        "x": [
+          0.85243,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q12202433",
+            "name": "Trimenia moorei",
+            "url": "http://www.wikidata.org/entity/Q12202433",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1071/CH9682095"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q6093520",
+        "name": "Pycnanthus angolensis",
+        "x": [
+          1.49528,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q6093520",
+            "name": "Pycnanthus angolensis",
+            "url": "http://www.wikidata.org/entity/Q6093520",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1055/S-2007-967103"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          0.0,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15466666",
+        "name": "Aristolochia holostylis",
+        "x": [
+          1.47355,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q15466666",
+            "name": "Aristolochia holostylis",
+            "url": "http://www.wikidata.org/entity/Q15466666",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(03)00335-2",
+              "10.1016/J.PHYTOCHEM.2009.02.008"
+            ]
+          },
+          null
+        ]
+      }
+    ],
+    "initial": [
+      "Q18038101"
+    ],
+    "hidden": {
+      "truth": "B",
+      "outcomes": {
+        "Q18038101": 0.5503592911349421,
+        "Q18036191": 0.690153070087809,
+        "Q794061": 1.0694493439673356,
+        "Q6039337": 0.6464435991181405,
+        "Q15608205": 0.581653918572427,
+        "Q104396371": 0.543144104371536,
+        "Q12202433": -0.0714879322993287,
+        "Q6093520": 0.0864924816535983,
+        "Q5792073": 0.7361832650062419,
+        "Q15466666": -0.18719506240175043
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.5,
+      "shared_species": 6,
+      "union_species": 12,
+      "replicate": 3,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL469499-CHEMBL471177-r4",
+    "pair_id": "CHEMBL469499-CHEMBL471177",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL469499",
+        "name": "CALOPIPTIN",
+        "inchikey": "HSMDOSKNXLVXIP-IRTBSJMASA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324173,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "12600.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "12.6",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL469499"
+      },
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18036191",
+        "name": "Piper hymenophyllum",
+        "x": [
+          0.4305,
+          0.4305
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q18036191",
+            "name": "Piper hymenophyllum",
+            "url": "http://www.wikidata.org/entity/Q18036191",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1080/10286020108040371"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1021/NP0302697"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.46488
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q12202433",
+        "name": "Trimenia moorei",
+        "x": [
+          0.85243,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q12202433",
+            "name": "Trimenia moorei",
+            "url": "http://www.wikidata.org/entity/Q12202433",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1071/CH9682095"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q6093520",
+        "name": "Pycnanthus angolensis",
+        "x": [
+          1.49528,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q6093520",
+            "name": "Pycnanthus angolensis",
+            "url": "http://www.wikidata.org/entity/Q6093520",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1055/S-2007-967103"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          0.0,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15466666",
+        "name": "Aristolochia holostylis",
+        "x": [
+          1.47355,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q15466666",
+            "name": "Aristolochia holostylis",
+            "url": "http://www.wikidata.org/entity/Q15466666",
+            "compound_url": "http://www.wikidata.org/entity/Q104396372",
+            "references": [
+              "10.1016/S0031-9422(03)00335-2",
+              "10.1016/J.PHYTOCHEM.2009.02.008"
+            ]
+          },
+          null
+        ]
+      }
+    ],
+    "initial": [
+      "Q18038101"
+    ],
+    "hidden": {
+      "truth": "B",
+      "outcomes": {
+        "Q18038101": 0.5961128810981768,
+        "Q18036191": 0.4416970109577957,
+        "Q794061": 0.8720395970318853,
+        "Q6039337": 0.821969184585776,
+        "Q15608205": 0.6530192144701678,
+        "Q104396371": 0.8146664025608064,
+        "Q12202433": -0.13391378267983528,
+        "Q6093520": -0.02619979722891687,
+        "Q5792073": 0.7840575167954946,
+        "Q15466666": -0.06827943518603707
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.5,
+      "shared_species": 6,
+      "union_species": 12,
+      "replicate": 4,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL471177-CHEMBL418309-r0",
+    "pair_id": "CHEMBL471177-CHEMBL418309",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      },
+      {
+        "id": "CHEMBL418309",
+        "name": "GALGRAVIN",
+        "inchikey": "JLJAVUZBHSLLJL-DQEHQXCCSA-N",
+        "smiles": "COc1ccc([C@H]2O[C@@H](c3ccc(OC)c(OC)c3)[C@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324170,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "4400.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "4.4",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL418309"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1002/CHIN.200533260",
+              "10.1248/CPB.53.235"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          1.06346,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          },
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/BF02975429",
+              "10.1080/14756360802632971",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP50068A032"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10545549",
+        "name": "Saururus chinensis",
+        "x": [
+          0.0,
+          0.9549
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10545549",
+            "name": "Saururus chinensis",
+            "url": "http://www.wikidata.org/entity/Q10545549",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/S10600-010-9640-3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5924111",
+        "name": "Piper kadsura",
+        "x": [
+          0.0,
+          0.83162
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5924111",
+            "name": "Piper kadsura",
+            "url": "http://www.wikidata.org/entity/Q5924111",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1248/CPB.53.121",
+              "10.1021/NP0505521"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10916972",
+        "name": "Schisandra propinqua",
+        "x": [
+          0.0,
+          1.36016
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10916972",
+            "name": "Schisandra propinqua",
+            "url": "http://www.wikidata.org/entity/Q10916972",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP900123Z"
+            ]
+          }
+        ]
+      }
+    ],
+    "initial": [
+      "Q794061"
+    ],
+    "hidden": {
+      "truth": "both",
+      "outcomes": {
+        "Q794061": 1.0071493549557378,
+        "Q5792073": 0.9789396943227586,
+        "Q18038101": 0.8230579803214003,
+        "Q6039337": 1.0011236205746492,
+        "Q15608205": 0.7535241456436437,
+        "Q10545549": 1.1094852294479205,
+        "Q104396371": 0.6869066054380127,
+        "Q5924111": 1.0044565232150637,
+        "Q10916972": 1.03545876654475
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.3125,
+      "shared_species": 5,
+      "union_species": 16,
+      "replicate": 0,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL471177-CHEMBL418309-r1",
+    "pair_id": "CHEMBL471177-CHEMBL418309",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      },
+      {
+        "id": "CHEMBL418309",
+        "name": "GALGRAVIN",
+        "inchikey": "JLJAVUZBHSLLJL-DQEHQXCCSA-N",
+        "smiles": "COc1ccc([C@H]2O[C@@H](c3ccc(OC)c(OC)c3)[C@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324170,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "4400.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "4.4",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL418309"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1002/CHIN.200533260",
+              "10.1248/CPB.53.235"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          1.06346,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          },
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/BF02975429",
+              "10.1080/14756360802632971",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP50068A032"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10545549",
+        "name": "Saururus chinensis",
+        "x": [
+          0.0,
+          0.9549
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10545549",
+            "name": "Saururus chinensis",
+            "url": "http://www.wikidata.org/entity/Q10545549",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/S10600-010-9640-3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5924111",
+        "name": "Piper kadsura",
+        "x": [
+          0.0,
+          0.83162
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5924111",
+            "name": "Piper kadsura",
+            "url": "http://www.wikidata.org/entity/Q5924111",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1248/CPB.53.121",
+              "10.1021/NP0505521"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10916972",
+        "name": "Schisandra propinqua",
+        "x": [
+          0.0,
+          1.36016
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10916972",
+            "name": "Schisandra propinqua",
+            "url": "http://www.wikidata.org/entity/Q10916972",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP900123Z"
+            ]
+          }
+        ]
+      }
+    ],
+    "initial": [
+      "Q794061"
+    ],
+    "hidden": {
+      "truth": "both",
+      "outcomes": {
+        "Q794061": 0.8802456052349873,
+        "Q5792073": 1.0553204236522729,
+        "Q18038101": 0.844569299475777,
+        "Q6039337": 0.7214237995703366,
+        "Q15608205": 0.9645989005619174,
+        "Q10545549": 0.7450354771774467,
+        "Q104396371": 0.838064279666396,
+        "Q5924111": 0.9022693069731433,
+        "Q10916972": 0.9489417289721634
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.3125,
+      "shared_species": 5,
+      "union_species": 16,
+      "replicate": 1,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL471177-CHEMBL418309-r2",
+    "pair_id": "CHEMBL471177-CHEMBL418309",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      },
+      {
+        "id": "CHEMBL418309",
+        "name": "GALGRAVIN",
+        "inchikey": "JLJAVUZBHSLLJL-DQEHQXCCSA-N",
+        "smiles": "COc1ccc([C@H]2O[C@@H](c3ccc(OC)c(OC)c3)[C@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324170,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "4400.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "4.4",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL418309"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1002/CHIN.200533260",
+              "10.1248/CPB.53.235"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          1.06346,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          },
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/BF02975429",
+              "10.1080/14756360802632971",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP50068A032"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10545549",
+        "name": "Saururus chinensis",
+        "x": [
+          0.0,
+          0.9549
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10545549",
+            "name": "Saururus chinensis",
+            "url": "http://www.wikidata.org/entity/Q10545549",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/S10600-010-9640-3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5924111",
+        "name": "Piper kadsura",
+        "x": [
+          0.0,
+          0.83162
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5924111",
+            "name": "Piper kadsura",
+            "url": "http://www.wikidata.org/entity/Q5924111",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1248/CPB.53.121",
+              "10.1021/NP0505521"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10916972",
+        "name": "Schisandra propinqua",
+        "x": [
+          0.0,
+          1.36016
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10916972",
+            "name": "Schisandra propinqua",
+            "url": "http://www.wikidata.org/entity/Q10916972",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP900123Z"
+            ]
+          }
+        ]
+      }
+    ],
+    "initial": [
+      "Q794061"
+    ],
+    "hidden": {
+      "truth": "both",
+      "outcomes": {
+        "Q794061": 1.01019993879622,
+        "Q5792073": 0.880586581902645,
+        "Q18038101": 0.6417039705471237,
+        "Q6039337": 0.7885732607160802,
+        "Q15608205": 0.9818433795419377,
+        "Q10545549": 0.9073376931999786,
+        "Q104396371": 0.561665369703703,
+        "Q5924111": 0.7820409531342487,
+        "Q10916972": 1.059381011138709
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.3125,
+      "shared_species": 5,
+      "union_species": 16,
+      "replicate": 2,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL471177-CHEMBL418309-r3",
+    "pair_id": "CHEMBL471177-CHEMBL418309",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      },
+      {
+        "id": "CHEMBL418309",
+        "name": "GALGRAVIN",
+        "inchikey": "JLJAVUZBHSLLJL-DQEHQXCCSA-N",
+        "smiles": "COc1ccc([C@H]2O[C@@H](c3ccc(OC)c(OC)c3)[C@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324170,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "4400.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "4.4",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL418309"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1002/CHIN.200533260",
+              "10.1248/CPB.53.235"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          1.06346,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          },
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/BF02975429",
+              "10.1080/14756360802632971",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP50068A032"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10545549",
+        "name": "Saururus chinensis",
+        "x": [
+          0.0,
+          0.9549
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10545549",
+            "name": "Saururus chinensis",
+            "url": "http://www.wikidata.org/entity/Q10545549",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/S10600-010-9640-3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5924111",
+        "name": "Piper kadsura",
+        "x": [
+          0.0,
+          0.83162
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5924111",
+            "name": "Piper kadsura",
+            "url": "http://www.wikidata.org/entity/Q5924111",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1248/CPB.53.121",
+              "10.1021/NP0505521"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10916972",
+        "name": "Schisandra propinqua",
+        "x": [
+          0.0,
+          1.36016
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10916972",
+            "name": "Schisandra propinqua",
+            "url": "http://www.wikidata.org/entity/Q10916972",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP900123Z"
+            ]
+          }
+        ]
+      }
+    ],
+    "initial": [
+      "Q794061"
+    ],
+    "hidden": {
+      "truth": "both",
+      "outcomes": {
+        "Q794061": 0.9126827622527083,
+        "Q5792073": 1.026182669200403,
+        "Q18038101": 0.571671914109314,
+        "Q6039337": 0.9475620574825879,
+        "Q15608205": 0.8411757823680058,
+        "Q10545549": 1.019654937648449,
+        "Q104396371": 0.7242562300952865,
+        "Q5924111": 0.9224294450314703,
+        "Q10916972": 1.1304058805771537
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.3125,
+      "shared_species": 5,
+      "union_species": 16,
+      "replicate": 3,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  },
+  {
+    "id": "CHEMBL471177-CHEMBL418309-r4",
+    "pair_id": "CHEMBL471177-CHEMBL418309",
+    "tier": "Tier A \u00b7 reconstructed",
+    "candidates": [
+      {
+        "id": "CHEMBL471177",
+        "name": "MACHILIN G",
+        "inchikey": "HSMDOSKNXLVXIP-QVEMZERUSA-N",
+        "smiles": "COc1ccc([C@@H]2O[C@H](c3ccc4c(c3)OCO4)[C@@H](C)[C@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324169,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "2200.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "2.2",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL471177"
+      },
+      {
+        "id": "CHEMBL418309",
+        "name": "GALGRAVIN",
+        "inchikey": "JLJAVUZBHSLLJL-DQEHQXCCSA-N",
+        "smiles": "COc1ccc([C@H]2O[C@@H](c3ccc(OC)c(OC)c3)[C@H](C)[C@@H]2C)cc1OC",
+        "identity_match_tier": "exact-full-InChIKey",
+        "activity_records": [
+          {
+            "activity_id": 2324170,
+            "assay_chembl_id": "CHEMBL1029992",
+            "assay_description": "Antitrypanosomal activity against Trypanosoma cruzi Y trypomastigotes infected in mouse macrophage",
+            "document_chembl_id": "CHEMBL1146457",
+            "standard_type": "IC50",
+            "standard_units": "nM",
+            "standard_value": "4400.0",
+            "standard_relation": "=",
+            "units": "uM",
+            "value": "4.4",
+            "relation": "="
+          }
+        ],
+        "source_url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL418309"
+      }
+    ],
+    "samples": [
+      {
+        "id": "Q794061",
+        "name": "Magnolia denudata",
+        "x": [
+          1.24792,
+          1.24792
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1271/BBB.80327"
+            ]
+          },
+          {
+            "id": "Q794061",
+            "name": "Magnolia denudata",
+            "url": "http://www.wikidata.org/entity/Q794061",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1002/CHIN.200533260",
+              "10.1248/CPB.53.235"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q5792073",
+        "name": "Machilus thunbergii",
+        "x": [
+          1.06346,
+          1.06346
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)81847-6",
+              "10.1016/0031-9422(88)83162-5",
+              "10.1007/BF02975429",
+              "10.1211/0022357001774949"
+            ]
+          },
+          {
+            "id": "Q5792073",
+            "name": "Machilus thunbergii",
+            "url": "http://www.wikidata.org/entity/Q5792073",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/BF02975429",
+              "10.1080/14756360802632971",
+              "10.1211/0022357001774949"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q18038101",
+        "name": "Piper schmidtii",
+        "x": [
+          0.36035,
+          0.36035
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0031-9422(00)95012-X"
+            ]
+          },
+          {
+            "id": "Q18038101",
+            "name": "Piper schmidtii",
+            "url": "http://www.wikidata.org/entity/Q18038101",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP50068A032"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q6039337",
+        "name": "Nectandra megapotamica",
+        "x": [
+          0.68223,
+          0.68223
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q6039337",
+            "name": "Nectandra megapotamica",
+            "url": "http://www.wikidata.org/entity/Q6039337",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q15608205",
+        "name": "Nectandra angustifolia",
+        "x": [
+          0.46983,
+          0.46983
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "documented"
+        ],
+        "evidence": [
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1021/NP0302697",
+              "10.1002/PTR.2486"
+            ]
+          },
+          {
+            "id": "Q15608205",
+            "name": "Nectandra angustifolia",
+            "url": "http://www.wikidata.org/entity/Q15608205",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP0302697",
+              "10.3390/MOLECULES200712757",
+              "10.1211/0022357044058",
+              "10.1002/PTR.2486"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10545549",
+        "name": "Saururus chinensis",
+        "x": [
+          0.0,
+          0.9549
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10545549",
+            "name": "Saururus chinensis",
+            "url": "http://www.wikidata.org/entity/Q10545549",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1007/S10600-010-9640-3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q104396371",
+        "name": "Piper wightii",
+        "x": [
+          0.46488,
+          0.0
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "documented",
+          "not recorded; simulated zero"
+        ],
+        "evidence": [
+          {
+            "id": "Q104396371",
+            "name": "Piper wightii",
+            "url": "http://www.wikidata.org/entity/Q104396371",
+            "compound_url": "http://www.wikidata.org/entity/Q104400215",
+            "references": [
+              "10.1016/S0040-4020(01)85081-X"
+            ]
+          },
+          null
+        ]
+      },
+      {
+        "id": "Q5924111",
+        "name": "Piper kadsura",
+        "x": [
+          0.0,
+          0.83162
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q5924111",
+            "name": "Piper kadsura",
+            "url": "http://www.wikidata.org/entity/Q5924111",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1248/CPB.53.121",
+              "10.1021/NP0505521"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Q10916972",
+        "name": "Schisandra propinqua",
+        "x": [
+          0.0,
+          1.36016
+        ],
+        "units": "simulated relative concentration",
+        "occurrence_status": [
+          "not recorded; simulated zero",
+          "documented"
+        ],
+        "evidence": [
+          null,
+          {
+            "id": "Q10916972",
+            "name": "Schisandra propinqua",
+            "url": "http://www.wikidata.org/entity/Q10916972",
+            "compound_url": "http://www.wikidata.org/entity/Q104396432",
+            "references": [
+              "10.1021/NP900123Z"
+            ]
+          }
+        ]
+      }
+    ],
+    "initial": [
+      "Q794061"
+    ],
+    "hidden": {
+      "truth": "both",
+      "outcomes": {
+        "Q794061": 0.9252276115147091,
+        "Q5792073": 1.079661011805644,
+        "Q18038101": 0.8405380578097896,
+        "Q6039337": 1.0490153177196215,
+        "Q15608205": 0.9990582067229492,
+        "Q10545549": 1.0097204569191902,
+        "Q104396371": 0.5913554672700162,
+        "Q5924111": 0.7821273595786864,
+        "Q10916972": 0.8425486979918818
+      }
+    },
+    "provenance": {
+      "assay": "CHEMBL1029992",
+      "lotus_record": "19360665",
+      "jaccard": 0.3125,
+      "shared_species": 5,
+      "union_species": 16,
+      "replicate": 4,
+      "source_manifest": "data/manifest.json"
+    },
+    "limitations": [
+      "RECONSTRUCTED: responses and concentrations are simulated, not measured extract assays.",
+      "LOTUS records documented occurrence. Unrecorded occurrences are encoded as zero only for this benchmark; they are not confirmed biological absences.",
+      "Compound IC50 labels are thresholded within each assay. They do not establish which constituent drives a real mixture.",
+      "The simulator and inference use the same response family. Results test acquisition under those assumptions, not prospective discovery performance.",
+      "Species occurrence aggregates literature across specimens, tissues, doses and extraction methods."
+    ]
+  }
+]

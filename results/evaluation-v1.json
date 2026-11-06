@@ -1,0 +1,2938 @@
+{
+  "schema_version": 2,
+  "tier": "Simulation diagnostic",
+  "config": {
+    "seed": 20261106,
+    "target": "Trypanosoma cruzi",
+    "target_chembl_id": "CHEMBL368",
+    "budget": 3,
+    "prior": [
+      0.4,
+      0.4,
+      0.1,
+      0.1
+    ],
+    "noise_sd": 0.12,
+    "background": 0.05,
+    "gain": 2.0,
+    "nomination_threshold": 0.9,
+    "simulation_draws": 128,
+    "bootstrap_draws": 1000,
+    "active_threshold_nM": 10000,
+    "min_shared_species": 3,
+    "min_jaccard": 0.3,
+    "max_pairs": 80,
+    "replicates": 5,
+    "data_dir": "data",
+    "results_file": "results/evaluation-v1.json"
+  },
+  "episodes_sha256": "7b1ea09cf096080c55ff13cd295b95c79959ce736273595b009d999cb4b27e9e",
+  "manifest_sha256": "99f3a34037bd7950ce01a2a510894ca5a3d0c4df513865a26eed609bb50961ba",
+  "episodes": 10,
+  "unique_pairs": 2,
+  "unique_source_documents": 1,
+  "source_documents": [
+    "CHEMBL1146457"
+  ],
+  "uncertainty": "Descriptive simulation results only. Confidence intervals are withheld because noise replicates and shared-source chemical pairs do not provide independent biological validation.",
+  "measured_extract_replay": false,
+  "acquisition_objective": "Expected gain in threshold-aware single-driver nomination utility; unitless.",
+  "policies": {
+    "random": {
+      "correct_nomination_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "single_driver_recovery": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "abstention_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.9,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": 1.2,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.0,
+        "ci95": null
+      }
+    },
+    "strongest-first": {
+      "correct_nomination_rate": {
+        "estimate": 0.0,
+        "ci95": null
+      },
+      "single_driver_recovery": {
+        "estimate": 0.0,
+        "ci95": null
+      },
+      "abstention_rate": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": null,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": null,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 1.0,
+        "ci95": null
+      }
+    },
+    "correlation": {
+      "correct_nomination_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "single_driver_recovery": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "abstention_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.0,
+        "ci95": null
+      }
+    },
+    "disagreement": {
+      "correct_nomination_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "single_driver_recovery": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "abstention_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.0,
+        "ci95": null
+      }
+    },
+    "decouple": {
+      "correct_nomination_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "single_driver_recovery": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "abstention_rate": {
+        "estimate": 0.5,
+        "ci95": null
+      },
+      "precision_when_nominating": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "hypothesis_accuracy": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "mean_assays_to_correct_threshold_among_recovered": {
+        "estimate": 1.0,
+        "ci95": null
+      },
+      "unrecovered_single_driver_rate": {
+        "estimate": 0.0,
+        "ci95": null
+      }
+    }
+  },
+  "paired_difference_vs_strongest": {
+    "metric": "correct_nomination_rate",
+    "estimate": 0.5,
+    "ci95": null
+  },
+  "indistinguishable_diagnostic": {
+    "label": "Contrast-withheld reconstructed diagnostic, excluded from main results",
+    "episodes": 10,
+    "unique_pairs": 2,
+    "abstentions": 10,
+    "rate": 1.0,
+    "ci95": null,
+    "note": "Structural rule under simulated profiles; no biological safety estimate."
+  },
+  "rows": [
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r0",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "random",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999849,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q12202433",
+          "response": -0.18319360761938502,
+          "policy": "random",
+          "posterior": [
+            2.6450898103103392e-15,
+            0.9999708877414402,
+            1.375317649511462e-16,
+            2.9112258556893986e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15466666",
+          "response": -0.08555375324449217,
+          "policy": "random",
+          "posterior": [
+            3.344779846465759e-31,
+            0.999970887741443,
+            1.739122330986125e-32,
+            2.911225855689407e-05
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q794061",
+          "response": 0.8389510619171133,
+          "policy": "random",
+          "posterior": [
+            3.3448772233962773e-31,
+            0.9999999999999849,
+            9.620309441769439e-33,
+            1.517343382376147e-14
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r0",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "strongest-first",
+      "truth": "B",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "A",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.49997394765332864,
+        "explanation": "The evidence cannot confidently separate CALOPIPTIN, MACHILIN G, both, and neither at the configured threshold.",
+        "next_contrast": "Q6093520"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q794061",
+          "response": 0.8389510619171133,
+          "policy": "strongest-first",
+          "posterior": [
+            0.49291160504368653,
+            0.49291160504368653,
+            0.0141767899126196,
+            7.479161620094567e-15
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.7672614401198928,
+          "policy": "strongest-first",
+          "posterior": [
+            0.49739073266283074,
+            0.49739073266283074,
+            0.005218534674338446,
+            1.3223428800488638e-22
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.44821604021227734,
+          "policy": "strongest-first",
+          "posterior": [
+            0.49997394765332864,
+            0.49997394765332864,
+            5.210469334266095e-05,
+            1.6747622167222168e-24
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r0",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "correlation",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 1.0,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": -0.11072230489819253,
+          "policy": "correlation",
+          "posterior": [
+            2.2424927499307056e-17,
+            0.999970887741443,
+            1.1659868205077473e-18,
+            2.911225855689407e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q794061",
+          "response": 0.8389510619171133,
+          "policy": "correlation",
+          "posterior": [
+            2.2425580358600405e-17,
+            0.9999999999999849,
+            6.449893614987399e-19,
+            1.517343382376147e-14
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.8555986213820937,
+          "policy": "correlation",
+          "posterior": [
+            3.7917643203532866e-27,
+            1.0,
+            6.449893614987496e-19,
+            2.565556122524868e-24
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r0",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "disagreement",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999951,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": -0.11072230489819253,
+          "policy": "disagreement",
+          "posterior": [
+            2.2424927499307056e-17,
+            0.999970887741443,
+            1.1659868205077473e-18,
+            2.911225855689407e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15466666",
+          "response": -0.08555375324449217,
+          "policy": "disagreement",
+          "posterior": [
+            2.8356861557504935e-33,
+            0.999970887741443,
+            1.4744184500946759e-34,
+            2.911225855689407e-05
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.8555986213820937,
+          "policy": "disagreement",
+          "posterior": [
+            4.7947774142978586e-43,
+            0.9999999999999951,
+            1.4744613749954496e-34,
+            4.922505247089039e-15
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r0",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "decouple",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999936,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": -0.11072230489819253,
+          "policy": "decouple",
+          "posterior": [
+            2.2424927499307056e-17,
+            0.999970887741443,
+            1.1659868205077473e-18,
+            2.911225855689407e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.7672614401198928,
+          "policy": "decouple",
+          "posterior": [
+            2.2425580358589305e-17,
+            0.99999999999949,
+            4.253518331673175e-19,
+            5.100949925194805e-13
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.44821604021227734,
+          "policy": "decouple",
+          "posterior": [
+            2.24255803586006e-17,
+            0.9999999999999936,
+            4.2250017574697124e-21,
+            6.427031786111869e-15
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r1",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "random",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 2,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999997138,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q104396371",
+          "response": 0.7214936165970071,
+          "policy": "random",
+          "posterior": [
+            0.4983168978405969,
+            0.4983168978405969,
+            0.0033662041973929117,
+            1.2141331797584295e-10
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6093520",
+          "response": 0.040107355732450424,
+          "policy": "random",
+          "posterior": [
+            2.851189561721802e-13,
+            0.999999999756066,
+            1.9260206330191328e-15,
+            2.436468008055873e-10
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.661062320153235,
+          "policy": "random",
+          "posterior": [
+            2.8511895624164883e-13,
+            0.9999999999997138,
+            5.414409954934198e-16,
+            5.912522092240308e-16
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r1",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "strongest-first",
+      "truth": "B",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "A",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.4996059456284259,
+        "explanation": "The evidence cannot confidently separate CALOPIPTIN, MACHILIN G, both, and neither at the configured threshold.",
+        "next_contrast": "Q6093520"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q794061",
+          "response": 0.919815845858612,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4981765335615202,
+            0.4981765335615202,
+            0.003646932876957433,
+            2.1604414166211815e-15
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.8264289673384027,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4986010842165205,
+            0.4986010842165205,
+            0.0027978315669590246,
+            2.072083099970488e-24
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.661062320153235,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4996059456284259,
+            0.4996059456284259,
+            0.0007881087431480535,
+            5.0384112301592335e-30
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r1",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "correlation",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.999999999999998,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.040107355732450424,
+          "policy": "correlation",
+          "posterior": [
+            2.848022767826806e-13,
+            0.9988893075955941,
+            2.5177274272952725e-15,
+            0.0011106924041186191
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q794061",
+          "response": 0.919815845858612,
+          "policy": "correlation",
+          "posterior": [
+            2.851189562416473e-13,
+            0.9999999999997085,
+            2.087231383477142e-15,
+            4.336698481510816e-15
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7592109000948055,
+          "policy": "correlation",
+          "posterior": [
+            1.3048661116998666e-20,
+            0.999999999999998,
+            2.087231383477746e-15,
+            1.984719276394837e-22
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r1",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "disagreement",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999491118,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.040107355732450424,
+          "policy": "disagreement",
+          "posterior": [
+            2.848022767826806e-13,
+            0.9988893075955941,
+            2.5177274272952725e-15,
+            0.0011106924041186191
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15466666",
+          "response": 0.048036835971948424,
+          "policy": "disagreement",
+          "posterior": [
+            1.5244367359068383e-25,
+            0.998889307595881,
+            1.3476423800143433e-27,
+            0.0011106924041189381
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7592109000948055,
+          "policy": "disagreement",
+          "posterior": [
+            6.984444992802036e-33,
+            0.9999999999491118,
+            1.3491408604515543e-27,
+            5.0888107179318285e-11
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r1",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "decouple",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999956,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.040107355732450424,
+          "policy": "decouple",
+          "posterior": [
+            2.848022767826806e-13,
+            0.9988893075955941,
+            2.5177274272952725e-15,
+            0.0011106924041186191
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q794061",
+          "response": 0.919815845858612,
+          "policy": "decouple",
+          "posterior": [
+            2.851189562416473e-13,
+            0.9999999999997085,
+            2.087231383477142e-15,
+            4.336698481510816e-15
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q12202433",
+          "response": -0.11080413650916836,
+          "policy": "decouple",
+          "posterior": [
+            3.7538562065510326e-26,
+            0.9999999999999956,
+            2.7480342193499116e-28,
+            4.336698481512062e-15
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r2",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "random",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 1.0,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q15466666",
+          "response": -0.15446797024339337,
+          "policy": "random",
+          "posterior": [
+            1.7024885588644909e-18,
+            0.9999994562317801,
+            6.136125055666289e-19,
+            5.437682199527866e-07
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q18036191",
+          "response": 0.47066681427436424,
+          "policy": "random",
+          "posterior": [
+            1.7024894811245576e-18,
+            0.9999999979444163,
+            1.21442046054742e-20,
+            2.0555836597286465e-09
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 1.0135927403780502,
+          "policy": "random",
+          "posterior": [
+            2.9651027014598157e-32,
+            1.0,
+            1.2144204630437541e-20,
+            3.580061275040604e-23
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r2",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "strongest-first",
+      "truth": "B",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "A",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.4998640562365802,
+        "explanation": "The evidence cannot confidently separate CALOPIPTIN, MACHILIN G, both, and neither at the configured threshold.",
+        "next_contrast": "Q6093520"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q794061",
+          "response": 0.9464130821698791,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4272007161712146,
+            0.4272007161712146,
+            0.1455985676575708,
+            1.8109018853788282e-19
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.6873914906523829,
+          "policy": "strongest-first",
+          "posterior": [
+            0.48884695447856885,
+            0.48884695447856885,
+            0.0223060910428622,
+            1.835090099872682e-25
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.4598285508737906,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4998640562365802,
+            0.4998640562365802,
+            0.00027188752683960315,
+            1.482494529650862e-27
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r2",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "correlation",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999943903,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.10483743427693876,
+          "policy": "correlation",
+          "posterior": [
+            1.64596377826745e-11,
+            0.9999994562093881,
+            5.932397917130407e-12,
+            5.437682199406105e-07
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q794061",
+          "response": 0.9464130821698791,
+          "policy": "correlation",
+          "posterior": [
+            1.6459646732912615e-11,
+            0.9999999999779305,
+            5.609777553606029e-12,
+            4.238995434204948e-19
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 1.0135927403780502,
+          "policy": "correlation",
+          "posterior": [
+            2.866657529130656e-25,
+            0.9999999999943903,
+            5.609777553698385e-12,
+            7.382751510161834e-33
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r2",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "disagreement",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 1.0,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.10483743427693876,
+          "policy": "disagreement",
+          "posterior": [
+            1.64596377826745e-11,
+            0.9999994562093881,
+            5.932397917130407e-12,
+            5.437682199406105e-07
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15466666",
+          "response": -0.15446797024339337,
+          "policy": "disagreement",
+          "posterior": [
+            2.8022360246353266e-29,
+            0.9999994562317801,
+            1.0099845072746914e-29,
+            5.437682199527866e-07
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 1.0135927403780502,
+          "policy": "disagreement",
+          "posterior": [
+            4.880454299390983e-43,
+            1.0,
+            1.0099850564724676e-29,
+            9.470422632533642e-21
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r2",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "decouple",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999996487,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.10483743427693876,
+          "policy": "decouple",
+          "posterior": [
+            1.64596377826745e-11,
+            0.9999994562093881,
+            5.932397917130407e-12,
+            5.437682199406105e-07
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.5592348425158307,
+          "policy": "decouple",
+          "posterior": [
+            1.645964673172055e-11,
+            0.9999999999055036,
+            3.513697065573733e-13,
+            7.768540234993844e-11
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 1.0135927403780502,
+          "policy": "decouple",
+          "posterior": [
+            2.8666575291457506e-25,
+            0.9999999999996487,
+            3.5136970659045306e-13,
+            1.3529904206388001e-24
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r3",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "random",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.999999999999998,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 0.7361832650062419,
+          "policy": "random",
+          "posterior": [
+            1.671879883746081e-07,
+            0.9583836847831784,
+            0.04161614802178393,
+            7.049288514247076e-12
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.543144104371536,
+          "policy": "random",
+          "posterior": [
+            1.7410036531632295e-07,
+            0.9980079983981455,
+            0.001991827501487319,
+            1.9940933697869064e-15
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15466666",
+          "response": -0.18719506240175043,
+          "policy": "random",
+          "posterior": [
+            3.839672889593892e-26,
+            0.999999999999998,
+            4.3928489433740245e-22,
+            1.998073535470168e-15
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r3",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "strongest-first",
+      "truth": "B",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "A",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.4998773448441113,
+        "explanation": "The evidence cannot confidently separate CALOPIPTIN, MACHILIN G, both, and neither at the configured threshold.",
+        "next_contrast": "Q6093520"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q794061",
+          "response": 1.0694493439673356,
+          "policy": "strongest-first",
+          "posterior": [
+            0.481726319406077,
+            0.481726319406077,
+            0.03654736118784589,
+            9.225726716492522e-21
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.6464435991181405,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4984856553453673,
+            0.4984856553453673,
+            0.0030286893092652794,
+            6.316985004022391e-26
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.581653918572427,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4998773448441113,
+            0.4998773448441113,
+            0.00024531031177740836,
+            3.739809161957543e-30
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r3",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "correlation",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999996043,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.0864924816535983,
+          "policy": "correlation",
+          "posterior": [
+            5.214477769045801e-12,
+            0.9999578379267565,
+            2.2642964622462876e-13,
+            4.216206780258727e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q794061",
+          "response": 1.0694493439673356,
+          "policy": "correlation",
+          "posterior": [
+            5.214697631480027e-12,
+            0.9999999999943896,
+            3.9562596052064595e-13,
+            1.9151386056329962e-20
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7361832650062419,
+          "policy": "correlation",
+          "posterior": [
+            9.096928723184267e-19,
+            0.9999999999996043,
+            3.956259605227104e-13,
+            3.340918423589829e-27
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r3",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "disagreement",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999926446,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.0864924816535983,
+          "policy": "disagreement",
+          "posterior": [
+            5.214477769045801e-12,
+            0.9999578379267565,
+            2.2642964622462876e-13,
+            4.216206780258727e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15466666",
+          "response": -0.18719506240175043,
+          "policy": "disagreement",
+          "posterior": [
+            1.1477290844388295e-30,
+            0.9999578379321972,
+            4.983814335040398e-32,
+            4.216206780281667e-05
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7361832650062419,
+          "policy": "disagreement",
+          "posterior": [
+            2.002273312298872e-37,
+            0.9999999999926446,
+            4.98402447178145e-32,
+            7.355392862087389e-12
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r3",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "decouple",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999998466,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": 0.0864924816535983,
+          "policy": "decouple",
+          "posterior": [
+            5.214477769045801e-12,
+            0.9999578379267565,
+            2.2642964622462876e-13,
+            4.216206780258727e-05
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q18036191",
+          "response": 0.690153070087809,
+          "policy": "decouple",
+          "posterior": [
+            5.2146976312865135e-12,
+            0.9999999999572804,
+            1.5347362945313652e-13,
+            3.7351563731092815e-11
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7361832650062419,
+          "policy": "decouple",
+          "posterior": [
+            9.096928723186407e-19,
+            0.9999999999998466,
+            1.5347362945966985e-13,
+            6.515900575379628e-18
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r4",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "random",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999978,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 0.7840575167954946,
+          "policy": "random",
+          "posterior": [
+            9.88935322811637e-09,
+            0.9154985943526036,
+            0.08450139575795473,
+            8.847967640439157e-14
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q12202433",
+          "response": -0.13391378267983528,
+          "policy": "random",
+          "posterior": [
+            4.0851802005397617e-22,
+            0.9999999999998999,
+            3.490657284714312e-15,
+            9.664643610616493e-14
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q794061",
+          "response": 0.8720395970318853,
+          "policy": "random",
+          "posterior": [
+            4.085180200540162e-22,
+            0.9999999999999978,
+            2.277487084977037e-15,
+            6.796617769071684e-24
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r4",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "strongest-first",
+      "truth": "B",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "A",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.4973109541035179,
+        "explanation": "The evidence cannot confidently separate CALOPIPTIN, MACHILIN G, both, and neither at the configured threshold.",
+        "next_contrast": "Q6093520"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q794061",
+          "response": 0.8720395970318853,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4853845933449183,
+            0.4853845933449183,
+            0.029230813310163115,
+            3.0539971421393067e-16
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.821969184585776,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4893208846049955,
+            0.4893208846049955,
+            0.02135823079000903,
+            3.6728240339058787e-25
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.6530192144701678,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4973109541035179,
+            0.4973109541035179,
+            0.0053780917929641655,
+            1.251535671766123e-30
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r4",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "correlation",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999998,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": -0.02619979722891687,
+          "policy": "correlation",
+          "posterior": [
+            4.474179738217949e-15,
+            0.9999910531171458,
+            4.129710685342255e-16,
+            8.946882849278563e-06
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q794061",
+          "response": 0.8720395970318853,
+          "policy": "correlation",
+          "posterior": [
+            4.474219768538058e-15,
+            0.9999999999999947,
+            2.6944630001850973e-16,
+            6.291911988992808e-16
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7840575167954946,
+          "policy": "correlation",
+          "posterior": [
+            4.8331193498536644e-23,
+            0.9999999999999998,
+            2.694463000185111e-16,
+            6.796617769071649e-24
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r4",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "disagreement",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999034,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": -0.02619979722891687,
+          "policy": "disagreement",
+          "posterior": [
+            4.474179738217949e-15,
+            0.9999910531171458,
+            4.129710685342255e-16,
+            8.946882849278563e-06
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15466666",
+          "response": -0.06827943518603707,
+          "policy": "disagreement",
+          "posterior": [
+            1.6656877057904297e-30,
+            0.9999910531171506,
+            1.5374456815598944e-31,
+            8.946882849278623e-06
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.7840575167954946,
+          "policy": "disagreement",
+          "posterior": [
+            1.7993169592410572e-38,
+            0.9999999999999034,
+            1.5374594370292146e-31,
+            9.664643610616527e-14
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL469499-CHEMBL471177-r4",
+      "pair_id": "CHEMBL469499-CHEMBL471177",
+      "policy": "decouple",
+      "truth": "B",
+      "nominate": true,
+      "correct_nomination": true,
+      "predicted_hypothesis": "B",
+      "first_correct_step": 1,
+      "decision": {
+        "kind": "nominate",
+        "candidate": "B",
+        "probability": 0.9999999999999956,
+        "explanation": "MACHILIN G is the single-driver hypothesis above the configured threshold. Confirm with purified-compound assays."
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6093520",
+          "response": -0.02619979722891687,
+          "policy": "decouple",
+          "posterior": [
+            4.474179738217949e-15,
+            0.9999910531171458,
+            4.129710685342255e-16,
+            8.946882849278563e-06
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15608205",
+          "response": 0.6530192144701678,
+          "policy": "decouple",
+          "posterior": [
+            4.474219768403878e-15,
+            0.999999999969998,
+            1.0231803127794408e-16,
+            2.99974593843421e-11
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q6039337",
+          "response": 0.821969184585776,
+          "policy": "decouple",
+          "posterior": [
+            4.474219768538125e-15,
+            0.9999999999999956,
+            7.415984032856917e-17,
+            3.578559185512326e-20
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r0",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "random",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.7465717787251963,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6039337",
+          "response": 1.0011236205746492,
+          "policy": "random",
+          "posterior": [
+            0.23823526368177086,
+            0.23823526368177086,
+            0.5235294726364583,
+            2.114661900127982e-28
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 1.1094852294479205,
+          "policy": "random",
+          "posterior": [
+            3.2511097331214134e-17,
+            0.3127412602914811,
+            0.6872587397085188,
+            2.885801950357196e-44
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 0.9789396943227586,
+          "policy": "random",
+          "posterior": [
+            2.634519526033281e-17,
+            0.2534282212748038,
+            0.7465717787251963,
+            3.050678862554571e-57
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r0",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "strongest-first",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.6388723352863962,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 0.9789396943227586,
+          "policy": "strongest-first",
+          "posterior": [
+            0.41167629856073834,
+            0.41167629856073834,
+            0.17664740287852324,
+            2.648898544298219e-28
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 1.0011236205746492,
+          "policy": "strongest-first",
+          "posterior": [
+            0.20218806069090553,
+            0.20218806069090553,
+            0.5956238786181889,
+            2.341265027324988e-41
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.7535241456436437,
+          "policy": "strongest-first",
+          "posterior": [
+            0.18056383235680187,
+            0.18056383235680187,
+            0.6388723352863962,
+            1.2341460475651863e-48
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r0",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "correlation",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.6388723352863962,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 0.9789396943227586,
+          "policy": "correlation",
+          "posterior": [
+            0.41167629856073834,
+            0.41167629856073834,
+            0.17664740287852324,
+            2.648898544298219e-28
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 1.0011236205746492,
+          "policy": "correlation",
+          "posterior": [
+            0.20218806069090553,
+            0.20218806069090553,
+            0.5956238786181889,
+            2.341265027324988e-41
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.7535241456436437,
+          "policy": "correlation",
+          "posterior": [
+            0.18056383235680187,
+            0.18056383235680187,
+            0.6388723352863962,
+            1.2341460475651863e-48
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r0",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "disagreement",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "B",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.7575250463240804,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q104396371"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 1.03545876654475,
+          "policy": "disagreement",
+          "posterior": [
+            2.3987029767872665e-15,
+            0.7575250463240786,
+            0.24247495367591915,
+            1.1831117234337371e-29
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 1.1094852294479205,
+          "policy": "disagreement",
+          "posterior": [
+            2.493577786132922e-31,
+            0.7575250463240804,
+            0.24247495367591973,
+            1.2299068040592277e-45
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5924111",
+          "response": 1.0044565232150637,
+          "policy": "disagreement",
+          "posterior": [
+            1.4885916556405663e-44,
+            0.7575250463240804,
+            0.24247495367591973,
+            7.342177235936059e-59
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r0",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "decouple",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.99999727544465,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q5924111"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 1.03545876654475,
+          "policy": "decouple",
+          "posterior": [
+            2.3987029767872665e-15,
+            0.7575250463240786,
+            0.24247495367591915,
+            1.1831117234337371e-29
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.6869066054380127,
+          "policy": "decouple",
+          "posterior": [
+            9.892553457682963e-15,
+            2.7245553499402733e-06,
+            0.99999727544464,
+            4.255243296971326e-35
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q10545549",
+          "response": 1.1094852294479205,
+          "policy": "decouple",
+          "posterior": [
+            1.0283829131379034e-30,
+            2.724555349940301e-06,
+            0.99999727544465,
+            4.423549002357267e-51
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r1",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "random",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9999999877370839,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q5924111"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 0.9489417289721634,
+          "policy": "random",
+          "posterior": [
+            5.597719061284819e-13,
+            0.854751713412415,
+            0.14524828658702546,
+            5.988588201994614e-24
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 0.7450354771774467,
+          "policy": "random",
+          "posterior": [
+            4.5738347886041293e-20,
+            0.8547517134128931,
+            0.14524828658710676,
+            4.893209672194665e-31
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q104396371",
+          "response": 0.838064279666396,
+          "policy": "random",
+          "posterior": [
+            3.14897672116264e-19,
+            1.2262916134010388e-08,
+            0.9999999877370839,
+            7.020169587804764e-39
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r1",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "strongest-first",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.5673987639364897,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 1.0553204236522729,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4189964930968133,
+            0.4189964930968133,
+            0.16200701380637353,
+            6.909370790433288e-27
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.7214237995703366,
+          "policy": "strongest-first",
+          "posterior": [
+            0.48091999060003454,
+            0.48091999060003454,
+            0.03816001879993095,
+            1.3200770015185857e-33
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.9645989005619174,
+          "policy": "strongest-first",
+          "posterior": [
+            0.21630061803175515,
+            0.21630061803175515,
+            0.5673987639364897,
+            7.24770524902902e-45
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r1",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "correlation",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.5673987639364897,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 1.0553204236522729,
+          "policy": "correlation",
+          "posterior": [
+            0.4189964930968133,
+            0.4189964930968133,
+            0.16200701380637353,
+            6.909370790433288e-27
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.7214237995703366,
+          "policy": "correlation",
+          "posterior": [
+            0.48091999060003454,
+            0.48091999060003454,
+            0.03816001879993095,
+            1.3200770015185857e-33
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.9645989005619174,
+          "policy": "correlation",
+          "posterior": [
+            0.21630061803175515,
+            0.21630061803175515,
+            0.5673987639364897,
+            7.24770524902902e-45
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r1",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "disagreement",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "B",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.8547517134128931,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q104396371"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 0.9489417289721634,
+          "policy": "disagreement",
+          "posterior": [
+            5.597719061284819e-13,
+            0.854751713412415,
+            0.14524828658702546,
+            5.988588201994614e-24
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 0.7450354771774467,
+          "policy": "disagreement",
+          "posterior": [
+            4.5738347886041293e-20,
+            0.8547517134128931,
+            0.14524828658710676,
+            4.893209672194665e-31
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5924111",
+          "response": 0.9022693069731433,
+          "policy": "disagreement",
+          "posterior": [
+            6.443890985384838e-31,
+            0.8547517134128931,
+            0.14524828658710676,
+            6.893845351566801e-42
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r1",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "decouple",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9999999877370839,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q5924111"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 0.9489417289721634,
+          "policy": "decouple",
+          "posterior": [
+            5.597719061284819e-13,
+            0.854751713412415,
+            0.14524828658702546,
+            5.988588201994614e-24
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.838064279666396,
+          "policy": "decouple",
+          "posterior": [
+            3.853896747528948e-12,
+            1.226291613396317e-08,
+            0.9999999877332298,
+            8.591682675746518e-32
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q10545549",
+          "response": 0.7450354771774467,
+          "policy": "decouple",
+          "posterior": [
+            3.14897672116264e-19,
+            1.2262916134010433e-08,
+            0.9999999877370839,
+            7.020169587804764e-39
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r2",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "random",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.7243332013146607,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q18038101",
+          "response": 0.6417039705471237,
+          "policy": "random",
+          "posterior": [
+            0.4435827471343824,
+            0.4435827471343824,
+            0.11283450573123524,
+            1.3889518217573692e-20
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q15608205",
+          "response": 0.9818433795419377,
+          "policy": "random",
+          "posterior": [
+            0.0767743678521586,
+            0.0767743678521586,
+            0.8464512642956827,
+            1.4673488421998578e-32
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q6039337",
+          "response": 0.7885732607160802,
+          "policy": "random",
+          "posterior": [
+            0.13783339934266967,
+            0.13783339934266967,
+            0.7243332013146607,
+            1.62048185481269e-40
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r2",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "strongest-first",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.6948509930723121,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 0.880586581902645,
+          "policy": "strongest-first",
+          "posterior": [
+            0.450360914358004,
+            0.450360914358004,
+            0.09927817128399198,
+            7.309909790205443e-26
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.7885732607160802,
+          "policy": "strongest-first",
+          "posterior": [
+            0.47504289946699824,
+            0.47504289946699824,
+            0.04991420106600353,
+            4.743039451834401e-34
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.9818433795419377,
+          "policy": "strongest-first",
+          "posterior": [
+            0.15257450346384394,
+            0.15257450346384394,
+            0.6948509930723121,
+            9.2984478626616e-46
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r2",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "correlation",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.6948509930723121,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 0.880586581902645,
+          "policy": "correlation",
+          "posterior": [
+            0.450360914358004,
+            0.450360914358004,
+            0.09927817128399198,
+            7.309909790205443e-26
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.7885732607160802,
+          "policy": "correlation",
+          "posterior": [
+            0.47504289946699824,
+            0.47504289946699824,
+            0.04991420106600353,
+            4.743039451834401e-34
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.9818433795419377,
+          "policy": "correlation",
+          "posterior": [
+            0.15257450346384394,
+            0.15257450346384394,
+            0.6948509930723121,
+            9.2984478626616e-46
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r2",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "disagreement",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "B",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.7547182152495595,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q104396371"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 1.059381011138709,
+          "policy": "disagreement",
+          "posterior": [
+            5.471364237338713e-16,
+            0.754718215249559,
+            0.24528178475044043,
+            2.24360250173562e-30
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 0.9073376931999786,
+          "policy": "disagreement",
+          "posterior": [
+            4.88564811595082e-27,
+            0.7547182152495595,
+            0.2452817847504406,
+            2.0034221558020163e-41
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5924111",
+          "response": 0.7820409531342487,
+          "policy": "disagreement",
+          "posterior": [
+            4.262287503390371e-35,
+            0.7547182152495595,
+            0.24528178475044057,
+            1.7478052074220008e-49
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r2",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "decouple",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9996012357250343,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q5924111"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 1.059381011138709,
+          "policy": "decouple",
+          "posterior": [
+            5.471364237338713e-16,
+            0.754718215249559,
+            0.24528178475044043,
+            2.24360250173562e-30
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.561665369703703,
+          "policy": "decouple",
+          "posterior": [
+            2.2297548341431463e-15,
+            0.0003987642749657391,
+            0.9996012357250321,
+            1.1854338570854302e-33
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q10545549",
+          "response": 0.9073376931999786,
+          "policy": "decouple",
+          "posterior": [
+            1.9910568976783037e-26,
+            0.00039876427496574003,
+            0.9996012357250343,
+            1.0585317370994134e-44
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r3",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "random",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "A",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.4307770426594818,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q6039337",
+          "response": 0.9475620574825879,
+          "policy": "random",
+          "posterior": [
+            0.37032579604792937,
+            0.37032579604792937,
+            0.2593484079041414,
+            1.3893427886467401e-24
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q18038101",
+          "response": 0.571671914109314,
+          "policy": "random",
+          "posterior": [
+            0.46022851300316087,
+            0.46022851300316087,
+            0.07954297399367834,
+            1.4144372722345364e-28
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5792073",
+          "response": 1.026182669200403,
+          "policy": "random",
+          "posterior": [
+            0.4307770426594818,
+            0.4307770426594818,
+            0.1384459146810365,
+            1.1094260522221513e-42
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r3",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "strongest-first",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.7559873385438026,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 1.026182669200403,
+          "policy": "strongest-first",
+          "posterior": [
+            0.4216736766923158,
+            0.4216736766923158,
+            0.15665264661536835,
+            5.305932255678373e-27
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.9475620574825879,
+          "policy": "strongest-first",
+          "posterior": [
+            0.302822582078768,
+            0.302822582078768,
+            0.394354835842464,
+            9.520271709908583e-39
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.8411757823680058,
+          "policy": "strongest-first",
+          "posterior": [
+            0.12200633072809873,
+            0.12200633072809873,
+            0.7559873385438026,
+            6.681550987680186e-48
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r3",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "correlation",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.7559873385438026,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 1.026182669200403,
+          "policy": "correlation",
+          "posterior": [
+            0.4216736766923158,
+            0.4216736766923158,
+            0.15665264661536835,
+            5.305932255678373e-27
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 0.9475620574825879,
+          "policy": "correlation",
+          "posterior": [
+            0.302822582078768,
+            0.302822582078768,
+            0.394354835842464,
+            9.520271709908583e-39
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.8411757823680058,
+          "policy": "correlation",
+          "posterior": [
+            0.12200633072809873,
+            0.12200633072809873,
+            0.7559873385438026,
+            6.681550987680186e-48
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r3",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "disagreement",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "B",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.83348296074581,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q104396371"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 1.1304058805771537,
+          "policy": "disagreement",
+          "posterior": [
+            7.590268841276274e-18,
+            0.8334829607458097,
+            0.16651703925419015,
+            1.1397424647397756e-29
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 1.019654937648449,
+          "policy": "disagreement",
+          "posterior": [
+            1.2293199944538696e-31,
+            0.83348296074581,
+            0.16651703925419015,
+            1.8459269753575155e-43
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5924111",
+          "response": 0.9224294450314703,
+          "policy": "disagreement",
+          "posterior": [
+            5.893713491032263e-43,
+            0.83348296074581,
+            0.1665170392541901,
+            8.849904636065219e-55
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r3",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "decouple",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9999990177846834,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q5924111"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 1.1304058805771537,
+          "policy": "decouple",
+          "posterior": [
+            7.590268841276274e-18,
+            0.8334829607458097,
+            0.16651703925419015,
+            1.1397424647397756e-29
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.7242562300952865,
+          "policy": "decouple",
+          "posterior": [
+            4.558249065677467e-17,
+            9.82215316590388e-07,
+            0.9999990177846834,
+            1.3431258448693102e-35
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q10545549",
+          "response": 1.019654937648449,
+          "policy": "decouple",
+          "posterior": [
+            7.382540504580763e-31,
+            9.822153165903898e-07,
+            0.9999990177846834,
+            2.1753267119955787e-49
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r4",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "random",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9999910191458433,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10545549",
+          "response": 1.0097204569191902,
+          "policy": "random",
+          "posterior": [
+            2.334194720440185e-14,
+            0.8246132448263847,
+            0.1753867551735921,
+            1.6401594738165447e-26
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.5913554672700162,
+          "policy": "random",
+          "posterior": [
+            1.3306364427503956e-13,
+            0.00018620569176685216,
+            0.9998137943081001,
+            3.703639631622306e-30
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q18038101",
+          "response": 0.8405380578097896,
+          "policy": "random",
+          "posterior": [
+            6.417769352735352e-15,
+            8.980854150184713e-06,
+            0.9999910191458433,
+            1.617967862151022e-39
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r4",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "strongest-first",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.8776484605946852,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q10545549"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 1.079661011805644,
+          "policy": "strongest-first",
+          "posterior": [
+            0.38867800869642566,
+            0.38867800869642566,
+            0.2226439826071486,
+            1.023279363742326e-28
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 1.0490153177196215,
+          "policy": "strongest-first",
+          "posterior": [
+            0.10901356220889014,
+            0.10901356220889014,
+            0.7819728755822197,
+            4.9149681378756085e-43
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q10916972",
+          "response": 0.8425486979918818,
+          "policy": "strongest-first",
+          "posterior": [
+            5.640851802583673e-11,
+            0.12235153934890627,
+            0.8776484605946852,
+            2.543225477491657e-52
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r4",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "correlation",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9951151363041719,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q10916972"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q5792073",
+          "response": 1.079661011805644,
+          "policy": "correlation",
+          "posterior": [
+            0.38867800869642566,
+            0.38867800869642566,
+            0.2226439826071486,
+            1.023279363742326e-28
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q6039337",
+          "response": 1.0490153177196215,
+          "policy": "correlation",
+          "posterior": [
+            0.10901356220889014,
+            0.10901356220889014,
+            0.7819728755822197,
+            4.9149681378756085e-43
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q15608205",
+          "response": 0.9990582067229492,
+          "policy": "correlation",
+          "posterior": [
+            0.0024424318479140212,
+            0.0024424318479140212,
+            0.9951151363041719,
+            3.3649070199958325e-56
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r4",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "disagreement",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "B",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.8246132448264039,
+        "explanation": "The evidence cannot confidently separate MACHILIN G, GALGRAVIN, both, and neither at the configured threshold.",
+        "next_contrast": "Q104396371"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 0.8425486979918818,
+          "policy": "disagreement",
+          "posterior": [
+            3.8017675392545567e-10,
+            0.824613244512905,
+            0.17538675510691815,
+            2.67137312588074e-22
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q10545549",
+          "response": 1.0097204569191902,
+          "policy": "disagreement",
+          "posterior": [
+            1.0761488221925019e-23,
+            0.8246132448264039,
+            0.17538675517359611,
+            7.561732834451435e-36
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q5924111",
+          "response": 0.7821273595786864,
+          "policy": "disagreement",
+          "posterior": [
+            9.345153203582447e-32,
+            0.8246132448264039,
+            0.17538675517359611,
+            6.566522247223881e-44
+          ]
+        }
+      ]
+    },
+    {
+      "episode_id": "CHEMBL471177-CHEMBL418309-r4",
+      "pair_id": "CHEMBL471177-CHEMBL418309",
+      "policy": "decouple",
+      "truth": "both",
+      "nominate": false,
+      "correct_nomination": false,
+      "predicted_hypothesis": "both",
+      "first_correct_step": null,
+      "decision": {
+        "kind": "abstain",
+        "candidate": null,
+        "probability": 0.9998137943082331,
+        "explanation": "The evidence favors both, so it does not justify isolating one driver.",
+        "next_contrast": "Q5924111"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "sample_id": "Q10916972",
+          "response": 0.8425486979918818,
+          "policy": "decouple",
+          "posterior": [
+            3.8017675392545567e-10,
+            0.824613244512905,
+            0.17538675510691815,
+            2.67137312588074e-22
+          ]
+        },
+        {
+          "step": 2,
+          "sample_id": "Q104396371",
+          "response": 0.5913554672700162,
+          "policy": "decouple",
+          "posterior": [
+            2.167244395362109e-09,
+            0.00018620569136332368,
+            0.9998137921413922,
+            6.032220354256542e-26
+          ]
+        },
+        {
+          "step": 3,
+          "sample_id": "Q10545549",
+          "response": 1.0097204569191902,
+          "policy": "decouple",
+          "posterior": [
+            6.134718873678179e-23,
+            0.00018620569176687693,
+            0.9998137943082331,
+            1.70751282765505e-39
+          ]
+        }
+      ]
+    }
+  ]
+}

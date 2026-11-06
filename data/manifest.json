@@ -1,0 +1,151 @@
+{
+  "sources": [
+    {
+      "file": "data/raw/lotus_metadata.csv.gz",
+      "url": "https://zenodo.org/api/records/19360665/files/260413_frozen_metadata.csv.gz/content",
+      "sha256": "09885dcfb3bc0e6d700fefcd5778e91446a1f9d5d2fbbcbf00eb5d2e83b68844",
+      "bytes": 90298678,
+      "downloaded_at": "2026-11-05T23:15:11.927044+00:00",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "file": "data/raw/lotus_record.json",
+      "url": "https://zenodo.org/api/records/19360665",
+      "sha256": "9e554c0bdc1c21c59e45ad663685cd4f6207dccce5ae2be3fbb3a60332b412de",
+      "bytes": 8367,
+      "downloaded_at": "2026-11-05T23:14:46.335476+00:00",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "file": "data/raw/chembl_activity.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000",
+      "sha256": "b91933c8cb9ce2150a08890646c020fdedc08ed0ab31a0a02c1e57556f1f0e7f",
+      "bytes": 1460651,
+      "downloaded_at": "2026-11-05T23:14:49.157708+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_1.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=1000",
+      "sha256": "8ded8f409872c688db0358410ad06f7b9079d72467b9716ba53c7caddc2ea7d6",
+      "bytes": 1467292,
+      "downloaded_at": "2026-11-05T23:15:35.478098+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_2.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=2000",
+      "sha256": "909f6f2709d7d14256ba0a7a23bc3fca0cd28e32bd14962879627f2e2663bff3",
+      "bytes": 1442389,
+      "downloaded_at": "2026-11-05T23:15:36.376513+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_3.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=3000",
+      "sha256": "a48c8bd3677441a8e6316837a814791cc79066dee24d8e79238dab8d28dcb89a",
+      "bytes": 1452561,
+      "downloaded_at": "2026-11-05T23:15:36.885452+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_4.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=4000",
+      "sha256": "8d80e176242c8bbb1548aa18a810cfdf6495056b99abea0cb1b909f3b461d5bf",
+      "bytes": 1473094,
+      "downloaded_at": "2026-11-05T23:15:36.987299+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_5.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=5000",
+      "sha256": "bf8e50ccb46ab8b261aa950e50403add3383dc2b9aaba8190b4d4fb8e85fd003",
+      "bytes": 1404771,
+      "downloaded_at": "2026-11-05T23:15:37.763019+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_6.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=6000",
+      "sha256": "7b4f74c87da2c5f59a6656322f51379f1589970b123a1d2edef6e38427c7bff5",
+      "bytes": 1512593,
+      "downloaded_at": "2026-11-05T23:15:39.720867+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_7.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=7000",
+      "sha256": "35e4a83f99eb2daf17cdebb474e8fcebe871d80c229ec6cf063131748a064d6b",
+      "bytes": 1477169,
+      "downloaded_at": "2026-11-05T23:15:40.273320+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_8.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=8000",
+      "sha256": "75a2309e2d2be5223f457c885cb3333e40bd5daf44b1508caa1316277dddc9c3",
+      "bytes": 2855953,
+      "downloaded_at": "2026-11-05T23:15:42.043093+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_9.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=9000",
+      "sha256": "533180cae63ab6c67b6f53e5b608822f1d5897a4e5540df08b0e20fa553100db",
+      "bytes": 3035327,
+      "downloaded_at": "2026-11-05T23:15:39.768622+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_10.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=10000",
+      "sha256": "9c4b2dac32d079ae85e869fbfd2b323a747dd77e60d9b2f72dd85752f183f8fe",
+      "bytes": 2247098,
+      "downloaded_at": "2026-11-05T23:15:42.737829+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_11.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=11000",
+      "sha256": "2c8185f365190311488fff3936966ed2ea59ffe5d640953c290970c7bd4dd138",
+      "bytes": 1501350,
+      "downloaded_at": "2026-11-05T23:15:43.480454+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_12.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=12000",
+      "sha256": "a70bd9ee802393b8b8fd97bf1687451ef45d75c3fc8e0d53488705f05dcffdba",
+      "bytes": 1528371,
+      "downloaded_at": "2026-11-05T23:15:45.485765+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_13.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=13000",
+      "sha256": "1220610e225cef0450a518a8975793f23a5f5279bddbea531bd1ac7bd328146c",
+      "bytes": 1596601,
+      "downloaded_at": "2026-11-05T23:15:42.796680+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_14.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=14000",
+      "sha256": "7adc78fe496f1c1ca7de822fbb686ac1ef2689ac6c330e4ffa2ddc357144b039",
+      "bytes": 1723652,
+      "downloaded_at": "2026-11-05T23:15:58.135135+00:00",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "file": "data/raw/chembl_activity_15.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?target_chembl_id=CHEMBL368&standard_type=IC50&limit=1000&offset=15000",
+      "sha256": "56eaba6272ec334aef8270dacdb1c2ead96026f4220bce8303dd47d3ceb80e2e",
+      "bytes": 1820006,
+      "downloaded_at": "2026-11-05T23:16:00.136472+00:00",
+      "license": "CC-BY-SA-3.0"
+    }
+  ],
+  "derived_license": "CC-BY-SA-4.0",
+  "attribution": "LOTUS Initiative; ChEMBL, EMBL-EBI",
+  "modifications": "Filtered, identity-matched, thresholded and simulated by DECOUPLE."
+}

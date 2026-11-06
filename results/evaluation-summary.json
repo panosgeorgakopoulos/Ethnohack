@@ -1,0 +1,209 @@
+{
+  "ok": true,
+  "result": {
+    "schema_version": 2,
+    "tier": "Simulation diagnostic",
+    "config": {
+      "seed": 20261106,
+      "target": "Trypanosoma cruzi",
+      "target_chembl_id": "CHEMBL368",
+      "budget": 3,
+      "prior": [
+        0.4,
+        0.4,
+        0.1,
+        0.1
+      ],
+      "noise_sd": 0.12,
+      "background": 0.05,
+      "gain": 2.0,
+      "nomination_threshold": 0.9,
+      "simulation_draws": 128,
+      "bootstrap_draws": 1000,
+      "active_threshold_nM": 10000,
+      "min_shared_species": 3,
+      "min_jaccard": 0.3,
+      "max_pairs": 80,
+      "replicates": 5,
+      "data_dir": "data",
+      "results_file": "results/evaluation-v1.json"
+    },
+    "episodes_sha256": "7b1ea09cf096080c55ff13cd295b95c79959ce736273595b009d999cb4b27e9e",
+    "manifest_sha256": "99f3a34037bd7950ce01a2a510894ca5a3d0c4df513865a26eed609bb50961ba",
+    "episodes": 10,
+    "unique_pairs": 2,
+    "unique_source_documents": 1,
+    "source_documents": [
+      "CHEMBL1146457"
+    ],
+    "uncertainty": "Descriptive simulation results only. Confidence intervals are withheld because noise replicates and shared-source chemical pairs do not provide independent biological validation.",
+    "measured_extract_replay": false,
+    "acquisition_objective": "Expected gain in threshold-aware single-driver nomination utility; unitless.",
+    "policies": {
+      "random": {
+        "correct_nomination_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "single_driver_recovery": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "abstention_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "precision_when_nominating": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "hypothesis_accuracy": {
+          "estimate": 0.9,
+          "ci95": null
+        },
+        "mean_assays_to_correct_threshold_among_recovered": {
+          "estimate": 1.2,
+          "ci95": null
+        },
+        "unrecovered_single_driver_rate": {
+          "estimate": 0.0,
+          "ci95": null
+        }
+      },
+      "strongest-first": {
+        "correct_nomination_rate": {
+          "estimate": 0.0,
+          "ci95": null
+        },
+        "single_driver_recovery": {
+          "estimate": 0.0,
+          "ci95": null
+        },
+        "abstention_rate": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "precision_when_nominating": {
+          "estimate": null,
+          "ci95": null
+        },
+        "hypothesis_accuracy": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "mean_assays_to_correct_threshold_among_recovered": {
+          "estimate": null,
+          "ci95": null
+        },
+        "unrecovered_single_driver_rate": {
+          "estimate": 1.0,
+          "ci95": null
+        }
+      },
+      "correlation": {
+        "correct_nomination_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "single_driver_recovery": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "abstention_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "precision_when_nominating": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "hypothesis_accuracy": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "mean_assays_to_correct_threshold_among_recovered": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "unrecovered_single_driver_rate": {
+          "estimate": 0.0,
+          "ci95": null
+        }
+      },
+      "disagreement": {
+        "correct_nomination_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "single_driver_recovery": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "abstention_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "precision_when_nominating": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "hypothesis_accuracy": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "mean_assays_to_correct_threshold_among_recovered": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "unrecovered_single_driver_rate": {
+          "estimate": 0.0,
+          "ci95": null
+        }
+      },
+      "decouple": {
+        "correct_nomination_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "single_driver_recovery": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "abstention_rate": {
+          "estimate": 0.5,
+          "ci95": null
+        },
+        "precision_when_nominating": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "hypothesis_accuracy": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "mean_assays_to_correct_threshold_among_recovered": {
+          "estimate": 1.0,
+          "ci95": null
+        },
+        "unrecovered_single_driver_rate": {
+          "estimate": 0.0,
+          "ci95": null
+        }
+      }
+    },
+    "paired_difference_vs_strongest": {
+      "metric": "correct_nomination_rate",
+      "estimate": 0.5,
+      "ci95": null
+    },
+    "indistinguishable_diagnostic": {
+      "label": "Contrast-withheld reconstructed diagnostic, excluded from main results",
+      "episodes": 10,
+      "unique_pairs": 2,
+      "abstentions": 10,
+      "rate": 1.0,
+      "ci95": null,
+      "note": "Structural rule under simulated profiles; no biological safety estimate."
+    }
+  }
+}
