@@ -7,6 +7,7 @@
 [![Tests](https://img.shields.io/badge/Tests-21%20passing-brightgreen.svg)](tests/test_decouple.py)
 [![Target](https://img.shields.io/badge/Target-Trypanosoma%20cruzi-orange.svg)](https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL368/)
 [![Pitch Guide](https://img.shields.io/badge/Presentation-3--Min%20Pitch%20%26%20Judge%20Guide-purple.svg)](docs/PITCH.md)
+[![Agent Handover](https://img.shields.io/badge/Codex-Handover%20Briefing-blueviolet.svg)](docs/HANDOVER.md)
 
 ---
 
@@ -107,7 +108,13 @@ Run paired evaluation across all 5 policies:
 python3 -m decouple evaluate --config config/default.json
 ```
 
-### 7. Launch the Interactive Web Workbench
+### 7. Generate a Printable Hit Prioritization Dossier
+Generate a publication- and wet-lab-ready HTML hit dossier with 2D structures, drug-likeness parameters, deconvolution trace, and confirmatory wet-lab protocols:
+```bash
+python3 -m decouple report --config config/default.json --output results/dossier.html
+```
+
+### 8. Launch the Interactive Web Workbench
 Start the local server and open your browser:
 ```bash
 python3 -m decouple serve --config config/default.json --port 8765

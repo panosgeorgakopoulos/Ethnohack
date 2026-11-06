@@ -8,6 +8,8 @@ A natural-products chemist has several plant extracts that inhibit intracellular
 
 | Read in order | What the reader can decide |
 |---|---|
+| [HANDOVER · Agent Knowledge Transfer](HANDOVER.md) | **Must-read onboarding guide for incoming AI coding agents (Codex) and engineers** |
+| [PITCH · Hackathon Presentation Guide](PITCH.md) | 3-minute visual slide pitch outline and judge defense Q&A |
 | [07 · Implementation plan](07-implementation-plan.md) | Coding entry point, dependency-ordered tickets, interfaces, time limits and completion checks |
 | [01 · Scientific brief](01-science.md) | What the project contributes, why Chagas fits, and which claims the evidence supports |
 | [02 · Data and identity audit](02-data.md) | Whether the experiments and chemical identities can actually be joined |

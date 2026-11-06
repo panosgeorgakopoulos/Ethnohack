@@ -62,10 +62,11 @@ def run_demo(cfg, episode_id=None):
 
 def main():
     parser=argparse.ArgumentParser(prog='python -m decouple')
-    parser.add_argument('command',choices=['prepare','audit','replay','evaluate','serve','demo'])
+    parser.add_argument('command',choices=['prepare','audit','replay','evaluate','serve','demo','report'])
     parser.add_argument('--config',required=True)
     parser.add_argument('--policy',default='decouple')
     parser.add_argument('--episode',default=None)
+    parser.add_argument('--output',default='results/dossier.html')
     parser.add_argument('--port',type=int,default=8765)
     args=parser.parse_args()
     try:
@@ -74,6 +75,16 @@ def main():
             raise ValueError('Invalid response model or budget configuration')
         if args.command=='demo':
             run_demo(cfg,args.episode);return
+        elif args.command=='report':
+            from .report import generate_report
+            es=json.loads((Path(cfg['data_dir'])/'episodes.json').read_text())
+            e=next((e for e in es if e['id']==args.episode), None) if args.episode else es[0]
+            if e is None:raise ValueError('Unknown episode')
+            state=run(e,args.policy,cfg)
+            out_path=Path(args.output)
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(generate_report(e, state, cfg), encoding='utf-8')
+            result={'episode':e['id'],'decision':state['decision'],'report_file':str(out_path)}
         elif args.command=='prepare': result=prepare(cfg)
         elif args.command=='audit':
             result=json.loads((Path(cfg['data_dir'])/'audit.json').read_text())
