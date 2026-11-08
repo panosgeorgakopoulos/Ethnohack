@@ -1,0 +1,131 @@
+{
+  "duration_seconds": 494.29999899999996,
+  "chapters": [
+    {
+      "start": 0,
+      "title": "THE PROBLEM"
+    },
+    {
+      "start": 51.933,
+      "title": "THE METHOD"
+    },
+    {
+      "start": 100.3,
+      "title": "GUIDED DEMONSTRATION"
+    },
+    {
+      "start": 111.133,
+      "title": "STEP 01  /  CHOOSE THE PAIR"
+    },
+    {
+      "start": 157.767,
+      "title": "STEP 02  /  INSPECT THE CONTRAST"
+    },
+    {
+      "start": 199.733,
+      "title": "STEP 03  /  REVEAL EACH ASSAY"
+    },
+    {
+      "start": 254.367,
+      "title": "STEP 04  /  REVIEW, COMPARE, EXPORT"
+    },
+    {
+      "start": 306.167,
+      "title": "RESULTS  /  SELECTIVITY"
+    },
+    {
+      "start": 367.9,
+      "title": "RESULTS  /  SELECTION"
+    },
+    {
+      "start": 423.6,
+      "title": "DATA  /  TRADITIONAL-KNOWLEDGE CONTEXT"
+    },
+    {
+      "start": 459.067,
+      "title": "IMPACT  /  THE NEXT EXPERIMENT"
+    }
+  ],
+  "scenes": [
+    {
+      "path": "video_production/build/unified_pitch/00_E1Problem.mp4",
+      "source": "video_production/build/hq_E1Problem/videos/explainer/1080p30/E1Problem.mp4",
+      "duration": 51.933333,
+      "label": "THE PROBLEM"
+    },
+    {
+      "path": "video_production/build/unified_pitch/01_E2Method.mp4",
+      "source": "video_production/build/hq_E2Method/videos/explainer/1080p30/E2Method.mp4",
+      "duration": 48.366667,
+      "label": "THE METHOD"
+    },
+    {
+      "path": "video_production/build/unified_pitch/02_PTransition.mp4",
+      "source": "video_production/build/pitch_PTransition/videos/pitch/1080p30/PTransition.mp4",
+      "duration": 10.833333,
+      "label": "GUIDED DEMONSTRATION"
+    },
+    {
+      "path": "video_production/build/unified_pitch/03_D1Launch.mp4",
+      "source": "video_production/build/pitch_D1Launch/videos/step_demo/1080p30/D1Launch.mp4",
+      "duration": 46.633333,
+      "label": "STEP 01  /  CHOOSE THE PAIR"
+    },
+    {
+      "path": "video_production/build/unified_pitch/04_D2Recommend.mp4",
+      "source": "video_production/build/pitch_D2Recommend/videos/step_demo/1080p30/D2Recommend.mp4",
+      "duration": 41.966667,
+      "label": "STEP 02  /  INSPECT THE CONTRAST"
+    },
+    {
+      "path": "video_production/build/unified_pitch/05_D3Reveal.mp4",
+      "source": "video_production/build/pitch_D3Reveal/videos/step_demo/1080p30/D3Reveal.mp4",
+      "duration": 54.633333,
+      "label": "STEP 03  /  REVEAL EACH ASSAY"
+    },
+    {
+      "path": "video_production/build/unified_pitch/06_D4Finalize.mp4",
+      "source": "video_production/build/pitch_D4Finalize/videos/step_demo/1080p30/D4Finalize.mp4",
+      "duration": 51.8,
+      "label": "STEP 04  /  REVIEW, COMPARE, EXPORT"
+    },
+    {
+      "path": "video_production/build/unified_pitch/07_E4Selectivity.mp4",
+      "source": "video_production/build/hq_E4Selectivity/videos/explainer/1080p30/E4Selectivity.mp4",
+      "duration": 61.733333,
+      "label": "RESULTS  /  SELECTIVITY"
+    },
+    {
+      "path": "video_production/build/unified_pitch/08_E5Benchmark.mp4",
+      "source": "video_production/build/hq_E5Benchmark/videos/explainer/1080p30/E5Benchmark.mp4",
+      "duration": 55.7,
+      "label": "RESULTS  /  SELECTION"
+    },
+    {
+      "path": "video_production/build/unified_pitch/09_E6Ethno.mp4",
+      "source": "video_production/build/hq_E6Ethno/videos/explainer/1080p30/E6Ethno.mp4",
+      "duration": 35.466667,
+      "label": "DATA  /  TRADITIONAL-KNOWLEDGE CONTEXT"
+    },
+    {
+      "path": "video_production/build/unified_pitch/10_PClose.mp4",
+      "source": "video_production/build/pitch_PClose/videos/pitch/1080p30/PClose.mp4",
+      "duration": 35.233333,
+      "label": "IMPACT  /  THE NEXT EXPERIMENT"
+    }
+  ],
+  "outputs": {
+    "DECOUPLE_Pitch.mp4": {
+      "bytes": 34621042,
+      "sha256": "acf908f95cc45adedd092f0842ebdf65d8863fb4924b5f6c6048cfe2f9e9169b"
+    },
+    "DECOUPLE_Pitch_captioned.mp4": {
+      "bytes": 36092277,
+      "sha256": "942d5476ab2eea02eeb8fef2e6ddf1845466da50919b5018a4d2a0fb63803e48"
+    },
+    "DECOUPLE_Pitch.srt": {
+      "bytes": 14065,
+      "sha256": "882c2e2fab8d99465c22c5b19dad2c4994316cb5c45317a004e25a9389d03597"
+    }
+  }
+}

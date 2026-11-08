@@ -1,5 +1,8 @@
 # FINDINGS — canonical record
 
+> **8 Nov clarification:** statements below that the system cannot say “both” refer to the threshold-based single-compound nomination rule. The current workbench uses `decouple/setvalued.py`, which can return a joint hypothesis. `results/benchmark.json` contains separate `cells` and `set_cells` evaluations. A joint verdict is a model output, not proof of synergy or loss of activity after fractionation. Historical compliance checkmarks below are not a current submission sign-off.
+
+
 Single source of truth for everything established in this project. Compiled 6 Nov 2026, reconciled to `results/benchmark.json` and `results/real_case.json`.
 If a number appears here and elsewhere and they disagree, **this file wins** and the other should be fixed.
 

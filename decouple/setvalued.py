@@ -51,7 +51,7 @@ def set_decision(p_par, p_tox, samples, revealed, cfg, mass=0.95, names=('A', 'B
     leader = 0 if p_par[0] >= p_par[1] else 1
     if leader in chosen and p_tox[leader] > cap:
         L = HYPOTHESES[leader]
-        return out('cytotoxic', [L], f'the compound best explaining the activity ({names[leader]}) also drives '
+        return out('cytotoxic', [L], f'the compound best explaining the activity ({names[leader]}) is also flagged by the model for '
                    f'host-cell toxicity (P_tox={p_tox[leader]:.2f} > {cap}): a likely general cytotoxin, '
                    'not a selective lead \u2014 do not isolate it.', contrast, [L])
     vetoed = [HYPOTHESES[i] for i in chosen if i < 2 and p_tox[i] > cap]
@@ -65,17 +65,17 @@ def set_decision(p_par, p_tox, samples, revealed, cfg, mass=0.95, names=('A', 'B
                else 'Every plausible explanation was removed or none is supported.') + veto_note
         return out('abstain', [], why, contrast, vetoed)
     if kept == ['both']:
-        return out('joint', kept, 'both contribute — fractionating will lose the activity; '
-                   'do not isolate either alone.' + veto_note, contrast, vetoed)
+        return out('joint', kept, 'the model favours a joint contribution. Test purified compounds separately and together; '
+                   'this does not establish synergy or prove that fractionating would lose activity.' + veto_note, contrast, vetoed)
     if len(kept) == 1 and kept[0] in ('A', 'B'):
-        return out('nominate', kept, f'{nm[kept[0]]} is the single driver of the activity and is not the '
-                   'host-cytotoxicity driver. Confirm with purified-compound assays.' + veto_note,
+        return out('nominate', kept, f'the model nominates {nm[kept[0]]} as the single-driver explanation and does not flag it '
+                   'as the host-cytotoxicity driver. Confirm identity and selectivity with purified-compound assays.' + veto_note,
                    contrast, vetoed)
     labels = ' / '.join(nm[k] for k in kept)
     if set(kept) == {'A', 'B'}:
-        why = (f'one of these two drives the activity; assaying an extract rich in {names[0]} but poor in '
+        why = (f'the model retains these two explanations; assaying an extract rich in {names[0]} but poor in '
                f'{names[1]} (or vice versa) would separate them.')
     else:
-        why = (f'the activity is explained by one of: {labels}. An extract that varies these '
+        why = (f'the model retains these explanations: {labels}. An extract that varies these '
                'independently would narrow it further.')
     return out('shortlist', kept, why + veto_note, contrast, vetoed)

@@ -1,0 +1,89 @@
+{
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "voice_name": "George",
+  "scenes": [
+    {
+      "id": "e1_problem",
+      "title": "Which molecule did it?",
+      "beats": [
+        {"key": "hit", "text": "A plant extract kills Trypanosoma cruzi, the parasite behind Chagas disease."},
+        {"key": "mixture", "text": "But an extract is a mixture of hundreds of compounds. So which one did it?"},
+        {"key": "cost", "text": "Isolating a single molecule costs weeks of chromatography. Guess wrong, and those weeks are gone."},
+        {"key": "rho", "text": "The obvious shortcut doesn't work. Across sixteen hundred ENPKG extracts, rotenoid content barely tracks activity: a Spearman rho of 0.095."},
+        {"key": "clitoria", "text": "The most rotenoid-rich extract in the whole library is not even a selective active."},
+        {"key": "alibi", "text": "And candidates travel together. 486 rotenoid pairs co-occur in at least three extracts, so each compound gives the other an alibi."},
+        {"key": "pools", "text": "In pooled screening, you design the pools. Here, nature composed them. Our only freedom is which extract to assay next."}
+      ]
+    },
+    {
+      "id": "e2_method",
+      "title": "How DECOUPLE works",
+      "beats": [
+        {"key": "intro", "text": "DECOUPLE turns that freedom into a decision, under a strict budget of three assays."},
+        {"key": "continuous", "text": "First, attribution is continuous in log-abundance. Extracts that separate two compounds often carry one of them only at trace level, so simple presence or absence says very little."},
+        {"key": "floor", "text": "Below a detection floor, a sample is treated as uninformative, not as negative."},
+        {"key": "hyp", "text": "Second, four explanations compete: compound A alone, B alone, both together, or neither. Every assay updates their probabilities."},
+        {"key": "contrast", "text": "Third, adaptive contrast scores each unassayed extract by how far it would pull apart the explanations the evidence can't yet separate."},
+        {"key": "recompute", "text": "It recomputes after every pick, with a penalty for redundant extracts. The goal is to find the extract where the suspects come apart."}
+      ]
+    },
+    {
+      "id": "e3_example",
+      "title": "One episode, measured data",
+      "beats": [
+        {"key": "pair", "text": "Here it is on measured ENPKG data: a methyl xanthone, and a rotenoid."},
+        {"key": "seeds", "text": "Two starting hits carry only the rotenoid. But a third, jicama leaves, is active with just a trace of the xanthone."},
+        {"key": "tie", "text": "So the rotenoid alone holds 39.7 percent, and both together hold 60.3."},
+        {"key": "pick", "text": "Adaptive contrast picks an Uncarina decaryi extract with about thirty-five times more xanthone, and no detected rotenoid."},
+        {"key": "reveal", "text": "If the xanthone mattered, this extract should respond. It comes back inactive."},
+        {"key": "jump", "text": "The joint explanation collapses, and rotenoid alone jumps to 99.9 percent."},
+        {"key": "verdict", "text": "Two confirming assays later, DECOUPLE nominates the rotenoid, and its second readout says it is not the host-toxicity driver."},
+        {"key": "baseline", "text": "On the same budget, the strongest-first rule ends with a two-way shortlist."}
+      ]
+    },
+    {
+      "id": "e4_selectivity",
+      "title": "Selectivity, not potency",
+      "beats": [
+        {"key": "trap", "text": "Our headline is about what gets nominated. Potency alone is a trap."},
+        {"key": "si", "text": "Rotenone is the most potent rotenoid, and the worst candidate. Its selectivity index is 51.7, against more than eleven hundred for deguelin and nineteen hundred for tephrosin."},
+        {"key": "decoys", "text": "In the real screen, 7 of the 15 extracts with over 80 percent inhibition of Trypanosoma cruzi are also toxic to host cells."},
+        {"key": "free", "text": "ENPKG measures host-cell toxicity on the same extracts, in the same screen. So every reveal buys both readouts, at no extra assay cost."},
+        {"key": "bench", "text": "On semi-synthetic benchmarks, selectivity-aware nomination keeps developable accuracy identical, at 32.7 percent,"},
+        {"key": "wasted", "text": "while wasted isolations fall from 32 per hundred episodes to 0.21. That is 154 times fewer."},
+        {"key": "caveat", "text": "Those rates depend on an assumed cytotoxic prevalence of fifty percent. The result is supported in simulation. It is not validated."}
+      ]
+    },
+    {
+      "id": "e5_benchmark",
+      "title": "What the benchmark shows",
+      "beats": [
+        {"key": "setup", "text": "We benchmarked on 952 semi-synthetic episodes from 238 real compound pairs. The abundances and co-occurrence are real; the response is simulated."},
+        {"key": "hard", "text": "On the hard stratum, sixteen pairs, spending no assays nominates correctly 8.6 percent of the time. Three random extracts: the same."},
+        {"key": "choose", "text": "Three well-chosen extracts roughly double that, to 19 percent."},
+        {"key": "tie", "text": "But adaptive contrast ties the chemist's strongest-first rule, with a margin of exactly zero. We do not claim to beat current practice. The value is in what it nominates."},
+        {"key": "abstain", "text": "In this benchmark, every nomination it made was correct. And on the full real library, it abstains, which is the right answer when the signal is that weak."},
+        {"key": "gaudry", "text": "The rotenoid finding itself belongs to Gaudry and colleagues. We reproduce it as a pipeline check, not as our discovery."}
+      ]
+    },
+    {
+      "id": "e6_ethno",
+      "title": "Grounded in traditional knowledge",
+      "beats": [
+        {"key": "jicama", "text": "The chemistry lines up with traditional knowledge. Jicama's root is eaten as food, while its seeds and leaves are used as insecticide and fish poison."},
+        {"key": "gradient", "text": "In the screen, that split appears as a gradient inside one plant: leaves, 65 percent rotenoid share and full inhibition. Woody stems, 12 percent and about half. Roots, 4 percent and none."},
+        {"key": "melochia", "text": "Three of six active species carry relevant traditional use, including Melochia umbellata, a Cameroonian antimalarial with no rotenoids at all. We treat it as a lead, not an identification."},
+        {"key": "ethics", "text": "We rejected a traditional-use claim we could not substantiate, and we claim no ownership of the knowledge described."}
+      ]
+    },
+    {
+      "id": "e7_close",
+      "title": "Occurrence is not abundance",
+      "beats": [
+        {"key": "motto", "text": "Occurrence is not abundance. Association is not causation."},
+        {"key": "summary", "text": "DECOUPLE chooses the assays that pull candidates apart, says both or neither when that is the honest answer, and vetoes cytotoxic decoys before a chemist spends weeks at the bench."},
+        {"key": "thanks", "text": "Thank you."}
+      ]
+    }
+  ]
+}

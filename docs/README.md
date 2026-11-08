@@ -1,3 +1,5 @@
+> **Historical design documents.** These describe earlier planning and reconstructed-data prototypes. For the submitted measured-data workbench, use the root [README](../README.md), [FINDINGS](../FINDINGS.md) and [submission checklist](../submission/READINESS.md).
+
 # Three assays, one isolation
 
 **Project handoff · updated 6 November 2026 · research and design stage**

@@ -324,6 +324,10 @@ def print_tables(title, res, pool, score):
                       f"{'[%s, %s]' % (f(lo), f(hi)):>16}{f(c['wasted_per_100'], False):>11}")
 
 
+def signed(value, places=1):
+    return "n/a" if value is None else f"{value:+.{places}f}"
+
+
 def main():
     t0 = time.time()
     print(f"confounded rotenoid pairs: {len(pairs)}   fitted gain = {GAIN:.2f}  (the shipped 2.0)")
@@ -366,7 +370,7 @@ def main():
     for m in R['margins']:
         if (m['a'], m['b'], m['pool'], m['rule']) == ('adaptive_contrast', 'strongest-first', 'unconstrained', 'potency-only'):
             lo, hi = m['ci95']
-            print(f"  {m['stratum']:8} {m['point']:+6.1f} pts  95% CI pair-clustered [{lo:+.1f}, {hi:+.1f}]  "
+            print(f"  {m['stratum']:8} {signed(m['point'], 1)} pts  95% CI pair-clustered [{signed(lo, 1)}, {signed(hi, 1)}]  "
                   f"({m['n_episodes']} episodes, {m['n_distinct_pairs']} distinct pairs)")
     for gname in ('well_specified', 'misspecified'):
         for regime in ('single_driver',):
@@ -376,19 +380,19 @@ def main():
                 for m in RR['margins']:
                     if (m['pool'], m['rule'], m['stratum']) == ('unconstrained', 'potency-only', st_):
                         lo, hi = m['ci95']
-                        print(f"  {st_:8}{m['comparison']:34}{m['point']:+6.1f}  [{lo:+.1f}, {hi:+.1f}]")
+                        print(f"  {st_:8}{m['comparison']:34}{signed(m['point'], 1)}  [{signed(lo, 1)}, {signed(hi, 1)}]")
     print("\nCOMPARABILITY COST (same-batch minus unconstrained, accuracy pts, named, potency-only, the generator, single driver):")
     for st_ in ('hard', 'easy', 'overall'):
         for c in R['comparability_cost']:
             if c['stratum'] == st_ and c['rule'] == 'potency-only' and c['scoring'] == 'named':
                 m = c['same_batch_minus_unconstrained']; lo, hi = m['ci95']
-                print(f"  {st_:8}{c['policy']:22}{m['point']:+6.1f}  [{lo:+.1f}, {hi:+.1f}]")
+                print(f"  {st_:8}{c['policy']:22}{signed(m['point'], 1)}  [{signed(lo, 1)}, {signed(hi, 1)}]")
     print("\nRULE COMPARISON (selectivity-aware minus potency-only, developable scoring, unconstrained):")
     for r in R['rule_comparison']:
         if r['pool'] == 'unconstrained' and r['policy'] in ('adaptive_contrast', 'strongest-first', 'decouple'):
             w, a = r['wasted_per_100'], r['developable_accuracy']
-            print(f"  {r['stratum']:8}{r['policy']:18} wasted/100 {w['point']:+6.2f} [{w['ci95'][0]:+.2f}, {w['ci95'][1]:+.2f}]"
-                  f"   dev. accuracy {a['point']:+5.1f} [{a['ci95'][0]:+.1f}, {a['ci95'][1]:+.1f}]")
+            print(f"  {r['stratum']:8}{r['policy']:18} wasted/100 {signed(w['point'], 2)} [{signed(w['ci95'][0], 2)}, {signed(w['ci95'][1], 2)}]"
+                  f"   dev. accuracy {signed(a['point'], 1)} [{signed(a['ci95'][0], 1)}, {signed(a['ci95'][1], 1)}]")
     print("\npick overlap with strongest-first (of 3), single driver, unconstrained:",
           {k: round(v, 2) for k, v in R['pick_overlap_with_strongest_first'].items() if k.startswith('unconstrained')})
     print(f"\nSET-VALUED vs SCALAR (overall stratum, unconstrained pool; scalar = potency-only named; set @{SET_MASS})")

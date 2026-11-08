@@ -1,0 +1,65 @@
+{
+  "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+  "voice_name": "Alice",
+  "scenes": [
+    {
+      "id": "d1_launch",
+      "title": "The workbench",
+      "beats": [
+        {"key": "intro", "text": "This is the DECOUPLE workbench, running on measured ENPKG data."},
+        {"key": "tier", "text": "Nothing on this screen is simulated. Extract abundances, parasite inhibition and host-cell toxicity are real screen values."},
+        {"key": "pair", "text": "We load a candidate pair: a methyl xanthone at mass 353, and a rotenoid at mass 393. These are mass-spec annotation candidates, not confirmed structures."},
+        {"key": "post", "text": "On the left, four explanations compete. After the three starting hits, rotenoid alone holds 39.7 percent, and both together 60.3. The data so far can't separate them."}
+      ]
+    },
+    {
+      "id": "d2_recommend",
+      "title": "Choosing the next assay",
+      "beats": [
+        {"key": "table", "text": "In the middle are fifty sample profiles, each with the relative abundance of both candidates."},
+        {"key": "strong", "text": "The strongest-first rule would assay a Cnestis palala extract, rich in the rotenoid, because it predicts the biggest response."},
+        {"key": "rec", "text": "DECOUPLE recommends Uncarina decaryi green stems instead. It carries the xanthone, with no detected rotenoid."},
+        {"key": "pred", "text": "If the xanthone drives activity, it should respond near 0.99. If the rotenoid does, near 0.05. That gap is the information."}
+      ]
+    },
+    {
+      "id": "d3_reveal",
+      "title": "Reveal",
+      "beats": [
+        {"key": "click", "text": "We reveal the assay."},
+        {"key": "both", "text": "One reveal returns both readouts: parasite inhibition 0.001, host toxicity 0.022. Inactive."},
+        {"key": "jump", "text": "Rotenoid alone jumps from 39.7 to 99.9 percent. Two assays remain."},
+        {"key": "more", "text": "The next two recommendations are also xanthone-only extracts. Both come back inactive, and the posterior settles."}
+      ]
+    },
+    {
+      "id": "d4_finalize",
+      "title": "Finalize and compare",
+      "beats": [
+        {"key": "final", "text": "With the budget spent, we finalize."},
+        {"key": "nominate", "text": "DECOUPLE nominates the rotenoid as the single driver, and its host-toxicity channel says it is not the cytotoxicity driver. The next step is a purified-compound assay."},
+        {"key": "compare", "text": "Compare replays strongest-first on identical archived outcomes. It spends its first assay on another active rotenoid extract, and ends with a shortlist: both, or the rotenoid."},
+        {"key": "export", "text": "Every step can be exported as a JSON decision trace."}
+      ]
+    },
+    {
+      "id": "d5_verdicts",
+      "title": "Other verdicts",
+      "beats": [
+        {"key": "intro", "text": "Not every pair ends in a single nomination."},
+        {"key": "joint", "text": "For a simple coumarin and a rotenoid, the evidence points to both. DECOUPLE answers: both contribute, do not fractionate. Isolating either one alone would lose the activity."},
+        {"key": "cyto", "text": "For a flavone and a rotenoid, the evidence points to the flavone. But the second channel shows it also drives host-cell toxicity, with probability 0.94. So DECOUPLE vetoes it: cytotoxic, do not isolate."}
+      ]
+    },
+    {
+      "id": "d6_benchmark",
+      "title": "Benchmark panel",
+      "beats": [
+        {"key": "open", "text": "The Benchmark panel replays 952 simulated episodes across 238 compound pairs."},
+        {"key": "rates", "text": "Spending no assays nominates correctly 10.8 percent of the time. Strongest-first and adaptive contrast are close, at 32.2 and 32.7 percent, and both are right 99.4 percent of the time they nominate."},
+        {"key": "set", "text": "The set-valued verdict answers 98.9 percent of episodes, and contains the true driver 99.4 percent of the time."},
+        {"key": "caveat", "text": "The chemistry is real. The response is simulated. DECOUPLE is built to say exactly that."}
+      ]
+    }
+  ]
+}

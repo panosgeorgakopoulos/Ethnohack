@@ -73,7 +73,7 @@ out = {
         "cytotoxic_rate": sc.get("cytotoxic_rate"),
         "kind_counts": sc.get("set_kind_counts")},
     "indistinguishable_diagnostic": {
-        "label": "Episodes where no available extract separates the pair",
+        "label": "Ordinary abstentions in the set-valued benchmark (not a contrast-withheld control)",
         "episodes": reg.get("n_episodes"),
         "unique_pairs": reg.get("n_distinct_pairs"),
         "abstentions": (sc.get("set_kind_counts") or {}).get("abstain"),

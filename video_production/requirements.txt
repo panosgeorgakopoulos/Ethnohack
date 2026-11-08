@@ -1,0 +1,4 @@
+# Optional video authoring; the application does not require these packages.
+manim==0.22.1
+pillow==13.0.0
+numpy==2.5.4

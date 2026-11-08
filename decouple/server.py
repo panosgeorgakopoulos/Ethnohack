@@ -124,13 +124,14 @@ def create_server(cfg, port):
                         self.send({'you': visible(episode, state, cfg), 'baseline': visible(episode, baseline, cfg)})
                     return
                 name = {'/': 'index.html', '/app.js': 'app.js', '/style.css': 'style.css',
-                        '/geist.woff2': 'geist.woff2'}.get(url.path)
+                        '/geist.woff2': 'geist.woff2', '/Geist-Regular.ttf': 'Geist-Regular.ttf',
+                        '/Geist-Bold.ttf': 'Geist-Bold.ttf'}.get(url.path)
                 if name is None:
                     self.send({'error': 'Not found'}, 404)
                     return
                 data = (static / name).read_bytes()
                 mime = {'html': 'text/html', 'js': 'text/javascript', 'css': 'text/css',
-                        'woff2': 'font/woff2'}[name.rsplit('.', 1)[1]]
+                        'woff2': 'font/woff2', 'ttf': 'font/ttf'}[name.rsplit('.', 1)[1]]
                 self.send_response(200)
                 self.send_header('Content-Type', mime)
                 self.send_header('Content-Length', str(len(data)))

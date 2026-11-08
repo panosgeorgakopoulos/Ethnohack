@@ -232,7 +232,7 @@
     }
   },
   "indistinguishable_diagnostic": {
-    "label": "Episodes where no available extract separates the pair",
+    "label": "Ordinary abstentions in the set-valued benchmark (not a contrast-withheld control)",
     "episodes": 952,
     "unique_pairs": 238,
     "abstentions": 10,

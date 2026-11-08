@@ -1,0 +1,98 @@
+{
+  "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+  "voice_name": "Alice",
+  "scenes": [
+    {
+      "id": "d1_launch",
+      "title": "The workbench",
+      "beats": [
+        {
+          "key": "intro",
+          "text": "Step one. Choose the candidate pair. This is a guided reconstruction of the DECOUPLE workbench, using states captured from the real engine."
+        },
+        {
+          "key": "tier",
+          "text": "The extract abundances, parasite inhibition and host-cell toxicity are real archived measurements. The probabilities and verdicts are model outputs."
+        },
+        {
+          "key": "pair",
+          "text": "Open the candidate menu and choose the methyl xanthone at mass 353 and the rotenoid at mass 393. These are annotation candidates, not confirmed structures."
+        },
+        {
+          "key": "post",
+          "text": "Read the left panel. After the starting assays, rotenoid alone holds 39.7 percent, and both together 60.3. The current evidence cannot separate them."
+        }
+      ]
+    },
+    {
+      "id": "d2_recommend",
+      "title": "Choosing the next assay",
+      "beats": [
+        {
+          "key": "table",
+          "text": "Step two. Inspect the recommendation before spending an assay. The sample table shows the abundance of each candidate."
+        },
+        {
+          "key": "strong",
+          "text": "Scroll down to the baseline. Strongest-first would choose another rotenoid-rich extract because it predicts the largest response."
+        },
+        {
+          "key": "rec",
+          "text": "Now return to the recommended row. DECOUPLE chooses Uncarina decaryi green stems. It carries the xanthone, with no detected rotenoid."
+        },
+        {
+          "key": "pred",
+          "text": "Read the predicted responses. Under the xanthone explanation, about 0.99. Under the rotenoid explanation, about 0.05. That gap makes this a useful contrast."
+        }
+      ]
+    },
+    {
+      "id": "d3_reveal",
+      "title": "Reveal",
+      "beats": [
+        {
+          "key": "click",
+          "text": "Step three. Click Reveal assay. In this retrospective demo, the button uncovers an archived measurement. In a prospective study, this is where the laboratory would run the assay."
+        },
+        {
+          "key": "both",
+          "text": "The row now shows both readouts: parasite inhibition 0.001, and host toxicity 0.022. Inactive."
+        },
+        {
+          "key": "jump",
+          "text": "Watch the model update. Support for the rotenoid alone rises from 39.7 to 99.9 percent. This is conditional model support, not a confirmed causal identity. Two assays remain."
+        },
+        {
+          "key": "more",
+          "text": "Read the next recommendation, then reveal assay two. Another xanthone-only extract is inactive."
+        },
+        {
+          "key": "third",
+          "text": "One assay remains. Reveal the third recommendation. It is also inactive. The budget is now zero. These are three separate archived observations."
+        }
+      ]
+    },
+    {
+      "id": "d4_finalize",
+      "title": "Finalize and compare",
+      "beats": [
+        {
+          "key": "final",
+          "text": "Step four. Click Finalize decision after all three reveals."
+        },
+        {
+          "key": "nominate",
+          "text": "The model nominates the rotenoid, and the toxicity model does not flag it. This is a hypothesis. The next experimental step is a purified-compound assay."
+        },
+        {
+          "key": "compare",
+          "text": "Next, click Compare with strongest-first. Both policies have the same budget and archived outcomes. In this one example, strongest-first ends with a shortlist: the joint explanation or the rotenoid. This example does not establish that adaptive contrast is better overall."
+        },
+        {
+          "key": "export",
+          "text": "Finally, export the JSON decision trace. It records the observations and decisions for review. The workflow is choose, inspect, reveal, finalize, compare, and export."
+        }
+      ]
+    }
+  ]
+}

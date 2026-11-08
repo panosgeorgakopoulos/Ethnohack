@@ -1,0 +1,852 @@
+1
+00:00:00,350 --> 00:00:03,395
+A plant extract kills Trypanosoma cruzi,
+
+2
+00:00:03,415 --> 00:00:05,729
+the parasite behind Chagas disease.
+
+3
+00:00:06,213 --> 00:00:08,178
+But an extract is a mixture of hundreds of
+
+4
+00:00:08,198 --> 00:00:09,061
+compounds.
+
+5
+00:00:09,452 --> 00:00:10,640
+So which one did it?
+
+6
+00:00:11,124 --> 00:00:13,461
+Isolating a single molecule costs weeks of
+
+7
+00:00:13,481 --> 00:00:14,576
+chromatography.
+
+8
+00:00:15,153 --> 00:00:17,142
+Guess wrong, and those weeks are gone.
+
+9
+00:00:17,533 --> 00:00:19,580
+The obvious shortcut doesn't work.
+
+10
+00:00:20,064 --> 00:00:23,062
+Across sixteen hundred ENPKG extracts,
+
+11
+00:00:23,082 --> 00:00:25,663
+rotenoid content barely tracks activity:
+
+12
+00:00:25,869 --> 00:00:28,682
+a Spearman rho of 0.095.
+
+13
+00:00:28,945 --> 00:00:31,108
+The most rotenoid-rich extract in the whole
+
+14
+00:00:31,128 --> 00:00:33,662
+library is not even a selective active.
+
+15
+00:00:33,926 --> 00:00:35,636
+And candidates travel together.
+
+16
+00:00:35,841 --> 00:00:39,385
+486 rotenoid pairs co-occur in at least three
+
+17
+00:00:39,405 --> 00:00:41,928
+extracts, so each compound gives the other an
+
+18
+00:00:41,948 --> 00:00:42,730
+alibi.
+
+19
+00:00:43,121 --> 00:00:45,725
+In pooled screening, you design the pools.
+
+20
+00:00:46,046 --> 00:00:47,873
+Here, nature composed them.
+
+21
+00:00:48,194 --> 00:00:50,380
+Our only freedom is which extract to assay
+
+22
+00:00:50,400 --> 00:00:51,275
+next.
+
+23
+00:00:52,283 --> 00:00:54,771
+DECOUPLE turns that freedom into a decision,
+
+24
+00:00:54,826 --> 00:00:57,198
+under a strict budget of three assays.
+
+25
+00:00:57,519 --> 00:00:59,508
+First, attribution is continuous in
+
+26
+00:00:59,528 --> 00:01:00,542
+log-abundance.
+
+27
+00:01:00,747 --> 00:01:03,385
+Extracts that separate two compounds often
+
+28
+00:01:03,405 --> 00:01:05,476
+carry one of them only at trace level,
+
+29
+00:01:05,565 --> 00:01:07,879
+so simple presence or absence says very
+
+30
+00:01:07,899 --> 00:01:08,460
+little.
+
+31
+00:01:08,549 --> 00:01:10,793
+Below a detection floor, a sample is treated
+
+32
+00:01:10,813 --> 00:01:13,162
+as uninformative, not as negative.
+
+33
+00:01:13,483 --> 00:01:15,763
+Second, four explanations compete:
+
+34
+00:01:15,852 --> 00:01:18,084
+compound A alone, B alone,
+
+35
+00:01:18,104 --> 00:01:19,664
+both together, or neither.
+
+36
+00:01:19,927 --> 00:01:22,368
+Every assay updates their probabilities.
+
+37
+00:01:22,631 --> 00:01:25,851
+Third, adaptive contrast scores each unassayed
+
+38
+00:01:25,871 --> 00:01:28,486
+extract by how far it would pull apart the
+
+39
+00:01:28,506 --> 00:01:31,122
+explanations the evidence can't yet separate.
+
+40
+00:01:31,327 --> 00:01:33,398
+It recomputes after every pick,
+
+41
+00:01:33,429 --> 00:01:35,685
+with a penalty for redundant extracts.
+
+42
+00:01:36,006 --> 00:01:37,913
+The goal is to find the extract where the
+
+43
+00:01:37,933 --> 00:01:39,632
+suspects come apart.
+
+44
+00:01:40,650 --> 00:01:42,441
+Let us walk through one decision,
+
+45
+00:01:42,461 --> 00:01:43,626
+step by step.
+
+46
+00:01:43,831 --> 00:01:45,564
+We will choose a pair, inspect the
+
+47
+00:01:45,584 --> 00:01:48,757
+recommendation, reveal three archived assays,
+
+48
+00:01:48,777 --> 00:01:50,476
+and review the result.
+
+49
+00:01:51,483 --> 00:01:52,497
+Step one.
+
+50
+00:01:52,656 --> 00:01:54,610
+Choose the candidate pair.
+
+51
+00:01:54,873 --> 00:01:56,920
+This is a guided reconstruction of the
+
+52
+00:01:56,940 --> 00:01:59,903
+DECOUPLE workbench, using states captured from
+
+53
+00:01:59,923 --> 00:02:01,251
+the real engine.
+
+54
+00:02:01,514 --> 00:02:04,547
+The extract abundances, parasite inhibition
+
+55
+00:02:04,567 --> 00:02:07,531
+and host-cell toxicity are real archived
+
+56
+00:02:07,551 --> 00:02:08,414
+measurements.
+
+57
+00:02:08,735 --> 00:02:11,118
+The probabilities and verdicts are model
+
+58
+00:02:11,138 --> 00:02:12,048
+outputs.
+
+59
+00:02:12,311 --> 00:02:14,776
+Open the candidate menu and choose the methyl
+
+60
+00:02:14,796 --> 00:02:18,978
+xanthone at mass 353 and the rotenoid at mass
+
+61
+00:02:18,998 --> 00:02:20,303
+393.
+
+62
+00:02:20,554 --> 00:02:22,613
+These are annotation candidates,
+
+63
+00:02:22,667 --> 00:02:24,366
+not confirmed structures.
+
+64
+00:02:24,757 --> 00:02:26,305
+Read the left panel.
+
+65
+00:02:26,463 --> 00:02:28,022
+After the starting assays,
+
+66
+00:02:28,042 --> 00:02:31,599
+rotenoid alone holds 39.7 percent,
+
+67
+00:02:31,688 --> 00:02:34,176
+and both together 60.3.
+
+68
+00:02:34,381 --> 00:02:37,114
+The current evidence cannot separate them.
+
+69
+00:02:38,117 --> 00:02:39,270
+Step two.
+
+70
+00:02:39,394 --> 00:02:41,986
+Inspect the recommendation before spending an
+
+71
+00:02:42,006 --> 00:02:42,904
+assay.
+
+72
+00:02:43,063 --> 00:02:46,050
+The sample table shows the abundance of each
+
+73
+00:02:46,070 --> 00:02:46,979
+candidate.
+
+74
+00:02:47,184 --> 00:02:49,069
+Scroll down to the baseline.
+
+75
+00:02:49,274 --> 00:02:51,042
+Strongest-first would choose another
+
+76
+00:02:51,062 --> 00:02:54,084
+rotenoid-rich extract because it predicts the
+
+77
+00:02:54,104 --> 00:02:55,594
+largest response.
+
+78
+00:02:55,915 --> 00:02:58,461
+Now return to the recommended row.
+
+79
+00:02:58,481 --> 00:03:02,130
+DECOUPLE chooses Uncarina decaryi green stems.
+
+80
+00:03:02,335 --> 00:03:04,928
+It carries the xanthone, with no detected
+
+81
+00:03:04,948 --> 00:03:05,753
+rotenoid.
+
+82
+00:03:06,016 --> 00:03:08,040
+Read the predicted responses.
+
+83
+00:03:08,233 --> 00:03:10,117
+Under the xanthone explanation,
+
+84
+00:03:10,137 --> 00:03:12,138
+about 0.99.
+
+85
+00:03:12,448 --> 00:03:14,227
+Under the rotenoid explanation,
+
+86
+00:03:14,247 --> 00:03:15,993
+about 0.05.
+
+87
+00:03:16,198 --> 00:03:19,058
+That gap makes this a useful contrast.
+
+88
+00:03:20,083 --> 00:03:21,131
+Step three.
+
+89
+00:03:21,151 --> 00:03:22,688
+Click Reveal assay.
+
+90
+00:03:23,078 --> 00:03:24,881
+In this retrospective demo,
+
+91
+00:03:24,901 --> 00:03:27,599
+the button uncovers an archived measurement.
+
+92
+00:03:27,862 --> 00:03:30,117
+In a prospective study, this is where the
+
+93
+00:03:30,137 --> 00:03:32,057
+laboratory would run the assay.
+
+94
+00:03:32,320 --> 00:03:34,506
+The row now shows both readouts:
+
+95
+00:03:34,537 --> 00:03:37,525
+parasite inhibition 0.001,
+
+96
+00:03:37,684 --> 00:03:40,230
+and host toxicity 0.022.
+
+97
+00:03:40,250 --> 00:03:41,100
+Inactive.
+
+98
+00:03:41,120 --> 00:03:42,610
+Watch the model update.
+
+99
+00:03:42,746 --> 00:03:46,186
+Support for the rotenoid alone rises from 39.7
+
+100
+00:03:46,206 --> 00:03:48,346
+to 99.9 percent.
+
+101
+00:03:48,586 --> 00:03:50,540
+This is conditional model support,
+
+102
+00:03:50,652 --> 00:03:52,839
+not a confirmed causal identity.
+
+103
+00:03:53,032 --> 00:03:54,417
+Two assays remain.
+
+104
+00:03:54,657 --> 00:03:56,274
+Read the next recommendation,
+
+105
+00:03:56,294 --> 00:03:58,191
+then reveal assay two.
+
+106
+00:03:58,454 --> 00:04:01,893
+Another xanthone-only extract is inactive.
+
+107
+00:04:01,913 --> 00:04:03,450
+One assay remains.
+
+108
+00:04:03,841 --> 00:04:05,900
+Reveal the third recommendation.
+
+109
+00:04:06,105 --> 00:04:07,931
+It is also inactive.
+
+110
+00:04:07,951 --> 00:04:10,021
+The budget is now zero.
+
+111
+00:04:10,226 --> 00:04:12,273
+These are three separate archived
+
+112
+00:04:12,293 --> 00:04:13,701
+observations.
+
+113
+00:04:14,717 --> 00:04:15,800
+Step four.
+
+114
+00:04:15,820 --> 00:04:18,517
+Click Finalize decision after all three
+
+115
+00:04:18,537 --> 00:04:19,469
+reveals.
+
+116
+00:04:19,733 --> 00:04:21,826
+The model nominates the rotenoid,
+
+117
+00:04:21,950 --> 00:04:24,717
+and the toxicity model does not flag it.
+
+118
+00:04:24,876 --> 00:04:26,691
+This is a hypothesis.
+
+119
+00:04:27,082 --> 00:04:29,047
+The next experimental step is a
+
+120
+00:04:29,067 --> 00:04:31,195
+purified-compound assay.
+
+121
+00:04:31,401 --> 00:04:34,957
+Next, click Compare with strongest-first.
+
+122
+00:04:35,348 --> 00:04:37,719
+Both policies have the same budget and
+
+123
+00:04:37,739 --> 00:04:39,090
+archived outcomes.
+
+124
+00:04:39,295 --> 00:04:42,352
+In this one example, strongest-first ends with
+
+125
+00:04:42,372 --> 00:04:43,455
+a shortlist:
+
+126
+00:04:43,486 --> 00:04:46,335
+the joint explanation or the rotenoid.
+
+127
+00:04:46,656 --> 00:04:49,352
+This example does not establish that adaptive
+
+128
+00:04:49,372 --> 00:04:51,826
+contrast is better overall.
+
+129
+00:04:52,147 --> 00:04:55,262
+Finally, export the JSON decision trace.
+
+130
+00:04:55,467 --> 00:04:57,944
+It records the observations and decisions for
+
+131
+00:04:57,964 --> 00:04:58,757
+review.
+
+132
+00:04:58,962 --> 00:05:01,403
+The workflow is choose, inspect,
+
+133
+00:05:01,423 --> 00:05:03,900
+reveal, finalize, compare,
+
+134
+00:05:03,920 --> 00:05:05,502
+and export.
+
+135
+00:05:06,517 --> 00:05:08,889
+Our headline is about what gets nominated.
+
+136
+00:05:09,280 --> 00:05:11,060
+Potency alone is a trap.
+
+137
+00:05:11,324 --> 00:05:13,486
+Rotenone is the most potent rotenoid,
+
+138
+00:05:13,506 --> 00:05:14,950
+and the worst candidate.
+
+139
+00:05:15,271 --> 00:05:18,317
+Its selectivity index is 51.7,
+
+140
+00:05:18,440 --> 00:05:20,662
+against more than eleven hundred for deguelin
+
+141
+00:05:20,820 --> 00:05:22,961
+and nineteen hundred for tephrosin.
+
+142
+00:05:23,352 --> 00:05:26,246
+In the real screen, 7 of the 15 extracts with
+
+143
+00:05:26,266 --> 00:05:29,009
+over 80 percent inhibition of Trypanosoma
+
+144
+00:05:29,029 --> 00:05:31,831
+cruzi are also toxic to host cells.
+
+145
+00:05:32,408 --> 00:05:36,242
+ENPKG measures host-cell toxicity on the same
+
+146
+00:05:36,262 --> 00:05:38,228
+extracts, in the same screen.
+
+147
+00:05:38,352 --> 00:05:40,526
+So every reveal buys both readouts,
+
+148
+00:05:40,546 --> 00:05:42,315
+at no extra assay cost.
+
+149
+00:05:42,706 --> 00:05:44,659
+On semi-synthetic benchmarks,
+
+150
+00:05:44,679 --> 00:05:47,295
+selectivity-aware nomination keeps developable
+
+151
+00:05:47,315 --> 00:05:50,894
+accuracy identical, at 32.7 percent,
+
+152
+00:05:51,053 --> 00:05:53,587
+while wasted isolations fall from 32 per
+
+153
+00:05:53,607 --> 00:05:56,073
+hundred episodes to 0.21.
+
+154
+00:05:56,556 --> 00:05:58,801
+That is 154 times fewer.
+
+155
+00:05:59,122 --> 00:06:01,552
+Those rates depend on an assumed cytotoxic
+
+156
+00:06:01,572 --> 00:06:03,248
+prevalence of fifty percent.
+
+157
+00:06:03,569 --> 00:06:05,709
+The result is supported in simulation.
+
+158
+00:06:05,740 --> 00:06:07,241
+It is not validated.
+
+159
+00:06:08,250 --> 00:06:12,283
+We benchmarked on 952 semi-synthetic episodes
+
+160
+00:06:12,372 --> 00:06:15,243
+from 238 real compound pairs.
+
+161
+00:06:15,564 --> 00:06:17,995
+The abundances and co-occurrence are real;
+
+162
+00:06:18,049 --> 00:06:19,678
+the response is simulated.
+
+163
+00:06:20,069 --> 00:06:22,557
+On the hard stratum, sixteen pairs,
+
+164
+00:06:22,577 --> 00:06:25,773
+spending no assays nominates correctly 8.6
+
+165
+00:06:25,793 --> 00:06:27,097
+percent of the time.
+
+166
+00:06:27,360 --> 00:06:28,919
+Three random extracts:
+
+167
+00:06:28,939 --> 00:06:29,744
+the same.
+
+168
+00:06:30,135 --> 00:06:32,530
+Three well-chosen extracts roughly double
+
+169
+00:06:32,550 --> 00:06:34,307
+that, to 19 percent.
+
+170
+00:06:34,698 --> 00:06:37,348
+But adaptive contrast ties the chemist's
+
+171
+00:06:37,368 --> 00:06:40,169
+strongest-first rule, with a margin of exactly
+
+172
+00:06:40,189 --> 00:06:40,983
+zero.
+
+173
+00:06:41,304 --> 00:06:43,688
+We do not claim to beat current practice.
+
+174
+00:06:43,847 --> 00:06:45,708
+The value is in what it nominates.
+
+175
+00:06:45,832 --> 00:06:48,296
+In this benchmark, every nomination it made
+
+176
+00:06:48,316 --> 00:06:49,179
+was correct.
+
+177
+00:06:49,570 --> 00:06:51,129
+And on the full real library,
+
+178
+00:06:51,149 --> 00:06:53,567
+it abstains, which is the right answer when
+
+179
+00:06:53,587 --> 00:06:55,112
+the signal is that weak.
+
+180
+00:06:55,433 --> 00:06:57,979
+The rotenoid finding itself belongs to Gaudry
+
+181
+00:06:57,999 --> 00:06:58,920
+and colleagues.
+
+182
+00:06:59,044 --> 00:07:01,219
+We reproduce it as a pipeline check,
+
+183
+00:07:01,273 --> 00:07:02,937
+not as our discovery.
+
+184
+00:07:03,950 --> 00:07:05,834
+The chemistry lines up with traditional
+
+185
+00:07:05,854 --> 00:07:06,520
+knowledge.
+
+186
+00:07:06,841 --> 00:07:08,771
+Jicama's root is eaten as food,
+
+187
+00:07:08,791 --> 00:07:10,652
+while its seeds and leaves are used as
+
+188
+00:07:10,672 --> 00:07:12,569
+insecticide and fish poison.
+
+189
+00:07:12,959 --> 00:07:14,959
+In the screen, that split appears as a
+
+190
+00:07:14,979 --> 00:07:16,992
+gradient inside one plant:
+
+191
+00:07:17,383 --> 00:07:20,335
+leaves, 65 percent rotenoid share and full
+
+192
+00:07:20,355 --> 00:07:21,183
+inhibition.
+
+193
+00:07:21,504 --> 00:07:24,202
+Woody stems, 12 percent and about half.
+
+194
+00:07:24,407 --> 00:07:26,338
+Roots, 4 percent and none.
+
+195
+00:07:26,659 --> 00:07:29,077
+Three of six active species carry relevant
+
+196
+00:07:29,097 --> 00:07:32,165
+traditional use, including Melochia umbellata,
+
+197
+00:07:32,185 --> 00:07:34,870
+a Cameroonian antimalarial with no rotenoids
+
+198
+00:07:34,890 --> 00:07:35,544
+at all.
+
+199
+00:07:35,935 --> 00:07:38,830
+We treat it as a lead, not an identification.
+
+200
+00:07:39,417 --> 00:07:43,659
+DECOUPLE uses Python, NumPy and RDKit,
+
+201
+00:07:43,748 --> 00:07:46,177
+with a browser workbench and an exportable
+
+202
+00:07:46,197 --> 00:07:47,281
+evidence trail.
+
+203
+00:07:47,486 --> 00:07:49,997
+The intended benefit is fewer premature
+
+204
+00:07:50,017 --> 00:07:51,658
+isolation decisions.
+
+205
+00:07:52,049 --> 00:07:54,490
+Next, we would compare its recommendations
+
+206
+00:07:54,510 --> 00:07:57,230
+with strongest-first in a blinded laboratory
+
+207
+00:07:57,250 --> 00:07:59,588
+study, broaden the hard cases,
+
+208
+00:07:59,642 --> 00:08:02,513
+and test purified compounds and mixtures.
+
+209
+00:08:02,776 --> 00:08:04,858
+These are research hypotheses.
+
+210
+00:08:05,064 --> 00:08:07,482
+Nothing here is clinically validated.
+
+211
+00:08:07,873 --> 00:08:08,759
+DECOUPLE.
+
+212
+00:08:08,779 --> 00:08:12,637
+Panos Georgakopoulos and Apostolos Dedeloudis.
+
+213
+00:08:12,668 --> 00:08:13,624
+Thank you.
+

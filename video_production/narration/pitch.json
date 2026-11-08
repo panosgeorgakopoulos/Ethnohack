@@ -1,0 +1,38 @@
+{
+  "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+  "voice_name": "Alice",
+  "scenes": [
+    {
+      "id": "p_transition",
+      "title": "Three assays. One decision.",
+      "beats": [
+        {
+          "key": "intro",
+          "text": "Let us walk through one decision, step by step. We will choose a pair, inspect the recommendation, reveal three archived assays, and review the result."
+        }
+      ]
+    },
+    {
+      "id": "p_close",
+      "title": "The next experiment",
+      "beats": [
+        {
+          "key": "tech",
+          "text": "DECOUPLE uses Python, NumPy and RDKit, with a browser workbench and an exportable evidence trail."
+        },
+        {
+          "key": "impact",
+          "text": "The intended benefit is fewer premature isolation decisions. Next, we would compare its recommendations with strongest-first in a blinded laboratory study, broaden the hard cases, and test purified compounds and mixtures."
+        },
+        {
+          "key": "limits",
+          "text": "These are research hypotheses. Nothing here is clinically validated."
+        },
+        {
+          "key": "team",
+          "text": "DECOUPLE. Panos Georgakopoulos and Apostolos Dedeloudis. Thank you."
+        }
+      ]
+    }
+  ]
+}

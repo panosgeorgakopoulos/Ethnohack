@@ -262,3 +262,14 @@ def load_structures():
         emit(key, buf)
         return out
     return _cached("structures", build)
+
+
+def main():
+    """Fetch the frozen ENPKG inputs; existing files are reused."""
+    for name in FILES:
+        path = _path(name)
+        print(f"{name}: {path.stat().st_size:,} bytes")
+
+
+if __name__ == "__main__":
+    main()
