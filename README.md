@@ -7,7 +7,7 @@ EthnoHack 2026 — Track 2: Natural Products & Drug Discovery.
 
 - **[Submission deck](submission/DECOUPLE_Submission_Visual.pptx)** — 10 slides.
 - **[Pitch downloads](https://github.com/panosgeorgakopoulos/Ethnohack/releases/tag/submission-2026-11-08)** — 8:14, 1080p, captioned and toggleable-subtitle versions.
-- **[Project-page copy](submission/DEVPOST.md)** and **[submission checklist](submission/READINESS.md)**.
+- **[Project-page copy](submission/DEVPOST.md)**.
 - Run the app locally with the bundled measured-data replay; no account, API key or full dataset download is needed for the demo.
 
 The submission includes Apostolos Dedeloudis’s newer workbench redesign. The approved video and deck screenshots show the earlier layout; they remain a disclosed reconstruction of the same captured engine states. See [release notes](submission/RELEASE_NOTES.md) for the exact implementation and evidence boundaries.
@@ -182,4 +182,4 @@ Analysis code in this project was written during the hackathon window with AI co
 
 ## Submission materials
 
-See [Devpost copy](submission/DEVPOST.md) and the [finalization checklist](submission/READINESS.md). The narrated product demo reconstructs engine states in Manim; it is not a browser recording.
+See the [Devpost copy](submission/DEVPOST.md). The narrated product demo reconstructs engine states in Manim; it is not a browser recording.

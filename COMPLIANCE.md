@@ -18,5 +18,3 @@ Dataset, font and media notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTI
 The published ENPKG screen and rotenoid findings belong to their original authors. Our contribution is the decision-support implementation, evaluation and prototype workflow. Traditional-knowledge sources are cited in ETHNOBOTANY.md; we claim no ownership or blanket downstream permissions.
 
 AI assistance supported code, analysis and media. The pitch uses synthetic narration and reconstructs archived engine states. It is not a screen recording of the redesigned UI or a prospective experiment.
-
-See [submission/READINESS.md](submission/READINESS.md) for the actual delivery checklist.

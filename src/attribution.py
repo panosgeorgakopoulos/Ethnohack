@@ -77,7 +77,6 @@ def should_abstain(results, threshold=0.6):
 
 # --------------------------------------------------------------------------
 # Calibration: does the top score separate "driver among candidates" from "absent"?
-# Setup follows scripts/robustness.py TEST 2.
 # --------------------------------------------------------------------------
 def _calibrate():
     import itertools

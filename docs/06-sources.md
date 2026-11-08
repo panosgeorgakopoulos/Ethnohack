@@ -1,6 +1,6 @@
 # 06 · Sources, prior art and provenance
 
-**Research cutoff for this handoff:** 3 November 2026. The evidence below supports a scoped research proposal. No search can establish worldwide novelty, unpublished work, patentability or the performance of an unbuilt policy.
+**Research cutoff:** 3 November 2026. The evidence below supports a scoped research proposal. No search can establish worldwide novelty, unpublished work, patentability or the performance of an unbuilt policy.
 
 ## Primary evidence and data access
 
