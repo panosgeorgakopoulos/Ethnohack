@@ -12,8 +12,8 @@
 
 ## Before pressing Submit
 
-- [ ] Publish the tested submission source and make it the GitHub entry point judges see. Existing `main` is an older prototype.
-- [ ] Publish final deck, MP4s and SRT as a release; verify anonymous download access.
+- [x] Public `main` contains the tested submission and Apostolos’s redesign; earlier histories and branches preserved.
+- [x] Final deck, MP4s, SRT and chapters published in [submission release](https://github.com/panosgeorgakopoulos/Ethnohack/releases/tag/submission-2026-11-08). Anonymous deck and captioned-video downloads matched local files byte for byte.
 - [ ] Upload the pitch to a Devpost-supported video host and paste the player URL. A GitHub downloadable MP4 may not satisfy Devpost's embedded-video field.
 - [x] Team confirmed a three-month ElevenLabs student plan; narration credited in the publication notes. Approved video unchanged.
 - [ ] Add both members to Devpost, attach the deck and repository, and submit before the event's actual deadline.

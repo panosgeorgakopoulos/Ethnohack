@@ -41,3 +41,5 @@ recording or a prospective wet-lab experiment.
 - Approved video and deck preserved unchanged. Team reports ElevenLabs student plan.
 
 Publication status is maintained in READINESS.md.
+
+Public main and the submission release are published. Anonymous downloads of the deck and captioned pitch match the approved local files byte for byte. Linux CI exposed last-bit float variation in a frozen-result test; comparison now uses a tight tolerance for floats while keeping choices and decisions exact.

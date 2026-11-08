@@ -50,5 +50,7 @@ Traditional knowledge belongs to its knowledge holders. We claim no ownership ov
 ## Submission links to complete
 - Source repository: https://github.com/panosgeorgakopoulos/Ethnohack
 - Pitch video: add the final hosted video URL
-- Slide deck: attach the accompanying deck
+- Slide deck: attach `DECOUPLE_Submission_Visual.pptx` from the [submission release](https://github.com/panosgeorgakopoulos/Ethnohack/releases/tag/submission-2026-11-08)
 - Optional app: add a tested public URL, or use the README's local launch instructions
+
+Video description credit: Narration generated with ElevenLabs (George and Alice); visuals built with Manim. ENPKG data: Gaudry et al., Zenodo 7824642. Demonstration reconstructs archived engine states; model predictions are not experimental confirmation.

@@ -97,7 +97,22 @@ def test_frozen_results_reproduce(tmp_path):
     cfg=copy.deepcopy(CFG);cfg['results_file']=str(tmp_path/'results.json')
     result=evaluate(cfg);frozen=json.loads(Path(CFG['results_file']).read_text())
     result['config']['results_file']=CFG['results_file']
-    assert result==frozen
+    # libm/NumPy can differ in the final floating-point bit across platforms.
+    # Keep decisions, selected extracts, schema and metadata exact.
+    def assert_reproduces(actual, expected, path="root"):
+        if isinstance(expected, dict):
+            assert actual.keys() == expected.keys(), path
+            for key in expected:
+                assert_reproduces(actual[key], expected[key], f"{path}.{key}")
+        elif isinstance(expected, list):
+            assert len(actual) == len(expected), path
+            for i, (a, e) in enumerate(zip(actual, expected)):
+                assert_reproduces(a, e, f"{path}[{i}]")
+        elif isinstance(expected, float):
+            assert actual == pytest.approx(expected, rel=1e-12, abs=1e-15), path
+        else:
+            assert actual == expected, path
+    assert_reproduces(result, frozen)
 
 
 def test_idempotent_requests_and_revision_conflicts():
